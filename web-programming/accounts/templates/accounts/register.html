@@ -1,0 +1,14 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>Registo</h2>
+
+<article class="card">
+    <p>Crie uma conta para publicar artigos. A conta sera associada ao grupo bloggers.</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Criar conta</button>
+    </form>
+</article>
+{% endblock %}

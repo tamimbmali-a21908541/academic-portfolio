@@ -1,0 +1,130 @@
+[
+    {
+        "nome": "Python",
+        "tipo": "linguagem",
+        "descricao": "Linguagem de programação de alto nível, interpretada e de propósito geral. Amplamente usada em desenvolvimento web, data science e automação.",
+        "link_oficial": "https://python.org",
+        "nivel_interesse": 5,
+        "destaque": "Linguagem principal do curso LEI para desenvolvimento web (Django) e scripting."
+    },
+    {
+        "nome": "Django",
+        "tipo": "framework",
+        "descricao": "Framework web de alto nível para Python que encoraja desenvolvimento rápido e design limpo e pragmático.",
+        "link_oficial": "https://djangoproject.com",
+        "nivel_interesse": 5,
+        "destaque": "Framework usado em Programação Web para criar aplicações web completas com ORM, admin e templates."
+    },
+    {
+        "nome": "JavaScript",
+        "tipo": "linguagem",
+        "descricao": "Linguagem de programação interpretada, usada principalmente para desenvolvimento web no lado do cliente.",
+        "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+        "nivel_interesse": 4,
+        "destaque": "Essencial para interatividade em páginas web e desenvolvimento frontend."
+    },
+    {
+        "nome": "HTML/CSS",
+        "tipo": "linguagem",
+        "descricao": "HTML define a estrutura das páginas web, CSS define o estilo e layout visual.",
+        "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+        "nivel_interesse": 4,
+        "destaque": "Base de todo o desenvolvimento web, usado em todas as UCs de programação web."
+    },
+    {
+        "nome": "Git",
+        "tipo": "ferramenta",
+        "descricao": "Sistema de controlo de versões distribuído para rastreamento de alterações no código-fonte.",
+        "link_oficial": "https://git-scm.com",
+        "nivel_interesse": 5,
+        "destaque": "Ferramenta fundamental para qualquer programador. Usado em todos os projetos do curso."
+    },
+    {
+        "nome": "PostgreSQL",
+        "tipo": "bd",
+        "descricao": "Sistema de gestão de base de dados relacional open-source, robusto e extensível.",
+        "link_oficial": "https://postgresql.org",
+        "nivel_interesse": 3,
+        "destaque": "Base de dados relacional avançada, alternativa ao SQLite para projetos em produção."
+    },
+    {
+        "nome": "Docker",
+        "tipo": "devops",
+        "descricao": "Plataforma de contentores para automatizar o deployment de aplicações.",
+        "link_oficial": "https://docker.com",
+        "nivel_interesse": 3,
+        "destaque": "Contentorização de aplicações para ambientes consistentes de desenvolvimento e produção."
+    },
+    {
+        "nome": "React",
+        "tipo": "framework",
+        "descricao": "Biblioteca JavaScript para construção de interfaces de utilizador.",
+        "link_oficial": "https://react.dev",
+        "nivel_interesse": 3,
+        "destaque": "Framework frontend popular para criação de SPAs (Single Page Applications)."
+    },
+    {
+        "nome": "Flutter",
+        "tipo": "framework",
+        "descricao": "Framework da Google para criação de aplicações móveis nativas a partir de uma única base de código.",
+        "link_oficial": "https://flutter.dev",
+        "nivel_interesse": 2,
+        "destaque": "Desenvolvimento cross-platform para Android e iOS."
+    },
+    {
+        "nome": "C",
+        "tipo": "linguagem",
+        "descricao": "Linguagem de programação de baixo nível, usada para programação de sistemas, estruturas de dados e algoritmos.",
+        "link_oficial": "https://en.cppreference.com/w/c",
+        "nivel_interesse": 3,
+        "destaque": "Primeira linguagem aprendida no curso (LP1). Fundamental para compreender memória, ponteiros e estruturas de dados."
+    },
+    {
+        "nome": "SQLite",
+        "tipo": "bd",
+        "descricao": "Motor de base de dados relacional leve, embutido, sem necessidade de servidor.",
+        "link_oficial": "https://sqlite.org",
+        "nivel_interesse": 3,
+        "destaque": "Base de dados padrão do Django para desenvolvimento. Simples e sem configuração."
+    },
+    {
+        "nome": "Valgrind",
+        "tipo": "ferramenta",
+        "descricao": "Ferramenta de instrumentação para deteção de memory leaks e erros de memória em programas C/C++.",
+        "link_oficial": "https://valgrind.org",
+        "nivel_interesse": 2,
+        "destaque": "Usado em LP1 para garantir que os projetos em C não têm memory leaks."
+    },
+    {
+        "nome": "Makefile",
+        "tipo": "ferramenta",
+        "descricao": "Ferramenta de automação de compilação que define regras para construir programas a partir de ficheiros fonte.",
+        "link_oficial": "https://www.gnu.org/software/make/",
+        "nivel_interesse": 2,
+        "destaque": "Usado em LP1 para compilar projetos em C com múltiplos ficheiros fonte."
+    },
+    {
+        "nome": "SQL",
+        "tipo": "linguagem",
+        "descricao": "Linguagem de consulta estruturada para gestão e manipulação de bases de dados relacionais.",
+        "link_oficial": "https://www.iso.org/standard/76583.html",
+        "nivel_interesse": 4,
+        "destaque": "Linguagem fundamental para interagir com bases de dados. Usada em Bases de Dados para criar tabelas, consultas, procedures e triggers."
+    },
+    {
+        "nome": "SQL Server",
+        "tipo": "bd",
+        "descricao": "Sistema de gestão de base de dados relacional da Microsoft, usado em ambiente empresarial.",
+        "link_oficial": "https://www.microsoft.com/sql-server",
+        "nivel_interesse": 3,
+        "destaque": "SGBD usado na UC de Bases de Dados para implementar o projeto de encomendas de restaurante."
+    },
+    {
+        "nome": "AWS",
+        "tipo": "devops",
+        "descricao": "Amazon Web Services - plataforma de cloud computing com serviços como Lambda, EC2, S3, entre outros.",
+        "link_oficial": "https://aws.amazon.com",
+        "nivel_interesse": 4,
+        "destaque": "Usado em Sistemas de Informação na Nuvem para implementar arquiteturas serverless com Lambda e instâncias EC2."
+    }
+]

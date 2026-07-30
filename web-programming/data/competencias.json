@@ -1,0 +1,68 @@
+[
+    {
+        "nome": "Programação Orientada a Objetos",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Conhecimento dos princípios de OOP: classes, herança, polimorfismo, encapsulamento. Aplicado em Python e Java."
+    },
+    {
+        "nome": "Desenvolvimento Web Full-Stack",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Capacidade de desenvolver aplicações web completas, desde o backend (Django) ao frontend (HTML/CSS/JS)."
+    },
+    {
+        "nome": "Bases de Dados Relacionais",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Modelação de bases de dados, SQL, ORM Django, relações entre tabelas."
+    },
+    {
+        "nome": "Trabalho em Equipa",
+        "nivel": "avancado",
+        "categoria": "soft",
+        "descricao": "Experiência em projetos de grupo no curso, com divisão de tarefas e comunicação eficaz."
+    },
+    {
+        "nome": "Resolução de Problemas",
+        "nivel": "avancado",
+        "categoria": "soft",
+        "descricao": "Capacidade de analisar problemas complexos e encontrar soluções estruturadas."
+    },
+    {
+        "nome": "Inglês",
+        "nivel": "avancado",
+        "categoria": "lingua",
+        "descricao": "Leitura de documentação técnica, comunicação profissional em inglês."
+    },
+    {
+        "nome": "Português",
+        "nivel": "especialista",
+        "categoria": "lingua",
+        "descricao": "Língua nativa."
+    },
+    {
+        "nome": "Controlo de Versões (Git)",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Utilização de Git e GitHub para controlo de versões, branches, commits e pull requests."
+    },
+    {
+        "nome": "Programação em C",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Programação de baixo nível em C: ponteiros, memória dinâmica, listas ligadas, ficheiros. Aplicado no projeto Trotify (LP1)."
+    },
+    {
+        "nome": "Estruturas de Dados",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Listas ligadas, arrays dinâmicos, filas (FIFO), pilhas. Aplicados em LP1 e Algoritmos."
+    },
+    {
+        "nome": "Modelação de Bases de Dados",
+        "nivel": "intermedio",
+        "categoria": "tecnica",
+        "descricao": "Diagramas Entidade-Relação (DER), normalização, criação de tabelas com restrições, stored procedures e triggers. Aplicado em Bases de Dados (projeto de restaurante)."
+    }
+]

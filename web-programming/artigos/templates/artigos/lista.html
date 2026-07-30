@@ -1,0 +1,37 @@
+{% extends "portfolio/base.html" %}
+{% load auth_extras %}
+
+{% block content %}
+<h2>Artigos</h2>
+
+{% if user|has_group:"bloggers" %}
+<p><a href="{% url 'artigos:artigo_novo' %}" class="btn btn-primary">+ Novo Artigo</a></p>
+{% endif %}
+
+<section>
+    {% for artigo in artigos %}
+    <article>
+        <header>
+            <h3><a href="{% url 'artigos:artigo_detalhe' artigo.id %}">Artigo de {{ artigo.autor.username }}</a></h3>
+            <p>{{ artigo.data_criacao|date:"d/m/Y H:i" }}</p>
+        </header>
+        <p>{{ artigo.texto|truncatewords:45 }}</p>
+        {% if artigo.fotografia %}
+        <img src="{{ artigo.fotografia.url }}" alt="Fotografia do artigo">
+        {% endif %}
+        {% if artigo.link_externo %}
+        <p><a href="{{ artigo.link_externo }}" target="_blank">Link externo</a></p>
+        {% endif %}
+        <form method="post" action="{% url 'artigos:artigo_like' artigo.id %}" class="inline-form">
+            {% csrf_token %}
+            <button type="submit">Gostar ({{ artigo.likes.count }})</button>
+        </form>
+        {% if user|has_group:"bloggers" and artigo.autor_id == user.id %}
+        <p class="actions"><a href="{% url 'artigos:artigo_editar' artigo.id %}">Editar</a></p>
+        {% endif %}
+    </article>
+    {% empty %}
+    <p>Ainda nao existem artigos publicados.</p>
+    {% endfor %}
+</section>
+{% endblock %}

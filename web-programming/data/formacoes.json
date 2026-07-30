@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Licenciatura em Engenharia Informática",
+        "tipo": "academica",
+        "instituicao": "Universidade Lusófona",
+        "descricao": "Curso de 3 anos (180 ECTS) focado em programação, desenvolvimento web, bases de dados, algoritmos e engenharia de software.",
+        "data_inicio": "2022-09-01",
+        "data_fim": null,
+        "em_curso": true,
+        "link_certificado": ""
+    },
+    {
+        "titulo": "Ensino Secundário",
+        "tipo": "academica",
+        "instituicao": "",
+        "descricao": "Ensino secundário concluído.",
+        "data_inicio": "2019-09-01",
+        "data_fim": "2022-07-01",
+        "em_curso": false,
+        "link_certificado": ""
+    }
+]

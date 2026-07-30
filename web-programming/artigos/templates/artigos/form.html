@@ -1,0 +1,13 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<h2>{% if modo == "editar" %}Editar artigo{% else %}Novo artigo{% endif %}</h2>
+
+<article class="card">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+</article>
+{% endblock %}

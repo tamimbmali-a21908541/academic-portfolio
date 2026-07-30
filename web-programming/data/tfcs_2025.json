@@ -1,0 +1,12 @@
+[
+    {
+        "titulo": "Aplicação Escolar Flexível e Personalizável",
+        "autores": "Tamim Mohamed Ali (a21908541), Boshra Alalou (a21908516)",
+        "orientador": "Prof. Rui Santos",
+        "resumo": "Proposta de criação de uma aplicação escolar flexível e personalizável, adaptável a diferentes instituições com mínima programação. A plataforma centraliza comunicação entre pais, alunos e professores, reunindo avisos, calendários, gestão de atividades e acompanhamento de desempenho. O modelo permite que cada escola ajuste as funcionalidades às suas necessidades, reduzindo custos e facilitando a manutenção.",
+        "ano": 2026,
+        "link": "",
+        "tags": "aplicação escolar, plataforma educativa, comunicação escola-família, personalização, Django",
+        "classificacao_interesse": 5
+    }
+]

@@ -1,0 +1,66 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+<article class="card">
+    <header>
+        <h2>Artigo de {{ artigo.autor.username }}</h2>
+        <p>{{ artigo.data_criacao|date:"d/m/Y H:i" }}</p>
+    </header>
+
+    <div>{{ artigo.texto|linebreaks }}</div>
+
+    {% if artigo.fotografia %}
+    <img src="{{ artigo.fotografia.url }}" alt="Fotografia do artigo">
+    {% endif %}
+
+    {% if artigo.link_externo %}
+    <p><a href="{{ artigo.link_externo }}" target="_blank">Link externo</a></p>
+    {% endif %}
+
+    <form method="post" action="{% url 'artigos:artigo_like' artigo.id %}" class="inline-form">
+        {% csrf_token %}
+        <button type="submit">Gostar ({{ artigo.likes.count }})</button>
+    </form>
+
+    <div class="rating-section">
+        <p><strong>Media de pontuacao:</strong> {{ artigo.media_pontuacao }}/5 ({{ artigo.numero_ratings }} votos)</p>
+        <form method="post" action="{% url 'artigos:artigo_rating' artigo.id %}" class="inline-form">
+            {% csrf_token %}
+            <label for="pontuacao">Avaliar:</label>
+            <select name="pontuacao" id="pontuacao">
+                <option value="1">1 - Fraco</option>
+                <option value="2">2 - Regular</option>
+                <option value="3">3 - Bom</option>
+                <option value="4">4 - Muito Bom</option>
+                <option value="5">5 - Excelente</option>
+            </select>
+            <button type="submit">Avaliar</button>
+        </form>
+    </div>
+
+    {% if can_edit %}
+    <p class="actions"><a href="{% url 'artigos:artigo_editar' artigo.id %}">Editar</a></p>
+    {% endif %}
+</article>
+
+<section>
+    <h3>Comentarios</h3>
+    {% for comentario in artigo.comentarios.all %}
+    <article class="comentario">
+        <div>{{ comentario.texto|linebreaks }}</div>
+        <p><small>{{ comentario.nome_exibicao }} - {{ comentario.data_criacao|date:"d/m/Y H:i" }}</small></p>
+    </article>
+    {% empty %}
+    <p>Ainda nao existem comentarios.</p>
+    {% endfor %}
+</section>
+
+<section class="card">
+    <h3>Novo comentario</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ comentario_form.as_p }}
+        <button type="submit">Comentar</button>
+    </form>
+</section>
+{% endblock %}
