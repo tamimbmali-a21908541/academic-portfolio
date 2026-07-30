@@ -1,0 +1,2981 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "gestor-portfolio",
+    "permissions": [
+      [
+        "add_competencia",
+        "portfolio",
+        "competencia"
+      ],
+      [
+        "change_competencia",
+        "portfolio",
+        "competencia"
+      ],
+      [
+        "delete_competencia",
+        "portfolio",
+        "competencia"
+      ],
+      [
+        "view_competencia",
+        "portfolio",
+        "competencia"
+      ],
+      [
+        "add_docente",
+        "portfolio",
+        "docente"
+      ],
+      [
+        "change_docente",
+        "portfolio",
+        "docente"
+      ],
+      [
+        "delete_docente",
+        "portfolio",
+        "docente"
+      ],
+      [
+        "view_docente",
+        "portfolio",
+        "docente"
+      ],
+      [
+        "add_formacao",
+        "portfolio",
+        "formacao"
+      ],
+      [
+        "change_formacao",
+        "portfolio",
+        "formacao"
+      ],
+      [
+        "delete_formacao",
+        "portfolio",
+        "formacao"
+      ],
+      [
+        "view_formacao",
+        "portfolio",
+        "formacao"
+      ],
+      [
+        "add_interesse",
+        "portfolio",
+        "interesse"
+      ],
+      [
+        "change_interesse",
+        "portfolio",
+        "interesse"
+      ],
+      [
+        "delete_interesse",
+        "portfolio",
+        "interesse"
+      ],
+      [
+        "view_interesse",
+        "portfolio",
+        "interesse"
+      ],
+      [
+        "add_licenciatura",
+        "portfolio",
+        "licenciatura"
+      ],
+      [
+        "change_licenciatura",
+        "portfolio",
+        "licenciatura"
+      ],
+      [
+        "delete_licenciatura",
+        "portfolio",
+        "licenciatura"
+      ],
+      [
+        "view_licenciatura",
+        "portfolio",
+        "licenciatura"
+      ],
+      [
+        "add_makingof",
+        "portfolio",
+        "makingof"
+      ],
+      [
+        "change_makingof",
+        "portfolio",
+        "makingof"
+      ],
+      [
+        "delete_makingof",
+        "portfolio",
+        "makingof"
+      ],
+      [
+        "view_makingof",
+        "portfolio",
+        "makingof"
+      ],
+      [
+        "add_projeto",
+        "portfolio",
+        "projeto"
+      ],
+      [
+        "change_projeto",
+        "portfolio",
+        "projeto"
+      ],
+      [
+        "delete_projeto",
+        "portfolio",
+        "projeto"
+      ],
+      [
+        "view_projeto",
+        "portfolio",
+        "projeto"
+      ],
+      [
+        "add_tecnologia",
+        "portfolio",
+        "tecnologia"
+      ],
+      [
+        "change_tecnologia",
+        "portfolio",
+        "tecnologia"
+      ],
+      [
+        "delete_tecnologia",
+        "portfolio",
+        "tecnologia"
+      ],
+      [
+        "view_tecnologia",
+        "portfolio",
+        "tecnologia"
+      ],
+      [
+        "add_tfc",
+        "portfolio",
+        "tfc"
+      ],
+      [
+        "change_tfc",
+        "portfolio",
+        "tfc"
+      ],
+      [
+        "delete_tfc",
+        "portfolio",
+        "tfc"
+      ],
+      [
+        "view_tfc",
+        "portfolio",
+        "tfc"
+      ],
+      [
+        "add_tipotecnologia",
+        "portfolio",
+        "tipotecnologia"
+      ],
+      [
+        "change_tipotecnologia",
+        "portfolio",
+        "tipotecnologia"
+      ],
+      [
+        "delete_tipotecnologia",
+        "portfolio",
+        "tipotecnologia"
+      ],
+      [
+        "view_tipotecnologia",
+        "portfolio",
+        "tipotecnologia"
+      ],
+      [
+        "add_unidadecurricular",
+        "portfolio",
+        "unidadecurricular"
+      ],
+      [
+        "change_unidadecurricular",
+        "portfolio",
+        "unidadecurricular"
+      ],
+      [
+        "delete_unidadecurricular",
+        "portfolio",
+        "unidadecurricular"
+      ],
+      [
+        "view_unidadecurricular",
+        "portfolio",
+        "unidadecurricular"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "autores",
+    "permissions": [
+      [
+        "add_artigo",
+        "artigos",
+        "artigo"
+      ],
+      [
+        "change_artigo",
+        "artigos",
+        "artigo"
+      ],
+      [
+        "delete_artigo",
+        "artigos",
+        "artigo"
+      ],
+      [
+        "view_artigo",
+        "artigos",
+        "artigo"
+      ],
+      [
+        "add_artigolike",
+        "artigos",
+        "artigolike"
+      ],
+      [
+        "change_artigolike",
+        "artigos",
+        "artigolike"
+      ],
+      [
+        "delete_artigolike",
+        "artigos",
+        "artigolike"
+      ],
+      [
+        "view_artigolike",
+        "artigos",
+        "artigolike"
+      ],
+      [
+        "add_comentario",
+        "artigos",
+        "comentario"
+      ],
+      [
+        "change_comentario",
+        "artigos",
+        "comentario"
+      ],
+      [
+        "delete_comentario",
+        "artigos",
+        "comentario"
+      ],
+      [
+        "view_comentario",
+        "artigos",
+        "comentario"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ZexnP753pw9LJ2109tVK7G$0/V11oQTQEkvZV6J/0uG5H8aUIQ0YiJ3Uq8d+C9U2LE=",
+    "last_login": "2026-05-01T20:51:16.924Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-03-31T22:46:44.373Z",
+    "groups": [
+      [
+        "gestor-portfolio"
+      ],
+      [
+        "autores"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$wHZrLGwxQs8T7uNtl81PeG$BtBwEnh+AZeIrXPmUE+8pMk5I9mBurXCg6cCd9O7dkI=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "ãdmin1",
+    "first_name": "",
+    "last_name": "",
+    "email": "a21908541@alunos.ulht.pt",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-09T22:58:59.135Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "portfolio.licenciatura",
+  "pk": 1,
+  "fields": {
+    "nome": "Engenharia Informática",
+    "descricao": "",
+    "instituicao": "Universidade Lusófona",
+    "grau": "Licenciatura",
+    "duracao_anos": 3,
+    "ects_total": 180,
+    "codigo_curso": 260,
+    "link_institucional": "https://informatica.ulusofona.pt/ensino/licenciaturas/engenharia-informatica/",
+    "imagem": "",
+    "ano_inicio": null,
+    "ano_conclusao": null
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 1,
+  "fields": {
+    "nome": "Cristiane da Silva Ferreira Nunes",
+    "email": "crisfis@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 2,
+  "fields": {
+    "nome": "CRISTINA MARIA RIBEIRO GUERRA",
+    "email": "cristina.guerra@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 3,
+  "fields": {
+    "nome": "JOSÉ ALEXANDRE SILVA PAREDES",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 4,
+  "fields": {
+    "nome": "RUTE MARIA DA SILVA PROENÇA MUCHACHO",
+    "email": "rute.muchacho@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 5,
+  "fields": {
+    "nome": "SERGIO PEDRO MESTRE FERREIRA",
+    "email": "sergiopmferreira@sapo.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 6,
+  "fields": {
+    "nome": "ANDRE VIEIRA VASSALO DA FONSECA",
+    "email": "andre.fonseca@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 7,
+  "fields": {
+    "nome": "DIOGO SOARES PEREIRA GIL MORAIS",
+    "email": "diogo.morais@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 8,
+  "fields": {
+    "nome": "RUI PEDRO NOBRE RIBEIRO",
+    "email": "rui.ribeiro@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 9,
+  "fields": {
+    "nome": "Tomaz Miranda da Cunha Saraiva",
+    "email": "tomaz.saraiva@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 10,
+  "fields": {
+    "nome": "Paulo Jorge Tavares Guedes",
+    "email": "paulo.guedes60@yahoo.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 11,
+  "fields": {
+    "nome": "Pedro Hugo de Queirós Alves",
+    "email": "pedro.alves@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 12,
+  "fields": {
+    "nome": "Bruno Miguel Pereira Cipriano",
+    "email": "bcipriano@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 13,
+  "fields": {
+    "nome": "Pedro de Almeida Perdigão",
+    "email": "p5617@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 14,
+  "fields": {
+    "nome": "Herminio Miguel Sobral Tavares",
+    "email": "hmiguel.tavares@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 15,
+  "fields": {
+    "nome": "MANUEL ARTURO MARQUES PITA",
+    "email": "manuel.pita@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 16,
+  "fields": {
+    "nome": "IOLANDA  RAQUEL FERNANDES VELHO",
+    "email": "iolanda.velho@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 17,
+  "fields": {
+    "nome": "Pedro Arroz Correia Bonifácio Serra",
+    "email": "pedro.serra@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 18,
+  "fields": {
+    "nome": "MARIA JOSÉ DE ALMEIDA E SILVA",
+    "email": "maria.almeida.silva@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 19,
+  "fields": {
+    "nome": "José Manuel Catarino Barreiros Cascais Brás",
+    "email": "cascaisbras@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 20,
+  "fields": {
+    "nome": "DANIEL FILIPE SOBRAL FERNANDES",
+    "email": "daniel.fernandes@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 21,
+  "fields": {
+    "nome": "SÉRGIO RODRIGUES NUNES",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 22,
+  "fields": {
+    "nome": "LUCIO MIGUEL STUDER FERREIRA",
+    "email": "lucio.studer@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 23,
+  "fields": {
+    "nome": "JOÃO LICINIO CABRAL DA SILVA",
+    "email": "p1508@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 24,
+  "fields": {
+    "nome": "SOFIA MARTA LIMA NAIQUE",
+    "email": "p6476@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 25,
+  "fields": {
+    "nome": "Maria da Conceição Gonçalves Costa",
+    "email": "conceicao.costa@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 26,
+  "fields": {
+    "nome": "Brena Kelly Sousa Lima",
+    "email": "brena.lima@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 27,
+  "fields": {
+    "nome": "Daniel Tomás de Maia Mozart Silveira",
+    "email": "p6902@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 28,
+  "fields": {
+    "nome": "Bruno David Ferreira Saraiva",
+    "email": "bruno.saraiva@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 29,
+  "fields": {
+    "nome": "ZUIL ANTÓNIO PIROLA FILHO",
+    "email": "zuilpirola@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 30,
+  "fields": {
+    "nome": "Rui Filipe Guimarães dos Santos",
+    "email": "rui.filipe.santos07@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 31,
+  "fields": {
+    "nome": "Ana Vieira dos Santos Cruz",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 32,
+  "fields": {
+    "nome": "Rodrigo Coutinho Correia",
+    "email": "rodrigo.correia@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 33,
+  "fields": {
+    "nome": "João Pedro Gonçalves Crespo Craveiro",
+    "email": "joao.craveiro@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 34,
+  "fields": {
+    "nome": "JOÃO CARLOS PALMELA PINHEIRO CALDEIRA",
+    "email": "jpalmela@gmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 35,
+  "fields": {
+    "nome": "Martim Duarte Barja Mourão",
+    "email": "martim.mourao@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 36,
+  "fields": {
+    "nome": "Berend Willem Martijn Kuipers",
+    "email": "martijn.kuipers@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 37,
+  "fields": {
+    "nome": "João Pedro Lavadinho Moreira",
+    "email": "joaopedro.moreira@protonmail.com",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 38,
+  "fields": {
+    "nome": "SOFIA DA SILVA FERNANDES",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 39,
+  "fields": {
+    "nome": "Francisco Fernandes Castro Rego",
+    "email": "p7577@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 40,
+  "fields": {
+    "nome": "Thiago Gustavo Vieira de Paiva",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 41,
+  "fields": {
+    "nome": "RICARDO JORGE SERRAS SANTOS",
+    "email": "p6221@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 42,
+  "fields": {
+    "nome": "LUIS ALEXANDRE FERREIRA DE OLIVEIRA GOMES",
+    "email": "luis.a.gomes@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 43,
+  "fields": {
+    "nome": "Carlos Alberto Teixeira Iglésias",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 44,
+  "fields": {
+    "nome": "Leonardo De Carlo",
+    "email": "leonardo.de.carlo@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 45,
+  "fields": {
+    "nome": "HOUDA HARKAT",
+    "email": "p7558@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 46,
+  "fields": {
+    "nome": "Duarte Nuno Donas Botto Neves",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 47,
+  "fields": {
+    "nome": "Giosuè Emanuele Muratore",
+    "email": "p8344@ulusofona.pt",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 48,
+  "fields": {
+    "nome": "Marcelo Garcia Domingues",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 49,
+  "fields": {
+    "nome": "Marina Pereira Martins",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 50,
+  "fields": {
+    "nome": "Luís Filipe Duarte Sousa",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.docente",
+  "pk": 51,
+  "fields": {
+    "nome": "João Pedro Cunha da Silva Eleutério",
+    "email": "",
+    "link_lusofona": "",
+    "foto": ""
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 1,
+  "fields": {
+    "nome": "Fundamentos de Física",
+    "codigo": "ULHT260-7336",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Mecânica clássica, eletrostátíca e corrente contínua",
+    "objetivos": "Compreensão do movimento dos corpos, ou seja, cinemática. Compreender as forças que atuam sobre os corpos e resolver as equações do movimento, ou seja, a dinâmica. Compreender o trabalho e a energia. Entendendo o campo elétrico e o potencial elétrico, ou seja, eletrostática. Compreender as correntes elétricas e resolver circuitos com correntes elétricas contínuas",
+    "programa": "Descrição dos conteúdos\r\n\r\n\r\n\tGrandezas físicas, dimensões e sistemas de unidades.\r\n\tReferencial, posição e trajetória. Movimento unidimensional.\r\n\tMovimento no espaço. Projéteis e movimento circular.\r\n\tLeis de Newton. Tipos de forças, força gravitacional.\r\n\tAplicações de Leis de Newton: plano inclinado, rodelas, mola oscilatória, pendulo.\r\n\tTrabalho. Forças conservativas e energia potencial.\r\n\tConservação da energia mecânica.\r\n\tCentro de massa, impulso e momento linear.Colisões.\r\n\tMomento de uma força, momento de inércia e momento angular.\r\n\tLei de Coulomb, campo elétrico.\r\n\tPotencial elétrico e capacitores.\r\n\tCorrente elétrica e resistência elétrica.\r\n\tCircuitos elétricos. Leis de Kirchhoff",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 2,
+  "fields": {
+    "nome": "Fundamentos de Programação",
+    "codigo": "ULHT260-7337",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta é uma disciplina fundamental na formação de qualquer profissional da área de Informática pois introduz os conceitos básicos da programação, sobre os quais assentarão muitas disciplinas subsequentes como Linguagens de Programação I e II, Algoritmia e Estruturas de Dados, Programação Web, Computação Móvel, etc. Mais do que aprender uma linguagem de programação, o aluno aprende a pensar como um programador, analisando problemas e desenhando algoritmos que os resolvam recorrendo a fluxogramas e a programas escritos em Kotlin, uma linguagem promissora que combina as melhores características das linguagens modernas mais populares (Java, Python, etc.)\r\n\r\nDado ser o primeiro contacto de muitos alunos com o tópico da Programação, reveste-se de uma importância especial na aquisição de conhecimentos primordiais mas também na sua motivação. Mais do que aprender a programar, os alunos aprendem a gostar de programar.",
+    "objetivos": "O objectivo desta unidade curricular é fornecer aos futuros profissionais na área da informática as bases para que possam iniciar (de um modo disciplinado) a actividade de programação.\r\n\r\nO aluno começa por desenvolver a capacidade de raciocínio algorítmico recorrendo a fluxogramas.\r\n\r\nO aluno deverá ser capaz de traduzir esses fluxogramas numa linguagem de programação imperativa. Concretamente, o aluno deverá conhecer a sintaxe básica de Kotlin que lhe permitam criar programas simples de linha de comando.\r\n\r\nFinalmente, o aluno deve conseguir analisar e avaliar programas feitos por outras pessoas (colegas, professores, etc.).",
+    "programa": "Introdução à programação\r\n\tAlgoritmos, fluxogramas, pseudo-código\r\n\tSintaxe e semântica das linguagens\r\n\tElementos da sintaxe, estrutura de um programa\r\n\tDeclarações e atribuições\r\n\tTipos primitivos\r\n\tExpressões aritméticas, expressões lógicas\r\n\tEntradas e saídas de dados\r\n\tSelecção\r\n\tRepetição\r\n\tFunções\r\n\tArrays uni-dimensionais e bi-dimensionais\r\n\tTratamento de erros\r\n\tLeitura e escrita de ficheiros\r\n\tBoas práticas de programação imperativa",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 3,
+  "fields": {
+    "nome": "Matemática I",
+    "codigo": "ULHT260-1",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta disciplina abrange os métodos fundamentais de Cálculo associados a funções reais de variável real. É uma área transversal a todas as engenharias e demais cursos de cariz científico. Abrange os métodos clássicos de cálculo diferencial e Integral a uma dimensão. \n",
+    "objetivos": "Esta disciplina confere a(o) aluna(o) conhecimentos que lhe permitam utilizar, de forma criativa, autónoma, e em contextos diversificados:\n\nOA1: a linguagem simbólica matemática e o raciocínio matemático;\n\nOA2: os conceitos e resultados fundamentais do cálculo diferencial, de modo a que possa proceder ao estudo de uma função real de variável real;\n\nOA3: os métodos de primitivação:\n\nOA4: as noções fundamentais do cálculo integral, de modo a que possa calcular integrais simples e determinar áreas de domínios planos.\n",
+    "programa": "1. Números reais\n\n\n\tRacionais e irracionais; operações algébricas entre frações.\n\n\n2. Funções reais de variável real\n\n\n\tGeneralidades sobre funções (domínio, imagem, leitura de domínio e imagem num gráfico, curvas de nível).\n\tFunções polinomiais e racionais.\n\tRaíz quadrada de um real.\n\tFunções trigonométricas.\n\tFunção exponencial e logarítmica.\n\n\n3. Limite:\n\n\n\tDefinição e propriedades do limite de uma função num ponto. Indeterminações (0/0  e  +00-00). Continuidade de funções.\n\n\n4. Derivada: \n\n\n\tInterpretação geométrica. Regras de derivação. Derivadas de ordem superior. Regra de Cauchy.\n\n\n5. Estudo global de uma função:\n\n\n\tMonotonia e extremos relativos. Concavidade e pontos de inflexão. Assíntotas. Gráficos.\n\n\n6. Integração:\n\n\n\tPrimitiva imediata. Primitivação por substituição e por partes. Integral definido, teorema fundamental do cálculo.  Aplicações da integração (áreas de figuras planas).\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 4,
+  "fields": {
+    "nome": "Matemática Discreta",
+    "codigo": "ULHT260-1656",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Na UC de Matemática Discreta pretende-se contribuir para a aquisição de um conjunto de competências nos alunos: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral e capacidade de raciocínio matemático. Para tal, serão estudados conceitos de lógica matemática, teoria de conjuntos, teoria de números e teoria da computação.\n",
+    "objetivos": "Os objetivos principais desta disciplina são:\n\nOA1. Aplicar propriedades elementares das operações lógicas e de quantificação;\n\nOA2. Construir e analisar argumentos matemáticos;\n\nOA3. Explicar os conceitos básicos sobre conjuntos e funções e realizar operações elementares sobre estes objetos matemáticos;\n\nOA4. Entender a teoria dos números;\n\nOA5. Construir e compreender autómatos finitos e máquinas de Turing;\n\nOA6. Contribuir para a aquisição de um conjunto de competências: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral.\n",
+    "programa": "CP1. Preliminares de Lógica\n\nCP2. Teoria de conjuntos\n\nCP3. Funções\n\nCP4. Teoria de números\n\nCP5. Teoria da computaçao\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 5,
+  "fields": {
+    "nome": "Sistemas Digitais",
+    "codigo": "ULHT260-7",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta Unidade Curricular (UC) visa apresentar aos estudantes os conceitos básicos conducentes à compreensão de Unidades Curriculares mais avançadas, nomeadamente no domínio da arquitetura de computadores. Tem ainda como objetivo potenciar o desenvolvimento do raciocínio lógico, capacidade essencial para a análise e compreensão de enunciados, de modo a conseguir decompor um problema em partes lógicas, identificando as etapas necessárias à construção de sistemas digitais.\n",
+    "objetivos": "Esta UC tem como principal objetivo apresentar aos alunos as ferramentas necessárias para a introdução ao funcionamento de máquinas. Um dos objetivos principais é a apresentar aos alunos novas bases numéricas, uma vez que estas constituem o principal alicerce de sistemas digitais. \n",
+    "programa": "Aulas teóricas:\n\n\n\tCódigos Numéricos e Sistemas de Numeração\n\tCircuitos Lógicos Básicos\n\tÁlgebra de Boole\n\tFunções Lógicas\n\tCircuitos Digitais LSI e MSI\n\tCircuitos Combinatórios Básicos\n\tSíntese de Circuitos Sequenciais Elementares\n\tCircuitos Digitais com Memória\n\n\nAulas práticas:\n\n\n\tCódigos Numéricos e Sistemas de Numeração\n\tSimulação de Componentes Básicos\n\tProjeto Simples de Sistemas Digitais\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 6,
+  "fields": {
+    "nome": "Álgebra Linear",
+    "codigo": "ULHT260-2091",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Nesta unidade curricular, os estudantes irão aprender a trabalhar com matrizes, sistemas de equações lineares e espaços vetoriais reais, essenciais para a resolução de diversos problemas reais.\n\n \n",
+    "objetivos": "No final desta unidade curricular, os estudantes devem saber:\n\nOA1. Dominar os conceitos e as operações elementares sobre matrizes;\n\nOA2. Discutir e resolver sistemas de equações lineares e utilizar o método de eliminação de Gauss;\n\nOA3. Formular e resolver problemas do mundo real usando sistemas de equações lineares;\n\nOA4. Reconhecer os conceitos de espaço vetorial e transformação linear e utilizá-los na resolução de problemas destes domínios;\n\nOA5. Calcular determinantes e compreender a sua utilidade;\n\nOA6. Determinar os valores próprios e os vetores próprios e saber utilizá-los no processo de diagonalização;\n\nOA7. Identificar e utilizar os conteúdos abordados na resolução de problemas reais.\n\n \n",
+    "programa": "CP1. Matrizes\n\nCP2. Sistemas de equações lineares\n\nCP3. Espaços vetoriais reais\n\nCP4. Transformações lineares\n\nCP5. Determinantes\n\nCP6. Valores e vetores próprios de matrizes\n\n \n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 7,
+  "fields": {
+    "nome": "Algoritmia e Estruturas de Dados",
+    "codigo": "ULHT260-13397",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "Esta UC surge no 2º semestre do 1º ano, na continuação do trabalho iniciado em Fundamentos de Programação (FP). Em FP, os alunos deram os primeiros passos na programação e preocuparam-se principalmente em produzir programas correctos. Agora, em Algoritmia e Estruturas de Dados, irão continuar a produzir programas correctos mas com preocupações de desempenho, a nível de tempo de execução e consumo de memória.\r\n\r\nEsta é uma UC fundamental no currículo de um Engenheiro Informático, que na sua vida profissional encontrará inúmeras situações em que terá que resolver problemas causados por fraco desempenho das aplicações e que exigem um conhecimento sólido dos princípios subjacentes aos principais algoritmos e estruturas de dados.\r\n\r\nNão obstante a aprendizagem de conceitos e técnicas de algoritmia e estruturas de dados, os alunos trabalham outras competências fundamentais. Nomeadamente, o espírito crítico e a capacidade de avaliar várias alternativas para resolver os problemas.",
+    "objetivos": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais de algoritmos e das estruturas de dados básicas, numa perspetiva de resolver problemas complexos de uma forma eficiente. O aluno deverá ser capaz de analisar e avaliar a eficiência de um algoritmo sem necessidade de o implementar ou testar. Deverá ser igualmente capaz de aplicar a estrutura de dados mais eficaz e eficiente para resolver um determinado problema.\r\n\r\nConcretamente, o aluno deverá conseguir criar programas em Java cuja eficiência seja um critério significativo de sucesso (ex: pesquisa, ordenação).",
+    "programa": "funções recursivas, algoritmos recursivos\r\n\ttipos de dados complexos\r\n\teficiência e optimização (algorítmica e não-algorítmica)\r\n\tcomplexidade de algoritmos\r\n\talgoritmos de pesquisa\r\n\talgoritmos de ordenação - bubble sort, selection sort, merge sort, quick sort \r\n\ttipos de dados abstractos - pilhas e filas\r\n\tlistas ligadas\r\n\tárvores binárias, árvores ordenadas, árvores AVL\r\n\thashtables",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 8,
+  "fields": {
+    "nome": "Arquitetura de Computadores",
+    "codigo": "ULHT260-5857",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta unidade curricular (UC) descreve o funcionamento de um computador moderno. Os estudantes aprendem quais são as componentes de um computador, as instruções máquina, o funcionamento do processador, a organização e funcionamento da memória e o paralelismo como forma de melhorar o desempenho. O estudo é baseado no processador RISC-V 32 bits.",
+    "objetivos": "Entender o funcionamento dos computadores, com o foco na interação dos programas com o hardware. Reconhecimento das potencialidades e limitações de um computador. Entendimento da forma como interagem os diversos elementos da estrutura/arquitetura de um computador.",
+    "programa": "Programa\r\n\r\n\r\n\tIntrodução à arquitetura de Computadores\r\n\tInstruções máquina\r\n\tProcessador\r\n\tMemória\r\n\tParalelismo\r\n\r\n\r\nNas Aulas Práticas os estudantes fazem exercícios e usam simuladores para executarem os programas e observarem a sua interação com o hardware.",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 9,
+  "fields": {
+    "nome": "Competências Comportamentais",
+    "codigo": "ULHT260-17267",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 4,
+    "descricao": "Esta unidade curricular (UC) inscreve-se num contexto onde têm sido elencadas necessidades de adaptação dos especialistas em informática ao contexto das organizações, nomeadamente no que às denominadas soft skills diz respeito. Assim, pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para a domínio profissional.",
+    "objetivos": "Pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para a domínio profissional.",
+    "programa": "1. Marketing Pessoal e personal skills development:\r\n\r\na. CV;\r\n\r\nb. Portefólio;\r\n\r\nc. Apresentação pessoal e comunicação interpessoal;\r\n\r\nd. Apresentação em público e ferramentas para o efeito;\r\n\r\ne. Redes sociais e Networking.\r\n\r\n2. Gestão de tempo:\r\n\r\na. Trabalho remoto e comunicação mediada;\r\n\r\n3. As tecnologias no trabalho: oportunidades e ameaças;\r\n\r\n4. Trabalho em equipa;\r\n\r\n5. Resolução de problemas e Pensamento crítico.\r\n\r\n6. Factos Vs Opiniões;\r\n\r\n7. Work-life balance.\r\n\r\n8. O fator Humano na IA",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 10,
+  "fields": {
+    "nome": "Linguagens de Programação I",
+    "codigo": "ULHT260-498",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta unidade curricular oferece uma extensa exploração da programação procedural usando a linguagem de programação C, abrangendo tópicos fundamentais e avançados. Os alunos obterão uma compreensão abrangente da história da programação C e dos seus benefícios, bem como aprenderão a criar e executar programas simples em C. O currículo concentra-se em conceitos essenciais, incluindo tipos de dados, variáveis, estruturas de controlo, funções e ponteiros, com oportunidades de experiência prática para reforçar o conhecimento. A unidade curricular também aborda tópicos avançados, como manipulação de ficheiros, alocação dinâmica de memória e estruturas de dados como listas e filas. Através de projetos de programação, os alunos desenvolverão experiência prática, com ênfase particular em obter uma compreensão completa da organização e operação da memória do computador como um recurso. No final do curso, os alunos serão capazes de criar programas eficientes que fazem uso eficaz da memória.\n",
+    "objetivos": "No final desta Unidade Curricular, os alunos deverão ser capazes de criar programas C eficientes e rápidos, tendo em consideração o uso correto da memória. Deverão adquirir uma compreensão sólida da abstração procedural e ser capazes de analisar e criar algoritmos simples usando essa abordagem. Além disso, os alunos devem entender os princípios por trás dos sistemas \"coletores de lixo\" em linguagens de alto nível, e da operação de bibliotecas de estruturas de dados. O curso visa fornecer aos alunos conhecimentos necessários para criar programas em C bem projetados, eficientes e robustos e para entender os princípios fundamentais que sustentam a operação das linguagens de programação modernas.\n",
+    "programa": "M0: Introdução: Visão geral, programação C, história, benefícios, configuração do ambiente, programa simples\n\nM1: Sintaxe Básica: Definições, tipos de dados, operadores, entrada/saída, estruturas de controlo\n\nM2: Estruturas de controle avançadas: Switch, break/continue, goto\n\nM3: Funções: definição/invocação, argumentos/valores de retorno, recursão\n\nM4: Matrizes e Strings: Definições, vectores de caracteres, strings, funções, matrizes 2D\n\nM5: Ponteiros: Definições, aritmética, pilha/heap, alocação dinâmica de memória\n\nM6: Ponteiros Avançados: Ponteiros para ponteiros/funções\n\nM7: Estruturas e Uniões: Definições, estruturas aninhadas, uniões\n\nM8: Entrada/saída de arquivo: visão geral, abertura/leitura/gravação de ficheiros, entrada/saída binária\n\nM9: Diretivas e Macros do Pré-processador: Definições, #define, #ifdef, #undef, macros com parâmetros\n\nM10: Operadores bit a bit: Definições, operadores bit a bit AND/OR/XOR/NOT/shift\n\nM11: Listas Ligadas: Definições, criação/manipulação, exemplos, pilhas/filas\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 11,
+  "fields": {
+    "nome": "Matemática II",
+    "codigo": "ULHT260-505",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Geométria analítica e calculo diferencial e integral para funções reais de várias variáveis reais.\n",
+    "objetivos": "Conferir competências nas técnicas e aplicações do cálculo diferencial e integral com funções de várias variáveis. Dominar os conceitos de limite, continuidade e diferenciabilidade de funções. Dominar o cálculo de integrais múltiplos.\n\nTer capacidade de resolver problemas em contextos diversificados usando os métodos do cálculo diferencial e integral. Conhecer as aplicações a problemas de otimização, de caracterização geométrica de curvas e superfícies e de cálculo de volumes e áreas.\n",
+    "programa": "1. Vectores e geometria do espaço\n\n1.1 Coordenadas cartesianas tridimensionais.\n\n1.2 Vectores, produto escalar.\n\n1.3 Rectas e planos.\n\n1.4 Superfícies cilíndricas e quádricas.\n\n1.5 Noções topologicas\n\n2. Funções vectoriais de variável real\n\n2.1 Funções vectoriais e curvas no espaço.\n\n2.2 Limites e continuidade. Diferenciabilidade, vector tangente a uma curva.\n\n2.3 Integração, comprimento de uma curva.\n\n3. Funções de várias variáveis\n\n3.1 Dominios e  curvas de nível.\n\n3.2 Limites e continuidade.\n\n3.3 Derivadas parciais, derivadas de ordem superior.\n\n3.4 Diferenciabilidade, planos tangentes e aproximações polinómiais.\n\n3.5 Derivada direccional, vector gradiente e sua interpretação geométrica.\n\n3.6 Matriz Hessiana, extremos locais e pontos de sela.\n\n4. Integrais múltiplos\n\n4.1 Integrais duplos.\n\n4.2 Coordenadas polares e mudança de variáveis em integrais duplos.\n\n4.3 Integrais triplos.\n\n4.4 Coordenadas cilíndricas e esféricas. Mudança de variáveis em integrais triplos.\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 12,
+  "fields": {
+    "nome": "Arquiteturas Avançadas de Computadores",
+    "codigo": "ULHT260-13398",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "Esta unidade curricular vem completar os conhecimentos adquiridos anteriormente nas UCs de Sistemas Digitais e Arquitectura de Computadores, abordando temas mais actuais e conceitos de mais alto nível. A compreensão destes conceitos avançados de arquitectura de computadores faz com que os alunos tomem consciencia das limitações e possibilidades do hardware. Consequentemente poderão criar programas mais eficientes, capazes de tirar partido das capacidades do hardware e que tenham em conta as eventuais limitações deste.\n",
+    "objetivos": "Os estudantes devem conhecer os componentes de um computador moderno e compreender o seu funcionamento e as suas interações. Devem ser capazes de identificar o fluxo de dados e analizar o desempenho de um computador.\n\nEsta competência é diretamente aplicável nos domínios do hardware e da administração de sistemas, e indiretamente aplicável no domínio do software - permitindo formar futuros engenheiros informáticos que tomem decisões de análise, desenho e implementação de software que tirem partido das capacidades do hardware e tenham em conta as eventuais limitações destas.\n",
+    "programa": "1. Introdução\n\n2. O processador\n\n    Principais módulos funcionais\n\n    Condutas e riscos\n\n    Exceções\n\n    Paralelismo ao nível da instrução\n\n3. Hierarquia de memória\n\n    Dispositivos e tecnologia de armazenamento: disco magnético, memória flash\n\n    Memórias cache\n\n    Memória virtual\n\n    Confiabilidade na hierarquia de memória\n\n    Paralelismo: coerência entre caches, RAID\n\n4. Arquiteturas paralelas\n\n    Limites de frequência, dissipação de energia e memória\n\n    Paralelismo e limites ao aumento de desempenho\n\n    SIMD e processadores vetoriais\n\n    Multithreading em hardware\n\n    Arquiteturas de multiprocessador¿ aglomerados e computação em grelha.\n\n    GPUs\n\n    Medição de desempenho\n\n5. Virtualização\n\n    Origens e definição do conceito de máquina virtual\n\n    Conceito de hipervisor\n\n    Variantes de implementação\n\n    Virtualização de sistema: processador, memória, periféricos (E/S)\n\n    Exemplos de plataformas\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 13,
+  "fields": {
+    "nome": "Bases de Dados",
+    "codigo": "ULHT260-1792",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta unidade curricular tem por objetivo apresentar a importância da Gestão de Dados no seio de uma empresa, de forma a garantir quer a operação diária de negócio, bem como o apoio à decisão estratégica.\n\nNesta unidade reforçar-se-á o enquadramento de estruturação e metodologias de criação das bases de dados.\n",
+    "objetivos": "São objetivos dotar os estudantes dos conhecimentos teóricos e práticos necessários à concepção, construção e análise de bases de dados relacionais: nomeadamente obter as seguintes aptidões e\n\ncompetências:\n\n1. Compreender as razões de implementação de bases de dados relacionais no mundo empresarial\n\n2. Transpor de uma análise de requisitos para um modelo entidade-associação para desenhar bases de dados;\n\n3. Aplicar os conceitos do modelo relacional de bases de dados, transformando o modelo entidade-associação, em modelo físico de dados;\n\n4. Aplicar as técnicas de normalização de tabelas;\n\n5. Compreender arquitetura e principais componentes de Sistemas de Gestão de Bases de Dados;\n\n6. Utilizar a linguagem SQL base e avançado para a criação, consulta e modificação de bases de dados;\n",
+    "programa": "O programa da unidade curricular é:\n\nA) Componente Teórico\n\n\n\tIntrodução\n\tModelo de relacionamento entre entidades\n\tO modelo relacional\n\tRefinamento de esquema: Conceito de normalização e transações\n\tArquitetura de SGBD e algum SQL Avançado\n\n\nB) Componente Prática\n\n\n\tIntrodução à linguagem SQL;\n\tInstruções: DDL, DML (DQL) e DCL\n\tOperações: WHERE, ORDER BY, GROUP BY;\n\tConceito avançados em SQL: Controlo de erros\n\tOperadores Relacionais: União, intersecção e Subtracção\n\tProduto Cartesiano (externo)\n\tQueries complexos (filtro com valores agregados) e sub-queries\n\tSet DDL; Instrução CREATE; Tipos de dados; Nulidade; Instruções ALTER e DROP\n\tINDICES e VIEWS\n\tControlo de erros: estrutura TRY¿CATCH\n\tProcedimentos (SP) e Triggers\n\tOperações com tabelas: Cursores\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 14,
+  "fields": {
+    "nome": "Desenvolvimento de Interfaces Web",
+    "codigo": "ULHT260-26141",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 3,
+    "descricao": "Esta Unidade Curricular fornece formação completa em desenvolvimento front-end, abordando HTML, CSS, JavaScript, React e Next.js. São integradas práticas profissionais, incluindo Git Flow, GitHub, Codespaces, GitHub Pages e Vercel, permitindo que os alunos adquiram competências em ambientes colaborativos e de produção. A UC visa desenvolver tanto a capacidade técnica como a criatividade, incentivando a criação de aplicações eficientes, funcionais e com boa experiência de utilizador. Esta formação prepara os alunos para enfrentar desafios reais em projetos empresariais, promovendo a utilização de ferramentas e metodologias modernas essenciais para qualquer profissional da área de informática.\n",
+    "objetivos": "\n\t\n\tCompreender o funcionamento da Internet e da Web e o seu impacto no desenvolvimento de aplicações.\n\t\n\t\n\tAplicar princípios de programação Web e padrões de arquitetura usando HTML, CSS, JavaScript, React e Next.js.\n\t\n\t\n\tCriar interfaces interativas, responsivas e escaláveis para aplicações front-end.\n\t\n\t\n\tIntegrar APIs e utilizar ferramentas como Git, GitHub, Codespaces, GitHub Pages e Vercel no ciclo de desenvolvimento.\n\t\n\t\n\tAvaliar e selecionar abordagens de design e arquitetura adequadas a cada contexto.\n\t\n\t\n\tDesenvolver e publicar aplicações Web criativas, funcionais e prontas para produção na cloud.\n\t\n\n",
+    "programa": "Módulo 1: A Web e seus Paradigmas\n\n\n\t\n\tFuncionamento da Web: IP, HTTP, client-server\n\t\n\t\n\tVisão geral de tecnologias, paradigmas e padrões de desenho da Web\n\t\n\n\n\nMódulo 2: HTML e CSS para Desenho de Páginas Web\n\n\n\t\n\tHTML e seus elementos para estruturação de conteúdos multimédia\n\t\n\t\n\tFormulários para envio de dados\n\t\n\t\n\tHTML5 e elementos semânticos\n\t\n\t\n\tCSS e seus seletores para estilização de conteúdos\n\t\n\t\n\tPropriedades CSS\n\t\n\t\n\tLayouts dinâmicos com CSS Flexbox e CSS Grid\n\t\n\t\n\tDesign responsivo com media queries\n\t\n\t\n\tEfeitos e animações CSS\n\t\n\t\n\tPrincípios de Web Design\n\t\n\n\n\nMódulo 3: JavaScript para Programação Front-End\n\n\n\t\n\tIntrodução ao JavaScript\n\t\n\t\n\tProgramação Orientada a Eventos\n\t\n\t\n\tManipulação de elementos do DOM\n\t\n\t\n\tComportamento de conteúdos\n\t\n\t\n\tData-attributes, Local Storage, Cookies\n\t\n\t\n\tAJAX\n\t\n\t\n\tInteração com REST APIs\n\t\n\t\n\tSingle Page Applications\n\t\n\n\n\nMódulo 4: React e Next.js\n\n\n\t\n\tComponentes e JSX\n\t\n\t\n\tGestão de estado e Context API\n\t\n\t\n\tRoteamento e renderização com Next.js\n\t\n\t\n\tFetching de dados e API routes\n\t\n\t\n\tEstilização e design responsivo\n\t\n\n\n \n\n\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 15,
+  "fields": {
+    "nome": "Linguagens de Programação II",
+    "codigo": "ULHT260-898",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta UC é o culminar de um caminho iniciado em Fundamentos de Programação e aprofundado em Algoritmia e Estruturas de Dados, solidificando os conhecimentos de programação. Com um foco no desenvolvimento e manutenção de programas de elevada complexidade, o paradigma imperativo deixa de ser suficiente e são abordados os paradigmas orientado a objectos e funcional. São igualmente abordados conceitos adjacentes à fase de implementação, como o controlo de versões, os testes unitários e funcionais, a cobertura de código e outras métricas de qualidade. Esta é uma UC fundamental na formação de qualquer profissional da área de Informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais nos projectos empresariais em que estes alunos virão a estar inseridos.\n",
+    "objetivos": "Esta UC tem como objetivo apresentar uma visão multi-paradigma da programação. São analisados e comparados os 3 paradigmas mais populares: imperativo, orientado a objectos e funcional. Os alunos revêm conceitos da programação imperativa e adquirem conceitos fundamentais da programação orientada a objetos (herança, encapsulamento, polimorfismo, etc.) e da programação funcional (lambdas, funções de 1a ordem, etc.) de forma a que consigam aplicá-los em projetos de desenvolvimento de software complexo usando linguagens de programação modernas multi-paradigma (Java, C#, Python, Kotlin, JavaScript).\n\nAo longo do semestre, os alunos são consciencializados para a necessidade de redução de custos de manutenção através de melhorias na qualidade do software produzido e aplicação de boas práticas tirando partido das vantagens específicas de cada paradigma. São igualmente expostos a ferramentas essenciais no desenvolvimento moderno de software, como controlo de versões e testes unitários.\n\nTodos estes conceitos são aplicados num projeto de elevada complexidade, multi-paradigma e multi-linguagem que atinge em média as 2500 LOC. O projeto tem que ser desenvolvido em Git e ter uma cobertura elevada de testes unitários. Mais do que as capacidades técnicas, os alunos trabalham a gestão de tempo, o rigor e a resiliência, a capacidade analítica e espírito crítico, a criatividade e o trabalho em equipa.\n",
+    "programa": "\n\tParadigmas de programação\n\t\n\t\tImperativo, funcional, orientado a objetos\n\t\n\t\n\tConceitos de programação por objectos\n\t\n\t\tEntidades, Atributos, Acções\n\t\tClasse vs Objecto, Principio do encapsulamento\n\t\tHerança, polimorfismo, parametrização por herança, composição\n\t\tUML\n\t\t\n\t\t\tDiagramas de classes\n\t\t\n\t\t\n\t\n\t\n\tJava orientado a objectos\n\t\n\t\tClasses, objectos, variáveis\n\t\tConstrutores, métodos\n\t\tVisibilidade, Exceptions\n\t\tEstruturas de dados: Arrays, Lists, Maps\n\t\tHerança, classes abstractas\n\t\tInput/Output\n\t\n\t\n\tTestes unitários\n\t\n\t\tJUnit\n\t\n\t\n\tControlo de versões\n\t\n\t\tGit, Github\n\t\n\t\n\tPadrões de desenho\n\t\n\t\tFactory, Singleton, Observer/Observable, Composite\n\t\n\t\n\tConceitos de programação funcional em Kotlin\n\t\n\t\tFunções puras, lambdas, funções de primeira ordem, iteração interna, operações com listas\n\t\n\t\n\tBoas práticas de programação multi-paradigma\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 16,
+  "fields": {
+    "nome": "Processamento de Imagem",
+    "codigo": "ULHT260-19082",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 4,
+    "descricao": "\n\nOs objectivos desta UC são:\n\n\n\t\n\tEnsinar aos alunos competências que lhes permitam, no papel de “software developer”, delegar de forma responsável partes do trabalho de desenvolvimento de software em LLMs e outras ferramentas de IA Generativa. Exemplos: requisitos, funções / classes pequenas, eventualmente testes, etc.\n\t\n\t\n\tDesenvolver o pensamento crítico face a estas novas ferramentas e outras do mesmo género (avaliar, questionar os resultados, comparar, tirar conclusões, etc.)\n\t\n\t\n\tDesenvolver competências de comunicação clara e não ambígua (p.e. dar exemplos, contextualizar, etc.)\n\t\n\t\n\tPromover uso ético e responsável no uso destas ferramentas.\n\t\n\n",
+    "objetivos": "- Conhecer e compreender os funcionamentos base dos Large Language Models, as suas características, limitações, e afins\n\n- Code reading: leitura e interpretação de programas de forma sistemática\n\n- Debugging: recorrendo ao debugger do IntelliJ\n\n- Unit Testing: recorrendo ao JUnit\n\n- Exploração e documentação de de código existente usando LLMs\n\n- Pensamento crítico e pensamento céptico\n\n- Code Review: análise crítica de código\n\n- Técnicas de \"Prompt engineering\"\n",
+    "programa": "\n\tLiteracia de IA Generativa\n\t\n\t\tIntrodução aos Large Language Models\n\t\tÉtica e Direitos de Autor\n\t\tImplicações éticas do uso dos LLMs (ética, propriedade intelectual, segurança, …)\n\t\tTécnicas de melhoria de soluções dos LLMs:  fine tunning, RAG, prompt engineering\n\t\n\t\n\tLeitura e análise sistemática de código\n\tDebugging com recurso ao debugger do IntelliJ\n\tPensamento Crítico e Pensamento Céptico\n\t\n\t\tIntrodução aos 2 tipos de pensamento\n\t\tDiferenças chave entre os 2 tipos de pensamento\n\t\tA importância dos 2 tipos de pensamento na era dos LLMs\n\t\n\t\n\tDecomposição de problemas e modularização\n\tTestes de Software\n\t\n\t\tTipos de testes (e.g., manuais, automaticos, integração, unitários, etc)\n\t\tTestes Unitários com JUnit\n\t\n\t\n\tTest Driven Development (TDD)\n\tIntrodução à Revisão/Verificação de Código (Code Review)\n\tExploração de Código Existente com base em LLMs\n\tIntegração de LLMs em software via API\n\tRetrieval Augmented Generation\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 17,
+  "fields": {
+    "nome": "Sistemas Operativos",
+    "codigo": "ULHT260-6305",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "O conhecimento do funcionamento de um sistema operativo, a forma como interage com o hardware e como pode ser utilizado eficientemente pelos utilizadores e programadores é uma componente fundamental da formação em informática.\n\nEsta disciplina fornece aos estudantes os conhecimentos teóricos de como funciona um sistema operativo e um computador, e os conhecimentos práticos para desenvolver programas sofisticados para utilizarem eficientemente os recursos do computador.\n\nO conhecimento de um sistema operativo permitirá os alunos terem um melhor entendimento do funcionamento de sistemas atuais.\n",
+    "objetivos": "OA1. Conhecimento teórico de como funciona um sistema operativo\n\nOA2. Capacidade prática para desenvolver programas que usem de forma eficiente os recursos do sistema operativo, incluindo concorrência e sincronização\n",
+    "programa": "CP1 - Introdução aos Sistemas Operativos\n\nCP2 - Processos: virtualização do CPU\n\nCP3 - Gestão de Memória: virtualização da memõria\n\nCP4 - Concorrência e Sincronização\n\nCP5 - Persistência, Sistema de ficheiros\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 18,
+  "fields": {
+    "nome": "Engenharia de Requisitos e Testes",
+    "codigo": "ULHT260-22512",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "A UC de Análise e Conceção de Sistemas tem por objetivo garantir um enquadramento de gestão de Sistemas de Informação e o seu impacto na componente aplicacional, onde a componente de metodologia e engenharia de requisitos, tal como a metodologia e estruturação de testes de software, sejam unitários ou agregados, são essenciais para o sucesso de negócio das empresas.\n",
+    "objetivos": "\n\tEntender o que é Gestão de Sistemas de Informação\n\tPor que é fundamental definir requisitos\n\tSaber desenvolver e gerenciar uma metodologia de definição e estrutura de requisitos\n\tComo alinhar os testes com os requisitos\n\tCompreender a importância de modelar os requisitos e testes\n\tFundamentos de Gestão de Projetos\n\n",
+    "programa": "Estrutura de Capítulos principais de conteúdos\n\n\n\t\n\tVisão de Gerenciamento de Sistemas de Informação\n\t\n\t\n\tEngenharia de Requisitos (Gestão de backlog, BPMN e UML - Modelação)\n\t\n\t\n\tTestes de software\n\t\n\t\n\tGestão de Projetos\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 19,
+  "fields": {
+    "nome": "Probabilidades e Estatística",
+    "codigo": "ULHT260-620",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "A disciplina de Probabilidades e Estatística tem como objetivo fundamental dar ao estudante conceitos fundamentais da teoria da probabilidade e técnicas de estatística descritiva e inferência estatística, essenciais para o estudo de Engenharia. \n",
+    "objetivos": "Esta disciplina permite que o(a) aluno(a)\n\nOA1: seja exposto à probabilidade como uma função de medida essencial à ciência.\n\nOA2: entenda a estatística como uma área da ciência que permite à engenharia recolher dados, analisar dados, formular hipóteses relativas a esses dados e testar essas hipóteses.\n\nOA3: utilize a linguagem de programação R para obter resultados estatísticos e probabilísticos em dados reais.\n\nNessa medida, a estatística e a probabilidade são essenciais ao conhecimento e à engenharia.\n\n \n",
+    "programa": "1. Estatística Descritiva\n\n\n\tClassificação de variáveis\n\tMedidas de localização, de dispersão e de forma\n\tRepresentações gráficas (Gráficos de barras, Histogramas, Caixas de Bigodes...)\n\n\n2. Correlação e Regressão Linear\n\n\n\tCoeficientes de correlação\n\tEstimativa da reta de regressão linear simples\n\tQualidade do ajustamento\n\n\n3. Introdução à Probabilidade\n\n\n\tEspaço de resultados. Acontecimentos. Definição de probabilidade\n\tProbabilidade condicionada\n\tLei das Probabilidade Composta\n\tTeorema da probabilidade total\n\tTeorema de Bayes\n\tAcontecimentos independentes\n\n\n4. Variáveis aleatórias reais\n\n\n\tFunção distribuição\n\tFunção (massa) de probabilidade\n\tDistribuição discreta Bernoulli e Binomial\n\tFunção densidade de probabilidade\n\tDistribuição contínua Normal\n\n\n5. Inferência Estatística\n\n\n\tEstimação pontual\n\tEstimação intervalar\n\t Testes de hipóteses\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 20,
+  "fields": {
+    "nome": "Programação Web",
+    "codigo": "ULHT260-11195",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "Esta Unidade Curricular pretende dar formação na área da programação Web em geral, e em particular no desenvolvimento de aplicações Web back-end e front-end, providenciando uma visão global do desenvolvimento moderno para a Web. No front-end, são introduzidos conceitos de estruturação, estilização e interação de conteúdos através das linguagens HTML, CSS e JavaScript, in. No back-end, é ensinado o desenvolvimento de aplicações empresariais seguindo o padrão de desenho model-view-control, recorrendo à linguagem Python e a Web framework django. Pretende-se estimular a criatividade e imaginação no desenvolvimento de aplicações inovadoras que sejam eficientes, escaláveis e fáceis de modificar por um lado, e que ofereçam uma boa experiência para o utilizador. Esta é uma UC fundamental para qualquer profissional da área da informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais em projetos empresariais em que virão a estar inseridos.\n",
+    "objetivos": "\n\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tEntender o funcionamento da Internet e da Web.\n\t\t\t\tCompreender os princípios da programação Web e seus principais padrões de desenho.\n\t\t\t\tAplicar estes conceitos, usando várias tecnologias (HTML, CSS, JavaScript, Python and Django¿).\n\t\t\t\tArquitetar aplicações eficientes, de fácil manutenção, que corram na Web.\n\t\t\t\tAvaliar as diferentes estratégias de desenho, sabendo escolher a abordagem que mais se adequa ao contexto.\n\t\t\t\tSer capaz de construir e implantar na cloud aplicações Web complexas e criativas, totalmente funcionais (full stack).\n\t\t\t\n\t\t\t\n\t\t\n\t\n\n",
+    "programa": "A Web e seus paradigmas\n\n- Funcionamento da Internet e da Web: arquitetura e protocolos IP e HTTP\n\n- Tecnologias, paradigmas e padrões de desenho da Web\n\nPython para desenvolvimento Web\n\n- Sintaxe, operadores, controlo de fluxos e tipos de dados\n\n- Funções e módulos \n\n- Gestão de ficheiros e pastas   \n\n- Classes \n\nDjango web framework para Back-end\n\n- Web frameworks\n\n- Arquitetura MVT \n\n- Urls, views e templates\n\n- Linguagem template\n\n- Modelação de base de dados, ORM\n\n- Formulários\n\n- Autenticação\n\n- Implantação na cloud \n\nHTML e CSS para desenho de páginas Web\n\n- HTML e seus elementos \n\n- Formulários para envio de dados\n\n- HTML5 e elementos semânticos\n\n- CSS e seus seletores, para estilização de conteúdos\n\n- Propriedades CSS\n\n- Design responsivo e layouts dinâmicos\n\n- Efeitos e animações CSS\n\n- Bootstrap\n\nJavaScript para programação Front-end\n\n- Programação Orientada a Eventos \n\n- Manipulação do DOM \n\n- JSON e APIs\n\n- Single Page Applications\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 21,
+  "fields": {
+    "nome": "Redes de Computadores",
+    "codigo": "ULHT260-1793",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "Esta unidade curricular aborda os fundamentos das redes de computadores e da Internet. Os estudantes exploram a arquitetura de rede em camadas, desde o nível aplicacional até ao nível de ligação, compreendendo protocolos essenciais como HTTP, DNS, TCP, IP e Ethernet. A UC é fundamental para qualquer engenheiro informático, proporcionando as bases para unidades curriculares subsequentes como Computação Distribuída, Segurança Informática e Sistemas de Informação na Nuvem. O conhecimento adquirido permite aos estudantes compreender, analisar e desenvolver sistemas distribuídos e aplicações cloud, bem como diagnosticar problemas de conectividade e desempenho.",
+    "objetivos": "Após a conclusão desta UC, os estudantes serão capazes de:\r\n\r\n1. Compreender a arquitetura da Internet e o modelo de camadas protocolar\r\n\r\n2. Analisar o funcionamento de protocolos aplicacionais (HTTP, SMTP, DNS)\r\n\r\n3. Distinguir os serviços de transporte UDP e TCP, incluindo mecanismos de controlo de fluxo e congestão\r\n\r\n4. Configurar endereços IP, sub-redes, e compreender encaminhamento e NAT\r\n\r\n5. Explicar protocolos de encaminhamento (RIP, OSPF, BGP)\r\n\r\n6. Analisar protocolos de nível de ligação, incluindo Ethernet e WiFi\r\n\r\n7. Utilizar ferramentas de análise de rede como Wireshark e Cisco Packet Tracer",
+    "programa": "1. Introdução\r\n\t\r\n\t\tO que é a internet\r\n\t\tPeriferia vs infraestrutura\r\n\t\tAtraso, perda, débito\r\n\t\tModelo de camadas\r\n\t\r\n\t\r\n\t2. Nível aplicacional\r\n\t\r\n\t\tPrincípios de aplicações distribuídas\r\n\t\tWeb e HTTP (incl. cookies e GET condicional)\r\n\t\tCorreio eletrónico\r\n\t\tDNS\r\n\t\r\n\t\r\n\t3. Nível transporte\r\n\t\r\n\t\tServiços do nível de transporte\r\n\t\tUDP\r\n\t\tTCP\r\n\t\t\r\n\t\t\tpipelining, timeouts, retransmissões\r\n\t\t\tcontrolo fluxo, gestão ligações, controlo congestão\r\n\t\t\r\n\t\t\r\n\t\tTLS\r\n\t\r\n\t\r\n\t4. Nível rede\r\n\t\r\n\t\tServiços, o que está dentro de um router\r\n\t\tIP\r\n\t\t\r\n\t\t\tformato do datagrama, endereçamento IPv4\r\n\t\t\tDHCP, NAT, IPv6\r\n\t\t\r\n\t\t\r\n\t\tAlgoritmos de roteamento\r\n\t\tRoteamento na Internet (RIP, OSPF, BGP)\r\n\t\r\n\t\r\n\t5. Nível ligação\r\n\t\r\n\t\tProtocolos acesso ao meio\r\n\t\tEndereçamento, ARP\r\n\t\tEthernet, VLANs\r\n\t\tRedes móveis/sem fios, WiFi",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 22,
+  "fields": {
+    "nome": "Sistemas de Suporte à Decisão",
+    "codigo": "ULHT260-7303",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "A UC de Sistemas de Suporte à Decisão / Business Intelligence tem por objetivo garantir que há a introdução à temática de processos de análise de dados para apoio às áreas de gestão das empresas. Neste sentido, a UC tem um papel fundamental no ciclo de estudo na compreensão dos processos de gestão e decisão de organizações, para além de como colocar infraestruturas de dados ao serviço do negócio empresarial.\n",
+    "objetivos": "\n\tEntender por que as empresas precisam de um ambiente de BI\n\tQuais componentes da arquitetura existem para BI\n\tEsquemas de modelação para DW\n\tConhecer os vários processos de manipulação de dados em ambientes DW\n\tO que um colaborador/utilizador pode obter em interfaces de relatórios\n\n",
+    "programa": "\n\tDesafios de Negócio de DW\n\tArquitecturas DW\n\tMelhores Práticas de Modelação de DW\n\tImplementação de ETL\n\tBases de Dados específicas para BI\n\tFerramentas de Relatórios\n\tProjetos de BI com Large Language Models (LLMs) e AI Agents\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 23,
+  "fields": {
+    "nome": "Trabalho Final de Curso",
+    "codigo": "ULHT260-5140",
+    "ano_curricular": 3,
+    "semestre": null,
+    "ects": 20,
+    "descricao": "O Trabalho Final de Curso (TFC) é um elemento fundamental do currículo da Licenciaturas, funcionando como um momento nuclear na formação dos alunos, nomeadamente em ordem à\n\npromoção da sua integração profissional e/ou iniciação ao trabalho científico.\n\nO TFC deve corresponder a um projecto aplicado na área objecto de estudo, podendo incluir a realização de projectos de produção de soluções relevantes para os conteúdos dos curso,\n\ndesenvolvimento de software ou projectos de índole mais teórica ou académica. O TFC deve conduzir a resultados finais susceptíveis de utilização em contexto real (aparelho, programa, método, modelo conceptual, contributo para investigação ou conclusões sobre um problema).\n\n \n",
+    "objetivos": "O principal objectivo desta unidade curricular é de integrar os conceitos que foram adquiridos pelo aluno ao longo do curso, num projecto de âmbito alargado e onde o aluno autonomamente resolva um problema.\n\nEste objectivo geral pode ser concretizado por:\n\nOA1. Saber aplicar os princípios e técnicas associadas à conceção e implementação de casos reais ou simulados.\n\nOA2. Saber aplicar os conhecimentos obtidos nas unidades curriculares do curso face a problemas ligados às mesmas, bem como a aplicação dos conhecimentos a novos paradigmas dos SI/TIC não abordados no curso.\n\nOA3. Saber investigar o estado da arte no objeto de estudo.\n\nOA4. Saber desenvolver um trabalho de natureza aplicada que integre os conhecimentos adquiridos ao longo da componente curricular do curso.\n",
+    "programa": "CP1. Orientação.\n\nCP2. Elaboração do estado da arte.\n\nCP3. Desenvolvimento do projeto.\n\n         CP3.1. Identificação de problema\n\n         CP3.2. Planeamento do projecto\n\n         CP3.3. Demonstração de viabilidade\n\n         CP3.4. Execução\n\n         CP3.5. Controlo do projecto\n\n         CP3.6. Testes\n\nCP4. Apresentação dos resultados.\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": [
+      30
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 24,
+  "fields": {
+    "nome": "Computação Distribuída",
+    "codigo": "ULHT260-7348",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "A disciplina de Computação Distribuída foca-se no estudo e desenvolvimento de aplicações distribuídas modernas, combinando fundamentos teóricos com uma forte componente prática. São analisadas as principais características destes sistemas, como escalabilidade, consistência, tolerância a falhas, resiliência e segurança, bem como os desafios arquiteturais e de implementação. Na prática, os estudantes utilizam Java e Spring Boot para criar microsserviços que comunicam através de APIs REST e Apache Kafka, com persistência em bases de dados relacionais (PostgreSQL) e documentais (MongoDB). São explorados conceitos de containerização e deployment com Docker, testes em sistemas distribuídos e padrões avançados de coordenação como SAGAs e consistência eventual. O curso culmina num projeto final agregador de conteúdos, onde os alunos desenvolvem um sistema completo, aplicando os conhecimentos adquiridos e sistematizando as competências técnicas e transversais essenciais para o mercado.\n",
+    "objetivos": "No final da unidade curricular, os estudantes deverão conhecer os conceitos fundamentais e os principais desafios da computação distribuída, com foco em desempenho, fiabilidade, resiliência e segurança. Serão capazes de aplicar técnicas de design e boas práticas para modelar soluções distribuídas adequadas a diferentes contextos, desenvolver microsserviços com comunicação síncrona e assíncrona, integrar persistência de dados e mecanismos de coordenação entre serviços. Além disso, terão oportunidade de experimentar metodologias e ferramentas que suportam o ciclo de vida de sistemas distribuídos, incluindo containerização, monitorização e estratégias de teste. Pretende-se ainda que os estudantes demonstrem competências transversais de trabalho em equipa, comunicação técnica e resolução de problemas em ambientes complexos, consolidando uma preparação sólida para desafios reais de desenvolvimento e arquitetura de software distribuído.\n",
+    "programa": "1. Introdução. Caracterização, requisitos, arquitectura e funcionalidades\n\n2. Arquitecturas e Modelos de Comunicação Distribuída. Arquitecturas de sistemas, níveis de software\n\n3. Comunicação entre Processos Distribuídos (IPC). Características da comunicação entre processos, Invocação, parâmetros e heterogeneidade de dados\n\n4. Invocação Remota e Objectos Distribuídos. RPC: Modelo de execução. Linguagem de definição de interfaces (IDL). Plataformas de execução: Sun RPC, Java RMI\n\n5. Nomeação e Serviços de Directório. Tipos de Nomes. Espaços de nomeação. Serviços de Directório (Web, X.500, LDAP)\n\n6. Web Services (WS). Modelo de Execução Web Services (WS). O protocolo SOAP. Linguagens de definição de Serviços (WSDL)\n\n7. Segurança. Modelo de segurança. Autenticação. Controlo de acesso\n\n8. Sistemas de Ficheiros Distribuídos. Arquitecturas de SGF distribuídos. Implementações: NFS e AFS\n\n9. Transações. Modelo transaccional. Propriedades ACID das transacções. Transacções distribuídas. Protocolo 2-phase-commit\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 25,
+  "fields": {
+    "nome": "Data Science",
+    "codigo": "ULHT260-22513",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "Esta cadeira tem como objetivo apresentar as técnicas e metodologias fundamentais para a análise de dados na perspectiva interdisciplinar de um Cientista de Dados. Na primeira parte da cadeira, os alunos aprendem sobre a natureza diversa dos dados e o poder simbólico das diferentes estruturas de dados para representar informação. Tal compreensão fundamental leva naturalmente a um segundo momento da cadeira no qual os alunos aprendem como interrogar e extrair informações dos dados e justificar suas escolhas. Durante esta segunda parte, os alunos aprendem sobre inferência estatística, testes de hipóteses, abordagens freqüentistas versus Bayesianas para pensar em dados, correlação e causalidade. Finalmente, na terceira parte do módulo, os alunos aprendem os fundamentos da aprendizagem de máquina por meio da teoria e prática dos métodos de regressão, classificação e redução de dimensionalidade.\n",
+    "objetivos": "\n\tCaracterizar tipos e estruturas de dados em conjuntos tabulares\n\tCalcular e interpretar estatísticas descritivas\n\tCriar e interpretar visualizações univariadas e bivariadas\n\tRealizar uma análise exploratória de dados estruturada e comunicar conclusões\n\tConstruir e avaliar modelos de base, incluindo regressão linear e logística\n\tAplicar métodos não supervisionados como k-means para agrupamento\n\tSelecionar e interpretar métricas de avaliação, compreendendo o compromisso viés–variância\n\tRelacionar conceitos de pensamento estatístico com a prática de aprendizagem automática (ML)\n\n\n\n",
+    "programa": "\n\tIntrodução à Ciência de Dados e funções no campo\n\tTipos de dados e estruturas de dados tabulares\n\tEstatística descritiva: tendência central e dispersão\n\tVisualização univariada: histogramas, KDE, boxplots, outliers, assimetria\n\tAnálise bivariada: gráficos de dispersão e pares, relações lineares e não lineares\n\tCorrelação: Pearson e Spearman, força vs significância\n\tDados categóricos: tabelas de contingência, proporções, resumos agrupados\n\tPipelines de Análise Exploratória de Dados (AED) e narrativa de dados\n\tFundamentos de aprendizagem automática\n\tRegressão linear: ajuste do modelo, resíduos, R², sobreajuste, interpretação\n\tRegressão logística: classificação binária, sigmoide, log-odds, ROC, precisão, F1\n\tClustering: k-means, método do cotovelo, introdução ao clustering hierárquico, aplicações\n\tValidação e avaliação de modelos\n\tPensamento estatístico\n\tRevisão e integração de conceitos\n\n\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 26,
+  "fields": {
+    "nome": "Engenharia de Software",
+    "codigo": "ULHT260-7341",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "A Engenharia de Software ensina o desenho, escrita de código e testes, e manutenção de programas que têm um propósito de resolver problemas complexos com soluções eficientes e seguras. Todas as unidades curriculares anteriores tem um maior foco na sintaxe e técnicas de programação enquanto nesta unidade curricular os alunos aprendem as técnicas de de desenhar e desenvolver software de uma forma eficiente, legível, modular e escalável.\n\nEsta unidade curricular é essencial para desenvolver as capacidades de desenho e programação que os alunos vão enfrentar no mercado de trabalho.\n",
+    "objetivos": "OA1. Compreender os métodos, técnicas e ferramentas para o completo desenvolvimento de um sistema de software, desde a sua conceção até à sua entrega e manutenção.\n\nOA2. Saber planear, gerir, avaliar e garantir a qualidade do desenvolvimento de projetos de software utilizando os princípios da Engenharia de Software.\n\n \n",
+    "programa": "\n\tCP1. Introdução à Engenharia de Software;\n\tCP2. Modelos e processos desenvolvimento de software;\n\t\n\t\t Modelos Clássicos: Cascata (contexto histórico)\n\t\tModelos Ágeis: Agile (framework de Scrum)\n\t\n\t\n\tCP3. Modelação de sistemas;\n\t\n\t\tAnálise de requisitos\n\t\tDiagrama de domínio\n\t\tDiagrama de conceitos\n\t\tCasos de uso\n\t\n\t\n\tCP4. Desenho da arquitectura;\n\t\n\t\tAnálise\n\t\tDesenho\n\t\tAvaliação\n\t\tEvolução\n\t\n\t\n\tCP5. Desenho e implementação;\n\t\n\t\tPadrões UML\n\t\tPrincípios de desenvolvimento orientado a objectos: S.O.L.I.D, KISS, entre outros.\n\t\n\t\n\tCP6. Verificação e validação;\n\t\n\t\tConhecer os diferentes tipos de testes\n\t\tAplicação de testes unitários\n\t\n\t\n\tCP7. Segurança e Confiabilidade\n\tCP8. Integração Contínua\n\t\n\t\tVantagens\n\t\tFerramentas e tecnologias\n\t\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 27,
+  "fields": {
+    "nome": "Interação Humano-Máquina",
+    "codigo": "ULHT260-11047",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": " \n\n \n\n A disciplina Interação Humano-Máquina tem por principal objetivo dotar os estudantes de competências metodológicas, de design, de comunicação e de fatores humanos, que lhes permitam desenhar produtos e serviços com as pessoas e para as pessoas. Num mundo cada vez mais digital, a inclusão de todas as pessoas/cidadãos é cada vez mais necessária. A Humanização da Tecnologia é mais do que uma boa experiência do Utilizador. Na prática e, aplicando os conhecimentos teóricos a projetos, os estudantes deverão ser capazes de criar artefactos (em tecnologias de informação) que melhorem a forma como as pessoas trabalham, comunicam e interagem numa sociedade inclusiva.\n",
+    "objetivos": "\n\t\n\tAdquirir competências em Desenho de Interação e Desenho Inclusivo.\n\t\n\t\n\tCompreender como a perceção humana e funções cognitivas influenciam a interação entre o humano e o computador. Compreender que a diferentes interações correspondem diferentes interfaces utilizador.\n\t\n\t\n\tCompreender o impacto dos públicos heterogéneos e dos fatores culturais no desenho de aplicações\n\t\n\t\n\tAprender metodologias de projeto que facilitem o desenho de experiências satisfatórias para o utilizador;\n\t\n\t\n\tCriar protótipos de alta fidelidade e recolher feed-back junto do Público-Alvo;\n\t\n\t\n\tAprender a planear, desenhar e realizar estudos de avaliação da usabilidade ao longo do ciclo de desenvolvimento de software. Saber tratar e analisar dados, bem como apresentar resultados de forma sucinta.\n\t\n\t\n\tAplicar as competências adquiridas ao desenvolvimento de sistemas de informação.\n\t\n\n",
+    "programa": "O que é o Desenho de Interação? Compreender e conceptualizar a interação. O impacto da Teoria da Actividade. Desenhar com a acessibilidade em mente. Princípios para  inclusão. Os contributos da psicologia cognitiva no estudo da interação humano-máquina. Perceção humana e funções cognitivas que influenciam o desempenho do utilizador e a satisfação. Desenvolvimento e Avaliação de Protótipos iniciais. Tipos de estudos em user experience, ao longo do ciclo de vida do projeto. Análise crítica aos resultados do estudo para melhorias no protótipo.\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 28,
+  "fields": {
+    "nome": "Computação Móvel",
+    "codigo": "ULHT260-16925",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta UC é cada vez mais fundamental numa sociedade onde o número de smartphones já ultrapassa largamente o número de computadores e onde se prevê que, num futuro próximo, cada indivíduo se faça acompanhar de um conjunto de dispositivos móveis (smartwatches, smart glasses, sensores, etc.) programáveis, criando a oportunidade para que os engenheiros informáticos possam resolver um vasto conjunto de problemas cuja resolução era até agora impossível ou excessivamente dispendiosa.\n\nA dificuldade está em passar conhecimento que não se esgote no dia em que terminam a UC, dada a velocidade vertiginosa a que evoluem as tecnologias associadas à computação móvel. Nesse sentido, esta UC não pretende apenas ensinar uma linguagem/tecnologia específica mas sim abordar temas intemporais desta área como os vários Modelos de Desenvolvmento, Autonomia, Geo-localização, Conectividade ou Usabilidade.\n",
+    "objetivos": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais da computação móvel. O aluno deverá ser capaz de perceber como tirar o máximo partido das vantagens da computação móvel (localização, sensores, contextual), quando aplicados à resolução de problema concretos. O aluno deverá estar sensibilizado para os constrangimentos típicos de uma aplicação móvel (autonomia, conectividade, usabilidade) e conhecer os mecanismos que permitem ultrapassar esses constrangimentos.\n\nConcretamente, o aluno deverá conhecer os 4 modelos de desenvolvimento de aplicações móveis (Web, Híbrido-Web, Híbrido-Nativo e Nativo) e saber aplicar os conceitos utilizando pelo menos 2 destes modelos - nomeadamente Híbrido-Nativo (Flutter) e Nativo (Android Kotlin).\n",
+    "programa": "Faceta \"conceptual\"\n\n\n\tComputação Móvel / Sistemas Ubíquos / IoT\n\tArquitetura e desenvolvimento de aplicações móveis (Web, Híbridas, Nativas) - Usabilidade e Interação\n\tConectividade\n\tGeo-localização\n\tAutonomia\n\tSensores\n\tIntegração com serviços externos\n\tModelos de negócio\n\n\nFaceta \"prática\"\n\n\n\tArquitetura de aplicações móveis\n\t\n\t\tSeparação UI/Lógica de Negócio\n\t\tProgramação de widgets\n\t\tGestão de estado\n\t\tTestes unitários / integração\n\t\tInjeção de dependências\n\t\tProgramação assíncrona\n\t\tPadrão repositório\n\t\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 29,
+  "fields": {
+    "nome": "Inteligência Artificial",
+    "codigo": "ULHT260-2129",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta cadeira é uma introdução aos conceitos e técnicas básicas da Inteligência Artificial, com três áreas principais de atuação. Primeiro, a formalização do que é uma máquina, tanto na óptica de manipulação de símbolos da máquina de Turing, como nas máquinas de McCulloch and Pitts que funcionam com padrões de interligação entre nós em redes de neurónios. Segundo, o conceito de agente racional em IA, que emerge da interseção com as ciências cognitivas, e as diversas implementações de algoritmos de busca exaustiva estruturada (informados e não informados). Ainda dentro desta área de foco são ainda introduzidos os conceito de busca estocástica e algoritmos para satisfação de restrições (CSPs). Finalmente, na terceira área de foco, os estudantes aprendem noções e usos de alguns dos algoritmos de inteligência artificial avançados que são utilizados hoje em dia.\n",
+    "objetivos": "Os objectivos de aprendizagem desta cadeira incluem (1) Entendimento profundo dos aspectos conceituais que dão origem à IA, nomeadamente a formalização do conceito de computação universal via manipulação de símbolos, e a computação baseada em redes de neurónios; (2) os métodos e representações usados para estudar o funcionamento de qualquer máquina; (3) Desenho e implementação de agentes racionais e o conceito de \"processamento de informação\"; (4) Algoritmos clássicos de busca não informada: British Museum, DFS e BFS; (5) Busca informada: Dijkstra e A*; (6) Formalização e resolução de problemas de satisfação de restrições (CSP); (7) conhecimentos básicos de técnicas avançadas de inteligência artificial nos domínios de machine learning e data science; e (8) Conhecimentos sobre os usos da inteligência artificial na sociedade incluindo aspectos relacionados com ética e o futuro de IA.\n",
+    "programa": "\n\tConceitos Básicos\n\t\n\t\tDefinições de IA\n\t\tMáquina de Turing\n\t\tRedes neuronais de McCulloch e Pitts\n\t\tCómo analisar máquinas? diagramas de transição de estados\n\t\n\t\n\tBusca\n\t\n\t\tO conceito de agente de busca em IA\n\t\tEspaços e Grafos de busca\n\t\tBusca não informada: British Museum, DFS, BFS\n\t\tBusca Informada: Dijkstra e A*\n\t\tBusca adversária\n\t\n\t\n\tProblemas de satisfação de restrições\n\tNocões básicas de sistemas de recomendação\n\tO futuro de IA\n\t\n\t\tAnalise critica de artigos recentes em IA\n\t\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 30,
+  "fields": {
+    "nome": "Segurança Informática",
+    "codigo": "ULHT260-11194",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "A presente unidade curricular tem por objectivo formar estudantes com perfis profissionais especializados, capazes de lidar eficazmente com a complexidade crescente das ameaças à segurança das aplicações em rede e na nuvem, utilizando as mais avançadas tecnologias da segurança informática, para implementar elevados padrões de segurança em redes informáticas\n",
+    "objetivos": "No final da cadeira, os estudantes deverão: Identificar os diferentes domínios e aplicações da segurança informática. Perceber e utilizar os principais algoritmos de encriptação, assim como quantificar os níveis de segurança que permitem assegurar. Conhecer e perceber as actuais ameaças à segurança em redes de dados e as boas práticas necessárias para as evitar. Conceber e implementar aplicações em rede obedecendo a elevados requisitos de segurança mesmo utilizando canais de comunicação inseguros Utilizar os conceitos adquiridos em cenários reais, no contexto do projecto / estágio profissional a realizar no ano lectivo.\n",
+    "programa": "¿Introdução à Segurança Informática ¿Conceitos fundamentais de Segurança Informática ¿Paradigmas de Segurança ¿Criptografia ¿Algoritmos de segurança ¿Autenticação e autorização ¿Gestão de chaves ¿Segurança de Redes ¿Firewalls ¿IDS/IPS ¿Redes sem fios ¿Arquitecturas de Segurança ¿Protocolos de comunicação segura ¿Tipificação de vulnerabilidades e ataques ¿Segurança de Software ¿Políticas e gestão de segurança\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 31,
+  "fields": {
+    "nome": "Sistemas de Informação na Nuvem",
+    "codigo": "ULHT260-22514",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta Unidade Curricular tem como objetivo uma introdução à computação em nuvem, numa perspectiva de um iniciante que não possui nenhuma experiência anterior com o tópico.\n\nA ideia é ajudar a criar Junior Cloud Architects, o que significa crias as competências para implementar ou adotar a tecnologia Cloud, entender o que é exatamente e quais opções existem quando se pensa em implantações em nuvem.\n\nEsta UC abrange uma ampla variedade de áreas de tópicos de computação em nuvem, fornecendo uma base sólida de entendimento. Esta unidade curricular cria também um ambiente de entendimento da teoria e das formas práticas dos diferentes modelos de serviços de Cloud Computing: Infraestrutura como Serviço (IaaS), Plataforma como Serviço (PaaS) e Software como Serviço (SaaS), fornecendo exemplos e diferenças entre cada .\n",
+    "objetivos": "\n\tEntenda por que as empresas estão migrando para serviços em nuvem para apoiar seus negócios\n\tQuais são os modelos de negócios\n\tQuais são os principais provedores de serviços\n\tPrincipais conceitos da arquitetura em nuvem\n\tRecursos práticos para criar e implantar um serviço em nuvem\n\n",
+    "programa": "Aulas teóricas:\n\n\n\tVisão geral: história, mercado, tendências\n\tRevisão de arquiteturas distribuídas: SOA, orientado a eventos Componentes e Serviços\n\tO que é uma nuvem? Privado, público, híbrido\n\tTecnologias, modelos de negócios, principais fornecedores de serviços nacionais e internacionais\n\t\n\t\tIaaS\n\t\tBaaS\n\t\tPaaS\n\t\tSaaS\n\t\toutras\n\t\n\t\n\n\nAgenda Prática:\n\n\n\t1º Trabalho - IaaS e PaaS\n\t\n\t\tAWS EC2 - Implante e execute o servidor ubuntu\n\t\tDocker PaaS - AWS Beanstalk\n\t\tHeroku - implantação de 2 aplicativos, cada um por serviço\n\t\n\t\n\t2º Trabalho - SaaS e BaaS\n\t\n\t\tTrello Board\n\t\tAWS BaaS\n\t\tFirebase (armazenar dados e média)\n\t\n\t\n\n\nCada trabalho tem um planeamento prático de 6 aulas\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.tipotecnologia",
+  "pk": 1,
+  "fields": {
+    "nome": "Frontend",
+    "descricao": "Tecnologias do lado do cliente (browser).",
+    "ordem": 1
+  }
+},
+{
+  "model": "portfolio.tipotecnologia",
+  "pk": 2,
+  "fields": {
+    "nome": "Backend",
+    "descricao": "Linguagens e frameworks do lado do servidor.",
+    "ordem": 2
+  }
+},
+{
+  "model": "portfolio.tipotecnologia",
+  "pk": 3,
+  "fields": {
+    "nome": "Base de Dados",
+    "descricao": "Sistemas de gestao e armazenamento de dados.",
+    "ordem": 3
+  }
+},
+{
+  "model": "portfolio.tipotecnologia",
+  "pk": 4,
+  "fields": {
+    "nome": "Storage",
+    "descricao": "Armazenamento de ficheiros/objectos.",
+    "ordem": 4
+  }
+},
+{
+  "model": "portfolio.tipotecnologia",
+  "pk": 5,
+  "fields": {
+    "nome": "Outros",
+    "descricao": "Ferramentas: Git, GitHub, CodeSpaces, DevOps, etc.",
+    "ordem": 5
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 11,
+  "fields": {
+    "nome": "Dart",
+    "tipo": 2,
+    "descricao": "Linguagem de programacao para Flutter",
+    "logo": "",
+    "link_oficial": "https://dart.dev",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 12,
+  "fields": {
+    "nome": "Python",
+    "tipo": 2,
+    "descricao": "Linguagem de programacao versatil",
+    "logo": "",
+    "link_oficial": "https://python.org",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 13,
+  "fields": {
+    "nome": "PHP",
+    "tipo": 2,
+    "descricao": "PHP 8.2+ para desenvolvimento backend",
+    "logo": "",
+    "link_oficial": "https://php.net",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 14,
+  "fields": {
+    "nome": "TypeScript",
+    "tipo": 1,
+    "descricao": "Superset tipado de JavaScript",
+    "logo": "",
+    "link_oficial": "https://typescriptlang.org",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 15,
+  "fields": {
+    "nome": "JavaScript",
+    "tipo": 1,
+    "descricao": "Linguagem de programacao para web",
+    "logo": "",
+    "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 16,
+  "fields": {
+    "nome": "HTML5/CSS3",
+    "tipo": 2,
+    "descricao": "Linguagens base para desenvolvimento web",
+    "logo": "",
+    "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 17,
+  "fields": {
+    "nome": "C#",
+    "tipo": 2,
+    "descricao": "Linguagem de programacao Microsoft",
+    "logo": "",
+    "link_oficial": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 18,
+  "fields": {
+    "nome": "Flutter",
+    "tipo": 2,
+    "descricao": "Flutter 3.38 - Framework cross-platform para mobile, web e desktop",
+    "logo": "",
+    "link_oficial": "https://flutter.dev",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 19,
+  "fields": {
+    "nome": "Laravel",
+    "tipo": 2,
+    "descricao": "Laravel 11 - Framework PHP para aplicacoes web enterprise",
+    "logo": "",
+    "link_oficial": "https://laravel.com",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 20,
+  "fields": {
+    "nome": "Django",
+    "tipo": 2,
+    "descricao": "Framework web Python",
+    "logo": "",
+    "link_oficial": "https://djangoproject.com",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 21,
+  "fields": {
+    "nome": "React",
+    "tipo": 1,
+    "descricao": "Biblioteca JavaScript para interfaces de utilizador",
+    "logo": "",
+    "link_oficial": "https://react.dev",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 22,
+  "fields": {
+    "nome": "Tailwind CSS",
+    "tipo": 2,
+    "descricao": "Framework CSS utility-first",
+    "logo": "",
+    "link_oficial": "https://tailwindcss.com",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 23,
+  "fields": {
+    "nome": "Livewire",
+    "tipo": 2,
+    "descricao": "Livewire 3 - Full-stack framework para Laravel",
+    "logo": "",
+    "link_oficial": "https://livewire.laravel.com",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 24,
+  "fields": {
+    "nome": "Git",
+    "tipo": 5,
+    "descricao": "Sistema de controlo de versoes distribuido",
+    "logo": "",
+    "link_oficial": "https://git-scm.com",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 25,
+  "fields": {
+    "nome": "GitHub Actions",
+    "tipo": 5,
+    "descricao": "CI/CD automation",
+    "logo": "",
+    "link_oficial": "https://github.com/features/actions",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 26,
+  "fields": {
+    "nome": "Firebase",
+    "tipo": 5,
+    "descricao": "Auth, Firestore, Storage, FCM, Remote Config, Cloud Functions, Crashlytics, Analytics",
+    "logo": "",
+    "link_oficial": "https://firebase.google.com",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 27,
+  "fields": {
+    "nome": "Stripe",
+    "tipo": 5,
+    "descricao": "Payment gateway integration",
+    "logo": "",
+    "link_oficial": "https://stripe.com",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 28,
+  "fields": {
+    "nome": "Sentry",
+    "tipo": 5,
+    "descricao": "Error monitoring and performance tracking",
+    "logo": "",
+    "link_oficial": "https://sentry.io",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 29,
+  "fields": {
+    "nome": "MySQL",
+    "tipo": 3,
+    "descricao": "Base de dados relacional com Eloquent ORM",
+    "logo": "",
+    "link_oficial": "https://mysql.com",
+    "nivel_interesse": 5,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 30,
+  "fields": {
+    "nome": "PostgreSQL",
+    "tipo": 3,
+    "descricao": "Sistema de gestao de bases de dados relacional",
+    "logo": "",
+    "link_oficial": "https://postgresql.org",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 31,
+  "fields": {
+    "nome": "Redis",
+    "tipo": 3,
+    "descricao": "Cache e armazenamento in-memory",
+    "logo": "",
+    "link_oficial": "https://redis.io",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 32,
+  "fields": {
+    "nome": "Elasticsearch",
+    "tipo": 3,
+    "descricao": "Motor de pesquisa e analytics",
+    "logo": "",
+    "link_oficial": "https://elastic.co",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 33,
+  "fields": {
+    "nome": "SQLite",
+    "tipo": 3,
+    "descricao": "Base de dados leve e embutida",
+    "logo": "",
+    "link_oficial": "https://sqlite.org",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 34,
+  "fields": {
+    "nome": "AWS S3",
+    "tipo": 4,
+    "descricao": "Amazon S3 cloud storage",
+    "logo": "",
+    "link_oficial": "https://aws.amazon.com/s3/",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 35,
+  "fields": {
+    "nome": "Cloudflare",
+    "tipo": 5,
+    "descricao": "Cloudflare Pages, Workers",
+    "logo": "",
+    "link_oficial": "https://cloudflare.com",
+    "nivel_interesse": 4,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 36,
+  "fields": {
+    "nome": "Docker",
+    "tipo": 5,
+    "descricao": "Plataforma de contentorizacao",
+    "logo": "",
+    "link_oficial": "https://docker.com",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 37,
+  "fields": {
+    "nome": "Java",
+    "tipo": 2,
+    "descricao": "Linguagem de programacao orientada a objetos",
+    "logo": "",
+    "link_oficial": "https://java.com",
+    "nivel_interesse": 3,
+    "destaque": "",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 38,
+  "fields": {
+    "nome": "HTML/CSS",
+    "tipo": 1,
+    "descricao": "HTML define a estrutura das páginas web, CSS define o estilo e layout visual.",
+    "logo": "",
+    "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+    "nivel_interesse": 4,
+    "destaque": "Base de todo o desenvolvimento web, usado em todas as UCs de programação web.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 39,
+  "fields": {
+    "nome": "C",
+    "tipo": 2,
+    "descricao": "Linguagem de programação de baixo nível, usada para programação de sistemas, estruturas de dados e algoritmos.",
+    "logo": "",
+    "link_oficial": "https://en.cppreference.com/w/c",
+    "nivel_interesse": 3,
+    "destaque": "Primeira linguagem aprendida no curso (LP1). Fundamental para compreender memória, ponteiros e estruturas de dados.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 40,
+  "fields": {
+    "nome": "Valgrind",
+    "tipo": 5,
+    "descricao": "Ferramenta de instrumentação para deteção de memory leaks e erros de memória em programas C/C++.",
+    "logo": "",
+    "link_oficial": "https://valgrind.org",
+    "nivel_interesse": 2,
+    "destaque": "Usado em LP1 para garantir que os projetos em C não têm memory leaks.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 41,
+  "fields": {
+    "nome": "Makefile",
+    "tipo": 5,
+    "descricao": "Ferramenta de automação de compilação que define regras para construir programas a partir de ficheiros fonte.",
+    "logo": "",
+    "link_oficial": "https://www.gnu.org/software/make/",
+    "nivel_interesse": 2,
+    "destaque": "Usado em LP1 para compilar projetos em C com múltiplos ficheiros fonte.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 42,
+  "fields": {
+    "nome": "SQL",
+    "tipo": 3,
+    "descricao": "Linguagem de consulta estruturada para gestão e manipulação de bases de dados relacionais.",
+    "logo": "",
+    "link_oficial": "https://www.iso.org/standard/76583.html",
+    "nivel_interesse": 4,
+    "destaque": "Linguagem fundamental para interagir com bases de dados. Usada em Bases de Dados para criar tabelas, consultas, procedures e triggers.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 43,
+  "fields": {
+    "nome": "SQL Server",
+    "tipo": 3,
+    "descricao": "Sistema de gestão de base de dados relacional da Microsoft, usado em ambiente empresarial.",
+    "logo": "",
+    "link_oficial": "https://www.microsoft.com/sql-server",
+    "nivel_interesse": 3,
+    "destaque": "SGBD usado na UC de Bases de Dados para implementar o projeto de encomendas de restaurante.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.tecnologia",
+  "pk": 44,
+  "fields": {
+    "nome": "AWS",
+    "tipo": 5,
+    "descricao": "Amazon Web Services - plataforma de cloud computing com serviços como Lambda, EC2, S3, entre outros.",
+    "logo": "",
+    "link_oficial": "https://aws.amazon.com",
+    "nivel_interesse": 4,
+    "destaque": "Usado em Sistemas de Informação na Nuvem para implementar arquiteturas serverless com Lambda e instâncias EC2.",
+    "ucs": []
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 5,
+  "fields": {
+    "titulo": "JRS-PT - Jesuit Refugee Service App (World's First)",
+    "descricao": "Developing the world's first mobile application for Jesuit Refugee Service Portugal. Flutter 3.24 with Material Design 3, flutter_animate animations, CustomScrollView, SliverAppBar.",
+    "conceitos_aplicados": "Flutter 3.24, Material Design 3, URL launcher, share_plus, CI/CD GitHub Actions",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2024-06-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": null,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      18
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 6,
+  "fields": {
+    "titulo": "Hayya-Jirani - Dubai Chambers Competition App",
+    "descricao": "Selected participant in prestigious Dubai Chambers App Competition. Health Integration: Apple Health & Google Fit APIs. Maps & Location: Google Maps Flutter, Geolocator, Geocoding.",
+    "conceitos_aplicados": "Flutter 3.38, Firebase Auth, Google Sign-In, Apple Sign-In, Cloud Firestore, Arabic/English localization",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-01-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": null,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      26,
+      18
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 7,
+  "fields": {
+    "titulo": "Sumak Market - E-Commerce Platform",
+    "descricao": "E-commerce mobile app for SUMAK company specializing in Arabic products. Backend: WooCommerce Store API integration with Dio HTTP client.",
+    "conceitos_aplicados": "Flutter 3.24, WooCommerce API, Stripe, PayPal, MBWay, Multibanco, RTL Arabic support",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2024-01-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": null,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      18,
+      27
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 8,
+  "fields": {
+    "titulo": "PowerInvoice - Enterprise Invoicing Platform",
+    "descricao": "Full-stack enterprise invoicing solution with Laravel 11 backend + Flutter mobile app. Client: TAIBATUNA FINE FOOD. 95% complete.",
+    "conceitos_aplicados": "Laravel 11, PHP 8.2+, Livewire 3, Alpine.js, MySQL, Redis, Elasticsearch, AWS S3, Pusher, Stripe, PayPal, ZUGFeRD, UBL",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2024-01-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": null,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      18,
+      19,
+      29,
+      13,
+      34,
+      31,
+      27,
+      32
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 9,
+  "fields": {
+    "titulo": "JustOneClickAnalysis - Cross-Platform Analytics Suite",
+    "descricao": "Multi-platform analytics solution. Web: Hono framework, Vite, TypeScript, Cloudflare Pages. Mobile: Flutter/Dart, Riverpod, fl_chart, Syncfusion Charts.",
+    "conceitos_aplicados": "Hono, Vite, TypeScript, Cloudflare Pages, Flutter, Riverpod, Dio/Retrofit, GitHub Actions CI/CD",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "https://platform-9bx.pags.dev/",
+    "data_inicio": "2024-06-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": null,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      18,
+      35,
+      14
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 11,
+  "fields": {
+    "titulo": "Ficha 5 - Apps Django",
+    "descricao": "Conjunto de aplicacoes Django (escola, ginasio, loja, etc.)",
+    "conceitos_aplicados": "Modelos, Views, Templates, URLs",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamimbmali-a21908541/ficha5",
+    "link_deploy": "",
+    "data_inicio": "2025-02-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 14,
+    "participantes": "",
+    "tecnologias": [
+      24,
+      12,
+      20,
+      16
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 12,
+  "fields": {
+    "titulo": "deisIMDB - Movie Database System",
+    "descricao": "Application that loads and processes movie, actor, director, and genre data from CSV files. Provides query and analysis functionalities through a command-line interface.",
+    "conceitos_aplicados": "Estruturas de dados, algoritmos de pesquisa, processamento de ficheiros CSV, Java Collections",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamim24778/my-works",
+    "link_deploy": "",
+    "data_inicio": "2023-09-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 7,
+    "participantes": "",
+    "tecnologias": [
+      37
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 13,
+  "fields": {
+    "titulo": "Restaurant Reservation - Microservices System",
+    "descricao": "Distributed system with microservices architecture: restaurant-service, reservation-service, payment-service, notification-service. Docker containerized with Spring Boot.",
+    "conceitos_aplicados": "Microservices, Docker, REST APIs, Event-driven architecture, PostgreSQL migrations",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamim24778/my-works",
+    "link_deploy": "",
+    "data_inicio": "2025-09-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 24,
+    "participantes": "",
+    "tecnologias": [
+      36,
+      37
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 14,
+  "fields": {
+    "titulo": "SNS Hospitals - Mobile App",
+    "descricao": "Mobile application in Flutter for managing and consulting hospital information within the SNS (National Health Service). Interactive maps, evaluation system, incident reports, offline sync.",
+    "conceitos_aplicados": "Flutter, Google Maps, offline sync, evaluation forms, dashboard, Firebase",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamim24778/my-works",
+    "link_deploy": "",
+    "data_inicio": "2025-09-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 28,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      26,
+      18
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 15,
+  "fields": {
+    "titulo": "CG OpenCV - Image Processing",
+    "descricao": "Computer Graphics project using OpenCV for image processing and computer vision in C#.",
+    "conceitos_aplicados": "OpenCV, processamento de imagem, visao computacional, C#",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamim24778/my-works",
+    "link_deploy": "",
+    "data_inicio": "2024-09-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 16,
+    "participantes": "",
+    "tecnologias": [
+      17
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 16,
+  "fields": {
+    "titulo": "CIL - Comunidade Islamica de Lisboa App",
+    "descricao": "Official mobile app for Comunidade Islamica de Lisboa (Islamic Community of Lisbon) built with Flutter.",
+    "conceitos_aplicados": "Flutter, Dart, localization, community features",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2024-01-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": null,
+    "participantes": "",
+    "tecnologias": [
+      11,
+      18
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 17,
+  "fields": {
+    "titulo": "Network Infrastructure Design",
+    "descricao": "Final project for Redes de Computadores - Network infrastructure design using Cisco Packet Tracer.",
+    "conceitos_aplicados": "Cisco Packet Tracer, routing, switching, network design, VLANs",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamim24778/my-works",
+    "link_deploy": "",
+    "data_inicio": "2024-09-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 21,
+    "participantes": "",
+    "tecnologias": []
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 18,
+  "fields": {
+    "titulo": "Trotify - Sistema de Vehicle Sharing",
+    "descricao": "Programa em C capaz de gerir uma frota de trotinetes partilhadas e os seus utilizadores. Lê dados de ficheiros (.users e .trotinetes), carrega-os em memória usando listas ligadas (memória dinâmica), e permite operações como localizar o veículo mais próximo, realizar viagens com cálculo automático de distância/custo/carga, e gestão de manutenção. Implementa política FIFO para listagem de veículos.",
+    "conceitos_aplicados": "Listas ligadas (linked lists), alocação dinâmica de memória (malloc/free), leitura e escrita de ficheiros, estruturas de dados (structs), geometria em coordenadas cartesianas, política FIFO, Makefile, deteção de memory leaks com Valgrind",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2019-02-01",
+    "data_fim": "2019-06-30",
+    "nota": null,
+    "uc": 10,
+    "participantes": "",
+    "tecnologias": [
+      39,
+      41,
+      40
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 19,
+  "fields": {
+    "titulo": "Portfólio Django - Ficha 6",
+    "descricao": "Aplicação web Django para portfólio pessoal académico. Inclui modelação de 10 entidades (Licenciatura, UC, Docente, Tecnologia, Projeto, TFC, Competência, Formação, MakingOf, Interesse), carregamento automático de dados via API da Lusófona e ficheiros JSON, e painel de administração completo.",
+    "conceitos_aplicados": "Modelos Django (ORM), relações ForeignKey e ManyToMany, Django Admin com list_display/search_fields/filter_horizontal, scripts de carregamento de dados, consumo de APIs REST, configuração de media files",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamimbmali-a21908541/ficha6",
+    "link_deploy": "",
+    "data_inicio": "2026-03-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 20,
+    "participantes": "",
+    "tecnologias": [
+      24,
+      12,
+      20,
+      38,
+      33
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 20,
+  "fields": {
+    "titulo": "Fichas Django - Ficha 5",
+    "descricao": "Conjunto de aplicações Django (escola, ginásio, loja, etc.) desenvolvidas como exercícios práticos para aprender os fundamentos do framework Django, incluindo modelos, views, templates e admin.",
+    "conceitos_aplicados": "Criação de apps Django, definição de modelos, migrações, registo no admin, relações entre modelos",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "https://github.com/tamimbmali-a21908541/ficha5",
+    "link_deploy": "",
+    "data_inicio": "2026-02-01",
+    "data_fim": "2026-03-01",
+    "nota": null,
+    "uc": 20,
+    "participantes": "",
+    "tecnologias": [
+      24,
+      12,
+      20,
+      38
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 21,
+  "fields": {
+    "titulo": "Sistema de Encomendas Online para Restaurante",
+    "descricao": "Base de dados para sistema de encomendas online de restaurante, desenvolvido em SQL Server. Inclui modelação de clientes, produtos (entradas, sopas, pratos, sobremesas, bebidas), ingredientes, Menu do Dia com controlo de unidades disponíveis, encomendas com cálculo automático de custo e IVA, e gestão de fotos de produtos. Implementa procedures para atualização de totais e triggers para validações CHECK.",
+    "conceitos_aplicados": "Modelação relacional (DER), criação de tabelas com restrições (PK, FK, UK, CK, NN), INSERT/UPDATE/DELETE, JOINs, GROUP BY, subconsultas, stored procedures, triggers, ALTER TABLE, tipos de dados SQL, IVA e cálculos monetários",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2020-09-01",
+    "data_fim": "2021-02-01",
+    "nota": null,
+    "uc": 13,
+    "participantes": "",
+    "tecnologias": [
+      42,
+      43
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 22,
+  "fields": {
+    "titulo": "Proposta TFC - Aplicação Escolar Flexível e Personalizável",
+    "descricao": "Proposta de criação de uma aplicação escolar flexível e personalizável, adaptável a diferentes instituições com mínima programação. A plataforma centraliza comunicação entre pais, alunos e professores, reunindo avisos, calendários, gestão de atividades e acompanhamento de desempenho. O modelo permite que cada escola ajuste as funcionalidades às suas necessidades, reduzindo custos e facilitando a manutenção.",
+    "conceitos_aplicados": "Arquitetura de software, design de plataformas multi-tenant, gestão de requisitos, comunicação escola-família, personalização de funcionalidades",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-09-01",
+    "data_fim": null,
+    "nota": null,
+    "uc": 23,
+    "participantes": "Orientador: Prof. Rui Santos",
+    "tecnologias": [
+      12,
+      20
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 24,
+  "fields": {
+    "titulo": "Projeto Data Science - Regressão e Clustering",
+    "descricao": "Projeto de Data Science focado em análise estatística e aprendizagem automática. Inclui regressão linear simples (mínimos quadrados, R², RSE, erros padrão), regressão logística (classificação binária, função sigmóide, log-loss, matriz de confusão, métricas F1/MCC), e análise de clusters (clustering hierárquico aglomerativo com dendrograma, k-means com centróides, método do silhouette).",
+    "conceitos_aplicados": "Regressão linear simples, coeficiente de determinação R², correlação de Pearson, regressão logística, função sigmóide, log-loss, matriz de confusão, precisão/recall/F1/MCC, clustering hierárquico aglomerativo, k-means, método do silhouette, aprendizagem supervisionada e não supervisionada",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-09-01",
+    "data_fim": "2026-02-01",
+    "nota": null,
+    "uc": 25,
+    "participantes": "",
+    "tecnologias": [
+      12
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 25,
+  "fields": {
+    "titulo": "Avaliação Heurística de Usabilidade",
+    "descricao": "Projeto individual de avaliação heurística a uma aplicação ou website, aplicando os princípios de usabilidade lecionados na UC. Inclui análise sistemática segundo heurísticas de Nielsen e justificação de cada avaliação com base nos princípios de Interação Humano-Máquina.",
+    "conceitos_aplicados": "Heurísticas de usabilidade de Nielsen, avaliação de interfaces, princípios de design de interação, experiência do utilizador (UX), acessibilidade",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-09-01",
+    "data_fim": "2026-02-01",
+    "nota": null,
+    "uc": 27,
+    "participantes": "",
+    "tecnologias": []
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 26,
+  "fields": {
+    "titulo": "App Metro de Lisboa - Aplicação Móvel Flutter",
+    "descricao": "Desenvolvimento de uma aplicação móvel multi-plataforma (Android e iOS) usando Flutter para o Metro de Lisboa. A primeira parte foca na implementação da interface gráfica e navegação. A segunda parte liga a aplicação à API do Metro de Lisboa, guarda dados de forma persistente e utiliza geolocalização. A app indica indisponibilidades das linhas, apresenta estações, localização das mesmas e outras informações pertinentes.",
+    "conceitos_aplicados": "Desenvolvimento móvel cross-platform com Flutter, interface gráfica (UI), navegação entre ecrãs, consumo de APIs REST, persistência de dados, geolocalização, design responsivo",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-09-01",
+    "data_fim": "2026-06-01",
+    "nota": null,
+    "uc": 28,
+    "participantes": "",
+    "tecnologias": [
+      18
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 27,
+  "fields": {
+    "titulo": "Projeto de Inteligência Artificial - Jornal e Podcast",
+    "descricao": "Projeto de IA composto por jornal das aulas (documentação das sessões) e produção de um video podcast sobre temas de Inteligência Artificial. Inclui conteúdos sobre redes neuronais de McCulloch-Pitts, modelamento de tópicos e fundamentos de NLP.",
+    "conceitos_aplicados": "Redes neuronais, modelo McCulloch-Pitts, processamento de linguagem natural (NLP), busca, modelamento de tópicos, fundamentos de IA",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2024-09-01",
+    "data_fim": "2025-02-01",
+    "nota": null,
+    "uc": 29,
+    "participantes": "",
+    "tecnologias": [
+      12
+    ]
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 28,
+  "fields": {
+    "titulo": "Projeto de Segurança Informática",
+    "descricao": "Estudo e aplicação de conceitos de segurança informática incluindo criptografia, gestão de chaves, autenticação, firewalls, sistemas de deteção de intrusão (IDS), comunicação segura, análise de risco IT, planos de contingência, segurança na cloud, standards de segurança e segurança web.",
+    "conceitos_aplicados": "Criptografia, gestão de chaves, autenticação, firewalls, IDS, comunicação segura, risco IT, contingência, segurança na cloud, standards de segurança, segurança web (OWASP)",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-02-01",
+    "data_fim": "2025-06-01",
+    "nota": null,
+    "uc": 30,
+    "participantes": "",
+    "tecnologias": []
+  }
+},
+{
+  "model": "portfolio.projeto",
+  "pk": 29,
+  "fields": {
+    "titulo": "Projeto AWS - Sistemas de Informação na Nuvem",
+    "descricao": "Projeto prático com serviços AWS incluindo Lambda functions, instâncias EC2, e outros serviços cloud. Implementação de arquiteturas serverless e gestão de infraestrutura na nuvem.",
+    "conceitos_aplicados": "AWS Lambda, EC2, arquitetura serverless, cloud computing, infraestrutura como serviço (IaaS), funções como serviço (FaaS), deployment na nuvem",
+    "imagem": "",
+    "video_demo": "",
+    "link_github": "",
+    "link_deploy": "",
+    "data_inicio": "2025-02-01",
+    "data_fim": "2025-06-01",
+    "nota": null,
+    "uc": 31,
+    "participantes": "",
+    "tecnologias": [
+      12,
+      36
+    ]
+  }
+},
+{
+  "model": "portfolio.tfc",
+  "pk": 19,
+  "fields": {
+    "titulo": "Aplicação Escolar Flexível e Personalizável",
+    "autores": "Tamim Mohamed Ali (a21908541), Boshra Alalou (a21908516)",
+    "orientador": "Prof. Rui Santos",
+    "resumo": "Proposta de criação de uma aplicação escolar flexível e personalizável, adaptável a diferentes instituições com mínima programação. A plataforma centraliza comunicação entre pais, alunos e professores, reunindo avisos, calendários, gestão de atividades e acompanhamento de desempenho. O modelo permite que cada escola ajuste as funcionalidades às suas necessidades, reduzindo custos e facilitando a manutenção.",
+    "ano": 2026,
+    "link": "",
+    "classificacao_interesse": 5,
+    "tags": "aplicação escolar, plataforma educativa, comunicação escola-família, personalização, Django",
+    "imagem": ""
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 9,
+  "fields": {
+    "nome": "Mobile Development (Flutter)",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "Flutter 3.38, Dart 3.5+, Android SDK, iOS, Material Design 3, Cross-Platform",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 10,
+  "fields": {
+    "nome": "State Management",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "Riverpod, Provider, Bloc/Cubit, GetX, GoRouter Navigation",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 11,
+  "fields": {
+    "nome": "Backend Development (Laravel)",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "PHP 8.2+, Laravel 11, Laravel Octane, Livewire 3, Alpine.js",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 12,
+  "fields": {
+    "nome": "Firebase Suite",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "Auth, Firestore, Storage, FCM, Remote Config, Cloud Functions, Crashlytics",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 13,
+  "fields": {
+    "nome": "Bases de Dados e Cache",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "MySQL, Eloquent ORM, PostgreSQL, SQLite, Redis, Elasticsearch",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 14,
+  "fields": {
+    "nome": "Web Frontend",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "TypeScript, JavaScript, React, HTML5, CSS3, Tailwind CSS, SASS",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 15,
+  "fields": {
+    "nome": "Cloud e DevOps",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "AWS S3, Cloudflare, GitHub Actions CI/CD, Sentry, Pusher",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 16,
+  "fields": {
+    "nome": "Payment Integrations",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "Stripe, PayPal, Braintree, Square, Mollie, MBWay, Multibanco",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 17,
+  "fields": {
+    "nome": "Clean Architecture",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "MVVM, MVC, Repository Pattern, SOLID Principles",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 18,
+  "fields": {
+    "nome": "Testing e Quality",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "PHPUnit, Cypress, Mockito, flutter_test, Integration Testing",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 19,
+  "fields": {
+    "nome": "REST APIs",
+    "nivel": "avancado",
+    "categoria": "tecnica",
+    "descricao": "Dio, Retrofit, Guzzle, Axios, Google Maps API",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 22,
+  "fields": {
+    "nome": "Trabalho em Equipa",
+    "nivel": "avancado",
+    "categoria": "soft",
+    "descricao": "Colaboracao em projetos com clientes reais",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 24,
+  "fields": {
+    "nome": "Comunicacao",
+    "nivel": "avancado",
+    "categoria": "soft",
+    "descricao": "Speaker em conferencias, comunicacao multilingue",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 25,
+  "fields": {
+    "nome": "Arabe",
+    "nivel": "especialista",
+    "categoria": "lingua",
+    "descricao": "Lingua nativa",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 28,
+  "fields": {
+    "nome": "Programação Orientada a Objetos",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Conhecimento dos princípios de OOP: classes, herança, polimorfismo, encapsulamento. Aplicado em Python e Java.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 29,
+  "fields": {
+    "nome": "Desenvolvimento Web Full-Stack",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Capacidade de desenvolver aplicações web completas, desde o backend (Django) ao frontend (HTML/CSS/JS).",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 30,
+  "fields": {
+    "nome": "Bases de Dados Relacionais",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Modelação de bases de dados, SQL, ORM Django, relações entre tabelas.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 31,
+  "fields": {
+    "nome": "Resolução de Problemas",
+    "nivel": "avancado",
+    "categoria": "soft",
+    "descricao": "Capacidade de analisar problemas complexos e encontrar soluções estruturadas.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 32,
+  "fields": {
+    "nome": "Inglês",
+    "nivel": "avancado",
+    "categoria": "lingua",
+    "descricao": "Leitura de documentação técnica, comunicação profissional em inglês.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 33,
+  "fields": {
+    "nome": "Português",
+    "nivel": "especialista",
+    "categoria": "lingua",
+    "descricao": "Língua nativa.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 34,
+  "fields": {
+    "nome": "Controlo de Versões (Git)",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Utilização de Git e GitHub para controlo de versões, branches, commits e pull requests.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 35,
+  "fields": {
+    "nome": "Programação em C",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Programação de baixo nível em C: ponteiros, memória dinâmica, listas ligadas, ficheiros. Aplicado no projeto Trotify (LP1).",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 36,
+  "fields": {
+    "nome": "Estruturas de Dados",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Listas ligadas, arrays dinâmicos, filas (FIFO), pilhas. Aplicados em LP1 e Algoritmos.",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.competencia",
+  "pk": 37,
+  "fields": {
+    "nome": "Modelação de Bases de Dados",
+    "nivel": "intermedio",
+    "categoria": "tecnica",
+    "descricao": "Diagramas Entidade-Relação (DER), normalização, criação de tabelas com restrições, stored procedures e triggers. Aplicado em Bases de Dados (projeto de restaurante).",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 4,
+  "fields": {
+    "titulo": "Crash Course on Python",
+    "tipo": "certificacao",
+    "instituicao": "Google",
+    "descricao": "Certificacao Google em Python",
+    "data_inicio": "2023-01-01",
+    "data_fim": "2023-03-01",
+    "em_curso": false,
+    "link_certificado": ""
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 5,
+  "fields": {
+    "titulo": "Introduction to Programming With C#",
+    "tipo": "certificacao",
+    "instituicao": "Microsoft",
+    "descricao": "Certificacao Microsoft em C#",
+    "data_inicio": "2023-01-01",
+    "data_fim": "2023-03-01",
+    "em_curso": false,
+    "link_certificado": ""
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 6,
+  "fields": {
+    "titulo": "Google Sheets Advanced Topics",
+    "tipo": "certificacao",
+    "instituicao": "Google Cloud",
+    "descricao": "Certificacao Google Cloud em Google Sheets",
+    "data_inicio": "2023-01-01",
+    "data_fim": "2023-03-01",
+    "em_curso": false,
+    "link_certificado": ""
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 7,
+  "fields": {
+    "titulo": "Licenciatura em Engenharia Informática",
+    "tipo": "academica",
+    "instituicao": "Universidade Lusófona",
+    "descricao": "Curso de 3 anos (180 ECTS) focado em programação, desenvolvimento web, bases de dados, algoritmos e engenharia de software.",
+    "data_inicio": "2022-09-01",
+    "data_fim": null,
+    "em_curso": true,
+    "link_certificado": ""
+  }
+},
+{
+  "model": "portfolio.formacao",
+  "pk": 8,
+  "fields": {
+    "titulo": "Ensino Secundário",
+    "tipo": "academica",
+    "instituicao": "",
+    "descricao": "Ensino secundário concluído.",
+    "data_inicio": "2019-09-01",
+    "data_fim": "2022-07-01",
+    "em_curso": false,
+    "link_certificado": ""
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 20,
+  "fields": {
+    "titulo": "DER v1 - Versao Inicial (5 Entidades)",
+    "tipo": "evolucao",
+    "descricao": "Primeira versao do DER com 5 entidades: Licenciatura, UC, Tecnologia, Projeto, TFC. 2 FK + 1 M2M. TFC independente.",
+    "fotografia": "makingof/der_v1.jpeg",
+    "data_registo": "2026-04-09T17:12:57.525Z",
+    "entidade_relacionada": "Geral"
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 21,
+  "fields": {
+    "titulo": "DER v2 - Versao Final (10 Entidades)",
+    "tipo": "evolucao",
+    "descricao": "Versao final com 10 entidades. Adicionados: Docente, Competencia, Formacao, MakingOf, Interesse. 2 FK + 7 M2M. 3 entidades independentes.",
+    "fotografia": "makingof/der_v2.jpeg",
+    "data_registo": "2026-04-09T17:12:57.532Z",
+    "entidade_relacionada": "Geral"
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 22,
+  "fields": {
+    "titulo": "Apontamentos - Modelos e Atributos",
+    "tipo": "justificacao",
+    "descricao": "Todos os 10 modelos com campos detalhados e 2 justificacoes por entidade.",
+    "fotografia": "makingof/apontamentos_modelos.jpeg",
+    "data_registo": "2026-04-09T17:12:57.537Z",
+    "entidade_relacionada": "Geral"
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 23,
+  "fields": {
+    "titulo": "Apontamentos - Relacoes entre Entidades",
+    "tipo": "justificacao",
+    "descricao": "2 FK (CASCADE, SET_NULL) e 7 M2M com justificacoes. 3 entidades independentes: TFC, Formacao, MakingOf.",
+    "fotografia": "makingof/apontamentos_relacoes.jpeg",
+    "data_registo": "2026-04-09T17:12:57.543Z",
+    "entidade_relacionada": "Geral"
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 24,
+  "fields": {
+    "titulo": "Erros Identificados e Correcoes",
+    "tipo": "erro",
+    "descricao": "4 erros: campos API na UC, Docente como texto, TFC sem classificacao, Projeto sem conceitos. Todos corrigidos.",
+    "fotografia": "makingof/erros_correcoes.jpeg",
+    "data_registo": "2026-04-09T17:12:57.548Z",
+    "entidade_relacionada": "Geral"
+  }
+},
+{
+  "model": "portfolio.makingof",
+  "pk": 25,
+  "fields": {
+    "titulo": "Uso de IA no Desenvolvimento",
+    "tipo": "uso_ia",
+    "descricao": "Google Gemini usado pontualmente para sintaxe Django. Modelacao, implementacao e dados feitos pelo aluno.",
+    "fotografia": "makingof/uso_ia.jpeg",
+    "data_registo": "2026-04-09T17:12:57.554Z",
+    "entidade_relacionada": "Geral"
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 4,
+  "fields": {
+    "area": "mobile",
+    "descricao": "Desenvolvimento de aplicacoes moveis cross-platform com Flutter",
+    "nivel_interesse": 5,
+    "objetivo_profissional": "Continuar a desenvolver apps mobile de nivel enterprise",
+    "tecnologias": [
+      11,
+      26,
+      18
+    ],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 5,
+  "fields": {
+    "area": "web",
+    "descricao": "Desenvolvimento full-stack com Laravel e Django",
+    "nivel_interesse": 5,
+    "objetivo_profissional": "Criar plataformas web escalaveias e robustas",
+    "tecnologias": [
+      19,
+      13,
+      12,
+      20,
+      16,
+      22,
+      21
+    ],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 6,
+  "fields": {
+    "area": "devops",
+    "descricao": "Cloud infrastructure com AWS, Cloudflare e CI/CD",
+    "nivel_interesse": 4,
+    "objetivo_profissional": "Dominar infraestrutura cloud e automacao",
+    "tecnologias": [
+      34,
+      35,
+      25,
+      36
+    ],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 7,
+  "fields": {
+    "area": "data",
+    "descricao": "Analytics e visualizacao de dados",
+    "nivel_interesse": 4,
+    "objetivo_profissional": "Integrar data analytics nas aplicacoes",
+    "tecnologias": [],
+    "projetos": []
+  }
+},
+{
+  "model": "portfolio.interesse",
+  "pk": 8,
+  "fields": {
+    "area": "seguranca",
+    "descricao": "Seguranca de aplicacoes e pagamentos online",
+    "nivel_interesse": 4,
+    "objetivo_profissional": "Garantir seguranca em sistemas de pagamento e autenticacao",
+    "tecnologias": [],
+    "projetos": []
+  }
+}
+]

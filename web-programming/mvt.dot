@@ -1,0 +1,22 @@
+digraph MVT {
+    rankdir=LR;
+    fontname="Sans";
+    node [fontname="Sans", style=filled, fontsize=11];
+    edge [fontname="Sans", fontsize=10];
+
+    Utilizador  [shape=oval, fillcolor="#e0f7fa", label="Utilizador\n(browser)"];
+    URLconf     [shape=box,  fillcolor="#fff8e1", label="URLconf\n(urls.py)"];
+    View        [shape=box,  fillcolor="#ffe0b2", label="View\n(views.py)"];
+    Model       [shape=box,  fillcolor="#c8e6c9", label="Model\n(models.py)"];
+    BD          [shape=cylinder, fillcolor="#a5d6a7", label="Base de Dados\n(SQLite)"];
+    Template    [shape=box,  fillcolor="#bbdefb", label="Template\n(*.html)"];
+
+    Utilizador -> URLconf  [label="1. HTTP request\nclica num link"];
+    URLconf    -> View     [label="2. mapeia rota\npara funcao view"];
+    View       -> Model    [label="3. lê / escreve\n(ORM)"];
+    Model      -> BD       [label="4. SQL"];
+    BD         -> Model    [label="5. dados"];
+    Model      -> View     [label="6. objetos"];
+    View       -> Template [label="7. render(contexto)"];
+    Template   -> Utilizador [label="8. HTML\nresposta"];
+}

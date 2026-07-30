@@ -1,0 +1,68 @@
+digraph MapaNavegacao {
+    rankdir=TB;
+    fontname="Sans";
+    node [fontname="Sans", style=filled, shape=box, fontsize=10];
+    edge [fontname="Sans", fontsize=9];
+
+    Index        [fillcolor="#bbdefb", label="/  (Index)\nindex.html"];
+    Licenciaturas[fillcolor="#c8e6c9", label="/licenciaturas/"];
+    UCs          [fillcolor="#c8e6c9", label="/ucs/"];
+    TFCs         [fillcolor="#c8e6c9", label="/tfcs/"];
+    Interesses   [fillcolor="#c8e6c9", label="/interesses/"];
+
+    Projetos     [fillcolor="#ffe0b2", label="/projetos/"];
+    ProjetoDet   [fillcolor="#fff3e0", label="/projeto/<id>/"];
+    ProjetoNovo  [fillcolor="#ffccbc", label="/projeto/novo/"];
+    ProjetoEdit  [fillcolor="#ffccbc", label="/projeto/<id>/editar/"];
+    ProjetoApag  [fillcolor="#ffccbc", label="/projeto/<id>/apagar/"];
+
+    Tecnologias  [fillcolor="#ffe0b2", label="/tecnologias/"];
+    TecNova      [fillcolor="#ffccbc", label="/tecnologia/nova/"];
+    TecEdit      [fillcolor="#ffccbc", label="/tecnologia/<id>/editar/"];
+    TecApag      [fillcolor="#ffccbc", label="/tecnologia/<id>/apagar/"];
+
+    Competencias [fillcolor="#ffe0b2", label="/competencias/"];
+    CompNova     [fillcolor="#ffccbc", label="/competencia/nova/"];
+    CompEdit     [fillcolor="#ffccbc", label="/competencia/<id>/editar/"];
+    CompApag     [fillcolor="#ffccbc", label="/competencia/<id>/apagar/"];
+
+    Formacoes    [fillcolor="#ffe0b2", label="/formacoes/"];
+    FormNova     [fillcolor="#ffccbc", label="/formacao/nova/"];
+    FormEdit     [fillcolor="#ffccbc", label="/formacao/<id>/editar/"];
+    FormApag     [fillcolor="#ffccbc", label="/formacao/<id>/apagar/"];
+
+    MakingOf     [fillcolor="#e1bee7", label="/makingof/"];
+    Sobre        [fillcolor="#d1c4e9", label="/sobre/"];
+    Admin        [fillcolor="#cfd8dc", label="/admin/"];
+
+    Index -> Licenciaturas;
+    Index -> UCs;
+    Index -> Projetos;
+    Index -> Tecnologias;
+    Index -> Competencias;
+    Index -> Formacoes;
+    Index -> TFCs;
+    Index -> Interesses;
+    Index -> MakingOf;
+    Index -> Sobre;
+    Index -> Admin;
+
+    Projetos -> ProjetoDet [label="ver"];
+    Projetos -> ProjetoNovo [label="criar"];
+    ProjetoDet -> ProjetoEdit [label="editar"];
+    ProjetoDet -> ProjetoApag [label="apagar"];
+
+    Tecnologias -> TecNova [label="criar"];
+    Tecnologias -> TecEdit [label="editar"];
+    Tecnologias -> TecApag [label="apagar"];
+
+    Competencias -> CompNova [label="criar"];
+    Competencias -> CompEdit [label="editar"];
+    Competencias -> CompApag [label="apagar"];
+
+    Formacoes -> FormNova [label="criar"];
+    Formacoes -> FormEdit [label="editar"];
+    Formacoes -> FormApag [label="apagar"];
+
+    Sobre -> MakingOf [label="ver detalhe"];
+}

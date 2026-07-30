@@ -1,0 +1,579 @@
+[
+{
+  "model": "portfolio.licenciatura",
+  "pk": 1,
+  "fields": {
+    "nome": "Engenharia Informática",
+    "descricao": "",
+    "instituicao": "Universidade Lusófona",
+    "grau": "Licenciatura",
+    "duracao_anos": 3,
+    "ects_total": 180,
+    "codigo_curso": 260,
+    "link_institucional": "https://informatica.ulusofona.pt/ensino/licenciaturas/engenharia-informatica/",
+    "imagem": "",
+    "ano_inicio": null,
+    "ano_conclusao": null
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 1,
+  "fields": {
+    "nome": "Fundamentos de Física",
+    "codigo": "ULHT260-7336",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Mecânica clássica, eletrostátíca e corrente contínua",
+    "objetivos": "Compreensão do movimento dos corpos, ou seja, cinemática. Compreender as forças que atuam sobre os corpos e resolver as equações do movimento, ou seja, a dinâmica. Compreender o trabalho e a energia. Entendendo o campo elétrico e o potencial elétrico, ou seja, eletrostática. Compreender as correntes elétricas e resolver circuitos com correntes elétricas contínuas",
+    "programa": "Descrição dos conteúdos\r\n\r\n\r\n\tGrandezas físicas, dimensões e sistemas de unidades.\r\n\tReferencial, posição e trajetória. Movimento unidimensional.\r\n\tMovimento no espaço. Projéteis e movimento circular.\r\n\tLeis de Newton. Tipos de forças, força gravitacional.\r\n\tAplicações de Leis de Newton: plano inclinado, rodelas, mola oscilatória, pendulo.\r\n\tTrabalho. Forças conservativas e energia potencial.\r\n\tConservação da energia mecânica.\r\n\tCentro de massa, impulso e momento linear.Colisões.\r\n\tMomento de uma força, momento de inércia e momento angular.\r\n\tLei de Coulomb, campo elétrico.\r\n\tPotencial elétrico e capacitores.\r\n\tCorrente elétrica e resistência elétrica.\r\n\tCircuitos elétricos. Leis de Kirchhoff",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 2,
+  "fields": {
+    "nome": "Fundamentos de Programação",
+    "codigo": "ULHT260-7337",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta é uma disciplina fundamental na formação de qualquer profissional da área de Informática pois introduz os conceitos básicos da programação, sobre os quais assentarão muitas disciplinas subsequentes como Linguagens de Programação I e II, Algoritmia e Estruturas de Dados, Programação Web, Computação Móvel, etc. Mais do que aprender uma linguagem de programação, o aluno aprende a pensar como um programador, analisando problemas e desenhando algoritmos que os resolvam recorrendo a fluxogramas e a programas escritos em Kotlin, uma linguagem promissora que combina as melhores características das linguagens modernas mais populares (Java, Python, etc.)\r\n\r\nDado ser o primeiro contacto de muitos alunos com o tópico da Programação, reveste-se de uma importância especial na aquisição de conhecimentos primordiais mas também na sua motivação. Mais do que aprender a programar, os alunos aprendem a gostar de programar.",
+    "objetivos": "O objectivo desta unidade curricular é fornecer aos futuros profissionais na área da informática as bases para que possam iniciar (de um modo disciplinado) a actividade de programação.\r\n\r\nO aluno começa por desenvolver a capacidade de raciocínio algorítmico recorrendo a fluxogramas.\r\n\r\nO aluno deverá ser capaz de traduzir esses fluxogramas numa linguagem de programação imperativa. Concretamente, o aluno deverá conhecer a sintaxe básica de Kotlin que lhe permitam criar programas simples de linha de comando.\r\n\r\nFinalmente, o aluno deve conseguir analisar e avaliar programas feitos por outras pessoas (colegas, professores, etc.).",
+    "programa": "Introdução à programação\r\n\tAlgoritmos, fluxogramas, pseudo-código\r\n\tSintaxe e semântica das linguagens\r\n\tElementos da sintaxe, estrutura de um programa\r\n\tDeclarações e atribuições\r\n\tTipos primitivos\r\n\tExpressões aritméticas, expressões lógicas\r\n\tEntradas e saídas de dados\r\n\tSelecção\r\n\tRepetição\r\n\tFunções\r\n\tArrays uni-dimensionais e bi-dimensionais\r\n\tTratamento de erros\r\n\tLeitura e escrita de ficheiros\r\n\tBoas práticas de programação imperativa",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 3,
+  "fields": {
+    "nome": "Matemática I",
+    "codigo": "ULHT260-1",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta disciplina abrange os métodos fundamentais de Cálculo associados a funções reais de variável real. É uma área transversal a todas as engenharias e demais cursos de cariz científico. Abrange os métodos clássicos de cálculo diferencial e Integral a uma dimensão. \n",
+    "objetivos": "Esta disciplina confere a(o) aluna(o) conhecimentos que lhe permitam utilizar, de forma criativa, autónoma, e em contextos diversificados:\n\nOA1: a linguagem simbólica matemática e o raciocínio matemático;\n\nOA2: os conceitos e resultados fundamentais do cálculo diferencial, de modo a que possa proceder ao estudo de uma função real de variável real;\n\nOA3: os métodos de primitivação:\n\nOA4: as noções fundamentais do cálculo integral, de modo a que possa calcular integrais simples e determinar áreas de domínios planos.\n",
+    "programa": "1. Números reais\n\n\n\tRacionais e irracionais; operações algébricas entre frações.\n\n\n2. Funções reais de variável real\n\n\n\tGeneralidades sobre funções (domínio, imagem, leitura de domínio e imagem num gráfico, curvas de nível).\n\tFunções polinomiais e racionais.\n\tRaíz quadrada de um real.\n\tFunções trigonométricas.\n\tFunção exponencial e logarítmica.\n\n\n3. Limite:\n\n\n\tDefinição e propriedades do limite de uma função num ponto. Indeterminações (0/0  e  +00-00). Continuidade de funções.\n\n\n4. Derivada: \n\n\n\tInterpretação geométrica. Regras de derivação. Derivadas de ordem superior. Regra de Cauchy.\n\n\n5. Estudo global de uma função:\n\n\n\tMonotonia e extremos relativos. Concavidade e pontos de inflexão. Assíntotas. Gráficos.\n\n\n6. Integração:\n\n\n\tPrimitiva imediata. Primitivação por substituição e por partes. Integral definido, teorema fundamental do cálculo.  Aplicações da integração (áreas de figuras planas).\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 4,
+  "fields": {
+    "nome": "Matemática Discreta",
+    "codigo": "ULHT260-1656",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Na UC de Matemática Discreta pretende-se contribuir para a aquisição de um conjunto de competências nos alunos: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral e capacidade de raciocínio matemático. Para tal, serão estudados conceitos de lógica matemática, teoria de conjuntos, teoria de números e teoria da computação.\n",
+    "objetivos": "Os objetivos principais desta disciplina são:\n\nOA1. Aplicar propriedades elementares das operações lógicas e de quantificação;\n\nOA2. Construir e analisar argumentos matemáticos;\n\nOA3. Explicar os conceitos básicos sobre conjuntos e funções e realizar operações elementares sobre estes objetos matemáticos;\n\nOA4. Entender a teoria dos números;\n\nOA5. Construir e compreender autómatos finitos e máquinas de Turing;\n\nOA6. Contribuir para a aquisição de um conjunto de competências: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral.\n",
+    "programa": "CP1. Preliminares de Lógica\n\nCP2. Teoria de conjuntos\n\nCP3. Funções\n\nCP4. Teoria de números\n\nCP5. Teoria da computaçao\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 5,
+  "fields": {
+    "nome": "Sistemas Digitais",
+    "codigo": "ULHT260-7",
+    "ano_curricular": 1,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta Unidade Curricular (UC) visa apresentar aos estudantes os conceitos básicos conducentes à compreensão de Unidades Curriculares mais avançadas, nomeadamente no domínio da arquitetura de computadores. Tem ainda como objetivo potenciar o desenvolvimento do raciocínio lógico, capacidade essencial para a análise e compreensão de enunciados, de modo a conseguir decompor um problema em partes lógicas, identificando as etapas necessárias à construção de sistemas digitais.\n",
+    "objetivos": "Esta UC tem como principal objetivo apresentar aos alunos as ferramentas necessárias para a introdução ao funcionamento de máquinas. Um dos objetivos principais é a apresentar aos alunos novas bases numéricas, uma vez que estas constituem o principal alicerce de sistemas digitais. \n",
+    "programa": "Aulas teóricas:\n\n\n\tCódigos Numéricos e Sistemas de Numeração\n\tCircuitos Lógicos Básicos\n\tÁlgebra de Boole\n\tFunções Lógicas\n\tCircuitos Digitais LSI e MSI\n\tCircuitos Combinatórios Básicos\n\tSíntese de Circuitos Sequenciais Elementares\n\tCircuitos Digitais com Memória\n\n\nAulas práticas:\n\n\n\tCódigos Numéricos e Sistemas de Numeração\n\tSimulação de Componentes Básicos\n\tProjeto Simples de Sistemas Digitais\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 6,
+  "fields": {
+    "nome": "Álgebra Linear",
+    "codigo": "ULHT260-2091",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Nesta unidade curricular, os estudantes irão aprender a trabalhar com matrizes, sistemas de equações lineares e espaços vetoriais reais, essenciais para a resolução de diversos problemas reais.\n\n \n",
+    "objetivos": "No final desta unidade curricular, os estudantes devem saber:\n\nOA1. Dominar os conceitos e as operações elementares sobre matrizes;\n\nOA2. Discutir e resolver sistemas de equações lineares e utilizar o método de eliminação de Gauss;\n\nOA3. Formular e resolver problemas do mundo real usando sistemas de equações lineares;\n\nOA4. Reconhecer os conceitos de espaço vetorial e transformação linear e utilizá-los na resolução de problemas destes domínios;\n\nOA5. Calcular determinantes e compreender a sua utilidade;\n\nOA6. Determinar os valores próprios e os vetores próprios e saber utilizá-los no processo de diagonalização;\n\nOA7. Identificar e utilizar os conteúdos abordados na resolução de problemas reais.\n\n \n",
+    "programa": "CP1. Matrizes\n\nCP2. Sistemas de equações lineares\n\nCP3. Espaços vetoriais reais\n\nCP4. Transformações lineares\n\nCP5. Determinantes\n\nCP6. Valores e vetores próprios de matrizes\n\n \n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 7,
+  "fields": {
+    "nome": "Algoritmia e Estruturas de Dados",
+    "codigo": "ULHT260-13397",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "Esta UC surge no 2º semestre do 1º ano, na continuação do trabalho iniciado em Fundamentos de Programação (FP). Em FP, os alunos deram os primeiros passos na programação e preocuparam-se principalmente em produzir programas correctos. Agora, em Algoritmia e Estruturas de Dados, irão continuar a produzir programas correctos mas com preocupações de desempenho, a nível de tempo de execução e consumo de memória.\r\n\r\nEsta é uma UC fundamental no currículo de um Engenheiro Informático, que na sua vida profissional encontrará inúmeras situações em que terá que resolver problemas causados por fraco desempenho das aplicações e que exigem um conhecimento sólido dos princípios subjacentes aos principais algoritmos e estruturas de dados.\r\n\r\nNão obstante a aprendizagem de conceitos e técnicas de algoritmia e estruturas de dados, os alunos trabalham outras competências fundamentais. Nomeadamente, o espírito crítico e a capacidade de avaliar várias alternativas para resolver os problemas.",
+    "objetivos": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais de algoritmos e das estruturas de dados básicas, numa perspetiva de resolver problemas complexos de uma forma eficiente. O aluno deverá ser capaz de analisar e avaliar a eficiência de um algoritmo sem necessidade de o implementar ou testar. Deverá ser igualmente capaz de aplicar a estrutura de dados mais eficaz e eficiente para resolver um determinado problema.\r\n\r\nConcretamente, o aluno deverá conseguir criar programas em Java cuja eficiência seja um critério significativo de sucesso (ex: pesquisa, ordenação).",
+    "programa": "funções recursivas, algoritmos recursivos\r\n\ttipos de dados complexos\r\n\teficiência e optimização (algorítmica e não-algorítmica)\r\n\tcomplexidade de algoritmos\r\n\talgoritmos de pesquisa\r\n\talgoritmos de ordenação - bubble sort, selection sort, merge sort, quick sort \r\n\ttipos de dados abstractos - pilhas e filas\r\n\tlistas ligadas\r\n\tárvores binárias, árvores ordenadas, árvores AVL\r\n\thashtables",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 8,
+  "fields": {
+    "nome": "Arquitetura de Computadores",
+    "codigo": "ULHT260-5857",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta unidade curricular (UC) descreve o funcionamento de um computador moderno. Os estudantes aprendem quais são as componentes de um computador, as instruções máquina, o funcionamento do processador, a organização e funcionamento da memória e o paralelismo como forma de melhorar o desempenho. O estudo é baseado no processador RISC-V 32 bits.",
+    "objetivos": "Entender o funcionamento dos computadores, com o foco na interação dos programas com o hardware. Reconhecimento das potencialidades e limitações de um computador. Entendimento da forma como interagem os diversos elementos da estrutura/arquitetura de um computador.",
+    "programa": "Programa\r\n\r\n\r\n\tIntrodução à arquitetura de Computadores\r\n\tInstruções máquina\r\n\tProcessador\r\n\tMemória\r\n\tParalelismo\r\n\r\n\r\nNas Aulas Práticas os estudantes fazem exercícios e usam simuladores para executarem os programas e observarem a sua interação com o hardware.",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 9,
+  "fields": {
+    "nome": "Competências Comportamentais",
+    "codigo": "ULHT260-17267",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 4,
+    "descricao": "Esta unidade curricular (UC) inscreve-se num contexto onde têm sido elencadas necessidades de adaptação dos especialistas em informática ao contexto das organizações, nomeadamente no que às denominadas soft skills diz respeito. Assim, pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para a domínio profissional.",
+    "objetivos": "Pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para a domínio profissional.",
+    "programa": "1. Marketing Pessoal e personal skills development:\r\n\r\na. CV;\r\n\r\nb. Portefólio;\r\n\r\nc. Apresentação pessoal e comunicação interpessoal;\r\n\r\nd. Apresentação em público e ferramentas para o efeito;\r\n\r\ne. Redes sociais e Networking.\r\n\r\n2. Gestão de tempo:\r\n\r\na. Trabalho remoto e comunicação mediada;\r\n\r\n3. As tecnologias no trabalho: oportunidades e ameaças;\r\n\r\n4. Trabalho em equipa;\r\n\r\n5. Resolução de problemas e Pensamento crítico.\r\n\r\n6. Factos Vs Opiniões;\r\n\r\n7. Work-life balance.\r\n\r\n8. O fator Humano na IA",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 10,
+  "fields": {
+    "nome": "Linguagens de Programação I",
+    "codigo": "ULHT260-498",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta unidade curricular oferece uma extensa exploração da programação procedural usando a linguagem de programação C, abrangendo tópicos fundamentais e avançados. Os alunos obterão uma compreensão abrangente da história da programação C e dos seus benefícios, bem como aprenderão a criar e executar programas simples em C. O currículo concentra-se em conceitos essenciais, incluindo tipos de dados, variáveis, estruturas de controlo, funções e ponteiros, com oportunidades de experiência prática para reforçar o conhecimento. A unidade curricular também aborda tópicos avançados, como manipulação de ficheiros, alocação dinâmica de memória e estruturas de dados como listas e filas. Através de projetos de programação, os alunos desenvolverão experiência prática, com ênfase particular em obter uma compreensão completa da organização e operação da memória do computador como um recurso. No final do curso, os alunos serão capazes de criar programas eficientes que fazem uso eficaz da memória.\n",
+    "objetivos": "No final desta Unidade Curricular, os alunos deverão ser capazes de criar programas C eficientes e rápidos, tendo em consideração o uso correto da memória. Deverão adquirir uma compreensão sólida da abstração procedural e ser capazes de analisar e criar algoritmos simples usando essa abordagem. Além disso, os alunos devem entender os princípios por trás dos sistemas \"coletores de lixo\" em linguagens de alto nível, e da operação de bibliotecas de estruturas de dados. O curso visa fornecer aos alunos conhecimentos necessários para criar programas em C bem projetados, eficientes e robustos e para entender os princípios fundamentais que sustentam a operação das linguagens de programação modernas.\n",
+    "programa": "M0: Introdução: Visão geral, programação C, história, benefícios, configuração do ambiente, programa simples\n\nM1: Sintaxe Básica: Definições, tipos de dados, operadores, entrada/saída, estruturas de controlo\n\nM2: Estruturas de controle avançadas: Switch, break/continue, goto\n\nM3: Funções: definição/invocação, argumentos/valores de retorno, recursão\n\nM4: Matrizes e Strings: Definições, vectores de caracteres, strings, funções, matrizes 2D\n\nM5: Ponteiros: Definições, aritmética, pilha/heap, alocação dinâmica de memória\n\nM6: Ponteiros Avançados: Ponteiros para ponteiros/funções\n\nM7: Estruturas e Uniões: Definições, estruturas aninhadas, uniões\n\nM8: Entrada/saída de arquivo: visão geral, abertura/leitura/gravação de ficheiros, entrada/saída binária\n\nM9: Diretivas e Macros do Pré-processador: Definições, #define, #ifdef, #undef, macros com parâmetros\n\nM10: Operadores bit a bit: Definições, operadores bit a bit AND/OR/XOR/NOT/shift\n\nM11: Listas Ligadas: Definições, criação/manipulação, exemplos, pilhas/filas\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 11,
+  "fields": {
+    "nome": "Matemática II",
+    "codigo": "ULHT260-505",
+    "ano_curricular": 1,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Geométria analítica e calculo diferencial e integral para funções reais de várias variáveis reais.\n",
+    "objetivos": "Conferir competências nas técnicas e aplicações do cálculo diferencial e integral com funções de várias variáveis. Dominar os conceitos de limite, continuidade e diferenciabilidade de funções. Dominar o cálculo de integrais múltiplos.\n\nTer capacidade de resolver problemas em contextos diversificados usando os métodos do cálculo diferencial e integral. Conhecer as aplicações a problemas de otimização, de caracterização geométrica de curvas e superfícies e de cálculo de volumes e áreas.\n",
+    "programa": "1. Vectores e geometria do espaço\n\n1.1 Coordenadas cartesianas tridimensionais.\n\n1.2 Vectores, produto escalar.\n\n1.3 Rectas e planos.\n\n1.4 Superfícies cilíndricas e quádricas.\n\n1.5 Noções topologicas\n\n2. Funções vectoriais de variável real\n\n2.1 Funções vectoriais e curvas no espaço.\n\n2.2 Limites e continuidade. Diferenciabilidade, vector tangente a uma curva.\n\n2.3 Integração, comprimento de uma curva.\n\n3. Funções de várias variáveis\n\n3.1 Dominios e  curvas de nível.\n\n3.2 Limites e continuidade.\n\n3.3 Derivadas parciais, derivadas de ordem superior.\n\n3.4 Diferenciabilidade, planos tangentes e aproximações polinómiais.\n\n3.5 Derivada direccional, vector gradiente e sua interpretação geométrica.\n\n3.6 Matriz Hessiana, extremos locais e pontos de sela.\n\n4. Integrais múltiplos\n\n4.1 Integrais duplos.\n\n4.2 Coordenadas polares e mudança de variáveis em integrais duplos.\n\n4.3 Integrais triplos.\n\n4.4 Coordenadas cilíndricas e esféricas. Mudança de variáveis em integrais triplos.\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 12,
+  "fields": {
+    "nome": "Arquiteturas Avançadas de Computadores",
+    "codigo": "ULHT260-13398",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "Esta unidade curricular vem completar os conhecimentos adquiridos anteriormente nas UCs de Sistemas Digitais e Arquitectura de Computadores, abordando temas mais actuais e conceitos de mais alto nível. A compreensão destes conceitos avançados de arquitectura de computadores faz com que os alunos tomem consciencia das limitações e possibilidades do hardware. Consequentemente poderão criar programas mais eficientes, capazes de tirar partido das capacidades do hardware e que tenham em conta as eventuais limitações deste.\n",
+    "objetivos": "Os estudantes devem conhecer os componentes de um computador moderno e compreender o seu funcionamento e as suas interações. Devem ser capazes de identificar o fluxo de dados e analizar o desempenho de um computador.\n\nEsta competência é diretamente aplicável nos domínios do hardware e da administração de sistemas, e indiretamente aplicável no domínio do software - permitindo formar futuros engenheiros informáticos que tomem decisões de análise, desenho e implementação de software que tirem partido das capacidades do hardware e tenham em conta as eventuais limitações destas.\n",
+    "programa": "1. Introdução\n\n2. O processador\n\n    Principais módulos funcionais\n\n    Condutas e riscos\n\n    Exceções\n\n    Paralelismo ao nível da instrução\n\n3. Hierarquia de memória\n\n    Dispositivos e tecnologia de armazenamento: disco magnético, memória flash\n\n    Memórias cache\n\n    Memória virtual\n\n    Confiabilidade na hierarquia de memória\n\n    Paralelismo: coerência entre caches, RAID\n\n4. Arquiteturas paralelas\n\n    Limites de frequência, dissipação de energia e memória\n\n    Paralelismo e limites ao aumento de desempenho\n\n    SIMD e processadores vetoriais\n\n    Multithreading em hardware\n\n    Arquiteturas de multiprocessador¿ aglomerados e computação em grelha.\n\n    GPUs\n\n    Medição de desempenho\n\n5. Virtualização\n\n    Origens e definição do conceito de máquina virtual\n\n    Conceito de hipervisor\n\n    Variantes de implementação\n\n    Virtualização de sistema: processador, memória, periféricos (E/S)\n\n    Exemplos de plataformas\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 13,
+  "fields": {
+    "nome": "Bases de Dados",
+    "codigo": "ULHT260-1792",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta unidade curricular tem por objetivo apresentar a importância da Gestão de Dados no seio de uma empresa, de forma a garantir quer a operação diária de negócio, bem como o apoio à decisão estratégica.\n\nNesta unidade reforçar-se-á o enquadramento de estruturação e metodologias de criação das bases de dados.\n",
+    "objetivos": "São objetivos dotar os estudantes dos conhecimentos teóricos e práticos necessários à concepção, construção e análise de bases de dados relacionais: nomeadamente obter as seguintes aptidões e\n\ncompetências:\n\n1. Compreender as razões de implementação de bases de dados relacionais no mundo empresarial\n\n2. Transpor de uma análise de requisitos para um modelo entidade-associação para desenhar bases de dados;\n\n3. Aplicar os conceitos do modelo relacional de bases de dados, transformando o modelo entidade-associação, em modelo físico de dados;\n\n4. Aplicar as técnicas de normalização de tabelas;\n\n5. Compreender arquitetura e principais componentes de Sistemas de Gestão de Bases de Dados;\n\n6. Utilizar a linguagem SQL base e avançado para a criação, consulta e modificação de bases de dados;\n",
+    "programa": "O programa da unidade curricular é:\n\nA) Componente Teórico\n\n\n\tIntrodução\n\tModelo de relacionamento entre entidades\n\tO modelo relacional\n\tRefinamento de esquema: Conceito de normalização e transações\n\tArquitetura de SGBD e algum SQL Avançado\n\n\nB) Componente Prática\n\n\n\tIntrodução à linguagem SQL;\n\tInstruções: DDL, DML (DQL) e DCL\n\tOperações: WHERE, ORDER BY, GROUP BY;\n\tConceito avançados em SQL: Controlo de erros\n\tOperadores Relacionais: União, intersecção e Subtracção\n\tProduto Cartesiano (externo)\n\tQueries complexos (filtro com valores agregados) e sub-queries\n\tSet DDL; Instrução CREATE; Tipos de dados; Nulidade; Instruções ALTER e DROP\n\tINDICES e VIEWS\n\tControlo de erros: estrutura TRY¿CATCH\n\tProcedimentos (SP) e Triggers\n\tOperações com tabelas: Cursores\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 14,
+  "fields": {
+    "nome": "Desenvolvimento de Interfaces Web",
+    "codigo": "ULHT260-26141",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 3,
+    "descricao": "Esta Unidade Curricular fornece formação completa em desenvolvimento front-end, abordando HTML, CSS, JavaScript, React e Next.js. São integradas práticas profissionais, incluindo Git Flow, GitHub, Codespaces, GitHub Pages e Vercel, permitindo que os alunos adquiram competências em ambientes colaborativos e de produção. A UC visa desenvolver tanto a capacidade técnica como a criatividade, incentivando a criação de aplicações eficientes, funcionais e com boa experiência de utilizador. Esta formação prepara os alunos para enfrentar desafios reais em projetos empresariais, promovendo a utilização de ferramentas e metodologias modernas essenciais para qualquer profissional da área de informática.\n",
+    "objetivos": "\n\t\n\tCompreender o funcionamento da Internet e da Web e o seu impacto no desenvolvimento de aplicações.\n\t\n\t\n\tAplicar princípios de programação Web e padrões de arquitetura usando HTML, CSS, JavaScript, React e Next.js.\n\t\n\t\n\tCriar interfaces interativas, responsivas e escaláveis para aplicações front-end.\n\t\n\t\n\tIntegrar APIs e utilizar ferramentas como Git, GitHub, Codespaces, GitHub Pages e Vercel no ciclo de desenvolvimento.\n\t\n\t\n\tAvaliar e selecionar abordagens de design e arquitetura adequadas a cada contexto.\n\t\n\t\n\tDesenvolver e publicar aplicações Web criativas, funcionais e prontas para produção na cloud.\n\t\n\n",
+    "programa": "Módulo 1: A Web e seus Paradigmas\n\n\n\t\n\tFuncionamento da Web: IP, HTTP, client-server\n\t\n\t\n\tVisão geral de tecnologias, paradigmas e padrões de desenho da Web\n\t\n\n\n\nMódulo 2: HTML e CSS para Desenho de Páginas Web\n\n\n\t\n\tHTML e seus elementos para estruturação de conteúdos multimédia\n\t\n\t\n\tFormulários para envio de dados\n\t\n\t\n\tHTML5 e elementos semânticos\n\t\n\t\n\tCSS e seus seletores para estilização de conteúdos\n\t\n\t\n\tPropriedades CSS\n\t\n\t\n\tLayouts dinâmicos com CSS Flexbox e CSS Grid\n\t\n\t\n\tDesign responsivo com media queries\n\t\n\t\n\tEfeitos e animações CSS\n\t\n\t\n\tPrincípios de Web Design\n\t\n\n\n\nMódulo 3: JavaScript para Programação Front-End\n\n\n\t\n\tIntrodução ao JavaScript\n\t\n\t\n\tProgramação Orientada a Eventos\n\t\n\t\n\tManipulação de elementos do DOM\n\t\n\t\n\tComportamento de conteúdos\n\t\n\t\n\tData-attributes, Local Storage, Cookies\n\t\n\t\n\tAJAX\n\t\n\t\n\tInteração com REST APIs\n\t\n\t\n\tSingle Page Applications\n\t\n\n\n\nMódulo 4: React e Next.js\n\n\n\t\n\tComponentes e JSX\n\t\n\t\n\tGestão de estado e Context API\n\t\n\t\n\tRoteamento e renderização com Next.js\n\t\n\t\n\tFetching de dados e API routes\n\t\n\t\n\tEstilização e design responsivo\n\t\n\n\n \n\n\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 15,
+  "fields": {
+    "nome": "Linguagens de Programação II",
+    "codigo": "ULHT260-898",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "Esta UC é o culminar de um caminho iniciado em Fundamentos de Programação e aprofundado em Algoritmia e Estruturas de Dados, solidificando os conhecimentos de programação. Com um foco no desenvolvimento e manutenção de programas de elevada complexidade, o paradigma imperativo deixa de ser suficiente e são abordados os paradigmas orientado a objectos e funcional. São igualmente abordados conceitos adjacentes à fase de implementação, como o controlo de versões, os testes unitários e funcionais, a cobertura de código e outras métricas de qualidade. Esta é uma UC fundamental na formação de qualquer profissional da área de Informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais nos projectos empresariais em que estes alunos virão a estar inseridos.\n",
+    "objetivos": "Esta UC tem como objetivo apresentar uma visão multi-paradigma da programação. São analisados e comparados os 3 paradigmas mais populares: imperativo, orientado a objectos e funcional. Os alunos revêm conceitos da programação imperativa e adquirem conceitos fundamentais da programação orientada a objetos (herança, encapsulamento, polimorfismo, etc.) e da programação funcional (lambdas, funções de 1a ordem, etc.) de forma a que consigam aplicá-los em projetos de desenvolvimento de software complexo usando linguagens de programação modernas multi-paradigma (Java, C#, Python, Kotlin, JavaScript).\n\nAo longo do semestre, os alunos são consciencializados para a necessidade de redução de custos de manutenção através de melhorias na qualidade do software produzido e aplicação de boas práticas tirando partido das vantagens específicas de cada paradigma. São igualmente expostos a ferramentas essenciais no desenvolvimento moderno de software, como controlo de versões e testes unitários.\n\nTodos estes conceitos são aplicados num projeto de elevada complexidade, multi-paradigma e multi-linguagem que atinge em média as 2500 LOC. O projeto tem que ser desenvolvido em Git e ter uma cobertura elevada de testes unitários. Mais do que as capacidades técnicas, os alunos trabalham a gestão de tempo, o rigor e a resiliência, a capacidade analítica e espírito crítico, a criatividade e o trabalho em equipa.\n",
+    "programa": "\n\tParadigmas de programação\n\t\n\t\tImperativo, funcional, orientado a objetos\n\t\n\t\n\tConceitos de programação por objectos\n\t\n\t\tEntidades, Atributos, Acções\n\t\tClasse vs Objecto, Principio do encapsulamento\n\t\tHerança, polimorfismo, parametrização por herança, composição\n\t\tUML\n\t\t\n\t\t\tDiagramas de classes\n\t\t\n\t\t\n\t\n\t\n\tJava orientado a objectos\n\t\n\t\tClasses, objectos, variáveis\n\t\tConstrutores, métodos\n\t\tVisibilidade, Exceptions\n\t\tEstruturas de dados: Arrays, Lists, Maps\n\t\tHerança, classes abstractas\n\t\tInput/Output\n\t\n\t\n\tTestes unitários\n\t\n\t\tJUnit\n\t\n\t\n\tControlo de versões\n\t\n\t\tGit, Github\n\t\n\t\n\tPadrões de desenho\n\t\n\t\tFactory, Singleton, Observer/Observable, Composite\n\t\n\t\n\tConceitos de programação funcional em Kotlin\n\t\n\t\tFunções puras, lambdas, funções de primeira ordem, iteração interna, operações com listas\n\t\n\t\n\tBoas práticas de programação multi-paradigma\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 16,
+  "fields": {
+    "nome": "Processamento de Imagem",
+    "codigo": "ULHT260-19082",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 4,
+    "descricao": "\n\nOs objectivos desta UC são:\n\n\n\t\n\tEnsinar aos alunos competências que lhes permitam, no papel de “software developer”, delegar de forma responsável partes do trabalho de desenvolvimento de software em LLMs e outras ferramentas de IA Generativa. Exemplos: requisitos, funções / classes pequenas, eventualmente testes, etc.\n\t\n\t\n\tDesenvolver o pensamento crítico face a estas novas ferramentas e outras do mesmo género (avaliar, questionar os resultados, comparar, tirar conclusões, etc.)\n\t\n\t\n\tDesenvolver competências de comunicação clara e não ambígua (p.e. dar exemplos, contextualizar, etc.)\n\t\n\t\n\tPromover uso ético e responsável no uso destas ferramentas.\n\t\n\n",
+    "objetivos": "- Conhecer e compreender os funcionamentos base dos Large Language Models, as suas características, limitações, e afins\n\n- Code reading: leitura e interpretação de programas de forma sistemática\n\n- Debugging: recorrendo ao debugger do IntelliJ\n\n- Unit Testing: recorrendo ao JUnit\n\n- Exploração e documentação de de código existente usando LLMs\n\n- Pensamento crítico e pensamento céptico\n\n- Code Review: análise crítica de código\n\n- Técnicas de \"Prompt engineering\"\n",
+    "programa": "\n\tLiteracia de IA Generativa\n\t\n\t\tIntrodução aos Large Language Models\n\t\tÉtica e Direitos de Autor\n\t\tImplicações éticas do uso dos LLMs (ética, propriedade intelectual, segurança, …)\n\t\tTécnicas de melhoria de soluções dos LLMs:  fine tunning, RAG, prompt engineering\n\t\n\t\n\tLeitura e análise sistemática de código\n\tDebugging com recurso ao debugger do IntelliJ\n\tPensamento Crítico e Pensamento Céptico\n\t\n\t\tIntrodução aos 2 tipos de pensamento\n\t\tDiferenças chave entre os 2 tipos de pensamento\n\t\tA importância dos 2 tipos de pensamento na era dos LLMs\n\t\n\t\n\tDecomposição de problemas e modularização\n\tTestes de Software\n\t\n\t\tTipos de testes (e.g., manuais, automaticos, integração, unitários, etc)\n\t\tTestes Unitários com JUnit\n\t\n\t\n\tTest Driven Development (TDD)\n\tIntrodução à Revisão/Verificação de Código (Code Review)\n\tExploração de Código Existente com base em LLMs\n\tIntegração de LLMs em software via API\n\tRetrieval Augmented Generation\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 17,
+  "fields": {
+    "nome": "Sistemas Operativos",
+    "codigo": "ULHT260-6305",
+    "ano_curricular": 2,
+    "semestre": 1,
+    "ects": 6,
+    "descricao": "O conhecimento do funcionamento de um sistema operativo, a forma como interage com o hardware e como pode ser utilizado eficientemente pelos utilizadores e programadores é uma componente fundamental da formação em informática.\n\nEsta disciplina fornece aos estudantes os conhecimentos teóricos de como funciona um sistema operativo e um computador, e os conhecimentos práticos para desenvolver programas sofisticados para utilizarem eficientemente os recursos do computador.\n\nO conhecimento de um sistema operativo permitirá os alunos terem um melhor entendimento do funcionamento de sistemas atuais.\n",
+    "objetivos": "OA1. Conhecimento teórico de como funciona um sistema operativo\n\nOA2. Capacidade prática para desenvolver programas que usem de forma eficiente os recursos do sistema operativo, incluindo concorrência e sincronização\n",
+    "programa": "CP1 - Introdução aos Sistemas Operativos\n\nCP2 - Processos: virtualização do CPU\n\nCP3 - Gestão de Memória: virtualização da memõria\n\nCP4 - Concorrência e Sincronização\n\nCP5 - Persistência, Sistema de ficheiros\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 18,
+  "fields": {
+    "nome": "Engenharia de Requisitos e Testes",
+    "codigo": "ULHT260-22512",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "A UC de Análise e Conceção de Sistemas tem por objetivo garantir um enquadramento de gestão de Sistemas de Informação e o seu impacto na componente aplicacional, onde a componente de metodologia e engenharia de requisitos, tal como a metodologia e estruturação de testes de software, sejam unitários ou agregados, são essenciais para o sucesso de negócio das empresas.\n",
+    "objetivos": "\n\tEntender o que é Gestão de Sistemas de Informação\n\tPor que é fundamental definir requisitos\n\tSaber desenvolver e gerenciar uma metodologia de definição e estrutura de requisitos\n\tComo alinhar os testes com os requisitos\n\tCompreender a importância de modelar os requisitos e testes\n\tFundamentos de Gestão de Projetos\n\n",
+    "programa": "Estrutura de Capítulos principais de conteúdos\n\n\n\t\n\tVisão de Gerenciamento de Sistemas de Informação\n\t\n\t\n\tEngenharia de Requisitos (Gestão de backlog, BPMN e UML - Modelação)\n\t\n\t\n\tTestes de software\n\t\n\t\n\tGestão de Projetos\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 19,
+  "fields": {
+    "nome": "Probabilidades e Estatística",
+    "codigo": "ULHT260-620",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "A disciplina de Probabilidades e Estatística tem como objetivo fundamental dar ao estudante conceitos fundamentais da teoria da probabilidade e técnicas de estatística descritiva e inferência estatística, essenciais para o estudo de Engenharia. \n",
+    "objetivos": "Esta disciplina permite que o(a) aluno(a)\n\nOA1: seja exposto à probabilidade como uma função de medida essencial à ciência.\n\nOA2: entenda a estatística como uma área da ciência que permite à engenharia recolher dados, analisar dados, formular hipóteses relativas a esses dados e testar essas hipóteses.\n\nOA3: utilize a linguagem de programação R para obter resultados estatísticos e probabilísticos em dados reais.\n\nNessa medida, a estatística e a probabilidade são essenciais ao conhecimento e à engenharia.\n\n \n",
+    "programa": "1. Estatística Descritiva\n\n\n\tClassificação de variáveis\n\tMedidas de localização, de dispersão e de forma\n\tRepresentações gráficas (Gráficos de barras, Histogramas, Caixas de Bigodes...)\n\n\n2. Correlação e Regressão Linear\n\n\n\tCoeficientes de correlação\n\tEstimativa da reta de regressão linear simples\n\tQualidade do ajustamento\n\n\n3. Introdução à Probabilidade\n\n\n\tEspaço de resultados. Acontecimentos. Definição de probabilidade\n\tProbabilidade condicionada\n\tLei das Probabilidade Composta\n\tTeorema da probabilidade total\n\tTeorema de Bayes\n\tAcontecimentos independentes\n\n\n4. Variáveis aleatórias reais\n\n\n\tFunção distribuição\n\tFunção (massa) de probabilidade\n\tDistribuição discreta Bernoulli e Binomial\n\tFunção densidade de probabilidade\n\tDistribuição contínua Normal\n\n\n5. Inferência Estatística\n\n\n\tEstimação pontual\n\tEstimação intervalar\n\t Testes de hipóteses\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 20,
+  "fields": {
+    "nome": "Programação Web",
+    "codigo": "ULHT260-11195",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "Esta Unidade Curricular pretende dar formação na área da programação Web em geral, e em particular no desenvolvimento de aplicações Web back-end e front-end, providenciando uma visão global do desenvolvimento moderno para a Web. No front-end, são introduzidos conceitos de estruturação, estilização e interação de conteúdos através das linguagens HTML, CSS e JavaScript, in. No back-end, é ensinado o desenvolvimento de aplicações empresariais seguindo o padrão de desenho model-view-control, recorrendo à linguagem Python e a Web framework django. Pretende-se estimular a criatividade e imaginação no desenvolvimento de aplicações inovadoras que sejam eficientes, escaláveis e fáceis de modificar por um lado, e que ofereçam uma boa experiência para o utilizador. Esta é uma UC fundamental para qualquer profissional da área da informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais em projetos empresariais em que virão a estar inseridos.\n",
+    "objetivos": "\n\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tEntender o funcionamento da Internet e da Web.\n\t\t\t\tCompreender os princípios da programação Web e seus principais padrões de desenho.\n\t\t\t\tAplicar estes conceitos, usando várias tecnologias (HTML, CSS, JavaScript, Python and Django¿).\n\t\t\t\tArquitetar aplicações eficientes, de fácil manutenção, que corram na Web.\n\t\t\t\tAvaliar as diferentes estratégias de desenho, sabendo escolher a abordagem que mais se adequa ao contexto.\n\t\t\t\tSer capaz de construir e implantar na cloud aplicações Web complexas e criativas, totalmente funcionais (full stack).\n\t\t\t\n\t\t\t\n\t\t\n\t\n\n",
+    "programa": "A Web e seus paradigmas\n\n- Funcionamento da Internet e da Web: arquitetura e protocolos IP e HTTP\n\n- Tecnologias, paradigmas e padrões de desenho da Web\n\nPython para desenvolvimento Web\n\n- Sintaxe, operadores, controlo de fluxos e tipos de dados\n\n- Funções e módulos \n\n- Gestão de ficheiros e pastas   \n\n- Classes \n\nDjango web framework para Back-end\n\n- Web frameworks\n\n- Arquitetura MVT \n\n- Urls, views e templates\n\n- Linguagem template\n\n- Modelação de base de dados, ORM\n\n- Formulários\n\n- Autenticação\n\n- Implantação na cloud \n\nHTML e CSS para desenho de páginas Web\n\n- HTML e seus elementos \n\n- Formulários para envio de dados\n\n- HTML5 e elementos semânticos\n\n- CSS e seus seletores, para estilização de conteúdos\n\n- Propriedades CSS\n\n- Design responsivo e layouts dinâmicos\n\n- Efeitos e animações CSS\n\n- Bootstrap\n\nJavaScript para programação Front-end\n\n- Programação Orientada a Eventos \n\n- Manipulação do DOM \n\n- JSON e APIs\n\n- Single Page Applications\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 21,
+  "fields": {
+    "nome": "Redes de Computadores",
+    "codigo": "ULHT260-1793",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "Esta unidade curricular aborda os fundamentos das redes de computadores e da Internet. Os estudantes exploram a arquitetura de rede em camadas, desde o nível aplicacional até ao nível de ligação, compreendendo protocolos essenciais como HTTP, DNS, TCP, IP e Ethernet. A UC é fundamental para qualquer engenheiro informático, proporcionando as bases para unidades curriculares subsequentes como Computação Distribuída, Segurança Informática e Sistemas de Informação na Nuvem. O conhecimento adquirido permite aos estudantes compreender, analisar e desenvolver sistemas distribuídos e aplicações cloud, bem como diagnosticar problemas de conectividade e desempenho.",
+    "objetivos": "Após a conclusão desta UC, os estudantes serão capazes de:\r\n\r\n1. Compreender a arquitetura da Internet e o modelo de camadas protocolar\r\n\r\n2. Analisar o funcionamento de protocolos aplicacionais (HTTP, SMTP, DNS)\r\n\r\n3. Distinguir os serviços de transporte UDP e TCP, incluindo mecanismos de controlo de fluxo e congestão\r\n\r\n4. Configurar endereços IP, sub-redes, e compreender encaminhamento e NAT\r\n\r\n5. Explicar protocolos de encaminhamento (RIP, OSPF, BGP)\r\n\r\n6. Analisar protocolos de nível de ligação, incluindo Ethernet e WiFi\r\n\r\n7. Utilizar ferramentas de análise de rede como Wireshark e Cisco Packet Tracer",
+    "programa": "1. Introdução\r\n\t\r\n\t\tO que é a internet\r\n\t\tPeriferia vs infraestrutura\r\n\t\tAtraso, perda, débito\r\n\t\tModelo de camadas\r\n\t\r\n\t\r\n\t2. Nível aplicacional\r\n\t\r\n\t\tPrincípios de aplicações distribuídas\r\n\t\tWeb e HTTP (incl. cookies e GET condicional)\r\n\t\tCorreio eletrónico\r\n\t\tDNS\r\n\t\r\n\t\r\n\t3. Nível transporte\r\n\t\r\n\t\tServiços do nível de transporte\r\n\t\tUDP\r\n\t\tTCP\r\n\t\t\r\n\t\t\tpipelining, timeouts, retransmissões\r\n\t\t\tcontrolo fluxo, gestão ligações, controlo congestão\r\n\t\t\r\n\t\t\r\n\t\tTLS\r\n\t\r\n\t\r\n\t4. Nível rede\r\n\t\r\n\t\tServiços, o que está dentro de um router\r\n\t\tIP\r\n\t\t\r\n\t\t\tformato do datagrama, endereçamento IPv4\r\n\t\t\tDHCP, NAT, IPv6\r\n\t\t\r\n\t\t\r\n\t\tAlgoritmos de roteamento\r\n\t\tRoteamento na Internet (RIP, OSPF, BGP)\r\n\t\r\n\t\r\n\t5. Nível ligação\r\n\t\r\n\t\tProtocolos acesso ao meio\r\n\t\tEndereçamento, ARP\r\n\t\tEthernet, VLANs\r\n\t\tRedes móveis/sem fios, WiFi",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 22,
+  "fields": {
+    "nome": "Sistemas de Suporte à Decisão",
+    "codigo": "ULHT260-7303",
+    "ano_curricular": 2,
+    "semestre": 2,
+    "ects": 6,
+    "descricao": "A UC de Sistemas de Suporte à Decisão / Business Intelligence tem por objetivo garantir que há a introdução à temática de processos de análise de dados para apoio às áreas de gestão das empresas. Neste sentido, a UC tem um papel fundamental no ciclo de estudo na compreensão dos processos de gestão e decisão de organizações, para além de como colocar infraestruturas de dados ao serviço do negócio empresarial.\n",
+    "objetivos": "\n\tEntender por que as empresas precisam de um ambiente de BI\n\tQuais componentes da arquitetura existem para BI\n\tEsquemas de modelação para DW\n\tConhecer os vários processos de manipulação de dados em ambientes DW\n\tO que um colaborador/utilizador pode obter em interfaces de relatórios\n\n",
+    "programa": "\n\tDesafios de Negócio de DW\n\tArquitecturas DW\n\tMelhores Práticas de Modelação de DW\n\tImplementação de ETL\n\tBases de Dados específicas para BI\n\tFerramentas de Relatórios\n\tProjetos de BI com Large Language Models (LLMs) e AI Agents\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 23,
+  "fields": {
+    "nome": "Trabalho Final de Curso",
+    "codigo": "ULHT260-5140",
+    "ano_curricular": 3,
+    "semestre": null,
+    "ects": 20,
+    "descricao": "O Trabalho Final de Curso (TFC) é um elemento fundamental do currículo da Licenciaturas, funcionando como um momento nuclear na formação dos alunos, nomeadamente em ordem à\n\npromoção da sua integração profissional e/ou iniciação ao trabalho científico.\n\nO TFC deve corresponder a um projecto aplicado na área objecto de estudo, podendo incluir a realização de projectos de produção de soluções relevantes para os conteúdos dos curso,\n\ndesenvolvimento de software ou projectos de índole mais teórica ou académica. O TFC deve conduzir a resultados finais susceptíveis de utilização em contexto real (aparelho, programa, método, modelo conceptual, contributo para investigação ou conclusões sobre um problema).\n\n \n",
+    "objetivos": "O principal objectivo desta unidade curricular é de integrar os conceitos que foram adquiridos pelo aluno ao longo do curso, num projecto de âmbito alargado e onde o aluno autonomamente resolva um problema.\n\nEste objectivo geral pode ser concretizado por:\n\nOA1. Saber aplicar os princípios e técnicas associadas à conceção e implementação de casos reais ou simulados.\n\nOA2. Saber aplicar os conhecimentos obtidos nas unidades curriculares do curso face a problemas ligados às mesmas, bem como a aplicação dos conhecimentos a novos paradigmas dos SI/TIC não abordados no curso.\n\nOA3. Saber investigar o estado da arte no objeto de estudo.\n\nOA4. Saber desenvolver um trabalho de natureza aplicada que integre os conhecimentos adquiridos ao longo da componente curricular do curso.\n",
+    "programa": "CP1. Orientação.\n\nCP2. Elaboração do estado da arte.\n\nCP3. Desenvolvimento do projeto.\n\n         CP3.1. Identificação de problema\n\n         CP3.2. Planeamento do projecto\n\n         CP3.3. Demonstração de viabilidade\n\n         CP3.4. Execução\n\n         CP3.5. Controlo do projecto\n\n         CP3.6. Testes\n\nCP4. Apresentação dos resultados.\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": [
+      30
+    ]
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 24,
+  "fields": {
+    "nome": "Computação Distribuída",
+    "codigo": "ULHT260-7348",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "A disciplina de Computação Distribuída foca-se no estudo e desenvolvimento de aplicações distribuídas modernas, combinando fundamentos teóricos com uma forte componente prática. São analisadas as principais características destes sistemas, como escalabilidade, consistência, tolerância a falhas, resiliência e segurança, bem como os desafios arquiteturais e de implementação. Na prática, os estudantes utilizam Java e Spring Boot para criar microsserviços que comunicam através de APIs REST e Apache Kafka, com persistência em bases de dados relacionais (PostgreSQL) e documentais (MongoDB). São explorados conceitos de containerização e deployment com Docker, testes em sistemas distribuídos e padrões avançados de coordenação como SAGAs e consistência eventual. O curso culmina num projeto final agregador de conteúdos, onde os alunos desenvolvem um sistema completo, aplicando os conhecimentos adquiridos e sistematizando as competências técnicas e transversais essenciais para o mercado.\n",
+    "objetivos": "No final da unidade curricular, os estudantes deverão conhecer os conceitos fundamentais e os principais desafios da computação distribuída, com foco em desempenho, fiabilidade, resiliência e segurança. Serão capazes de aplicar técnicas de design e boas práticas para modelar soluções distribuídas adequadas a diferentes contextos, desenvolver microsserviços com comunicação síncrona e assíncrona, integrar persistência de dados e mecanismos de coordenação entre serviços. Além disso, terão oportunidade de experimentar metodologias e ferramentas que suportam o ciclo de vida de sistemas distribuídos, incluindo containerização, monitorização e estratégias de teste. Pretende-se ainda que os estudantes demonstrem competências transversais de trabalho em equipa, comunicação técnica e resolução de problemas em ambientes complexos, consolidando uma preparação sólida para desafios reais de desenvolvimento e arquitetura de software distribuído.\n",
+    "programa": "1. Introdução. Caracterização, requisitos, arquitectura e funcionalidades\n\n2. Arquitecturas e Modelos de Comunicação Distribuída. Arquitecturas de sistemas, níveis de software\n\n3. Comunicação entre Processos Distribuídos (IPC). Características da comunicação entre processos, Invocação, parâmetros e heterogeneidade de dados\n\n4. Invocação Remota e Objectos Distribuídos. RPC: Modelo de execução. Linguagem de definição de interfaces (IDL). Plataformas de execução: Sun RPC, Java RMI\n\n5. Nomeação e Serviços de Directório. Tipos de Nomes. Espaços de nomeação. Serviços de Directório (Web, X.500, LDAP)\n\n6. Web Services (WS). Modelo de Execução Web Services (WS). O protocolo SOAP. Linguagens de definição de Serviços (WSDL)\n\n7. Segurança. Modelo de segurança. Autenticação. Controlo de acesso\n\n8. Sistemas de Ficheiros Distribuídos. Arquitecturas de SGF distribuídos. Implementações: NFS e AFS\n\n9. Transações. Modelo transaccional. Propriedades ACID das transacções. Transacções distribuídas. Protocolo 2-phase-commit\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 25,
+  "fields": {
+    "nome": "Data Science",
+    "codigo": "ULHT260-22513",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "Esta cadeira tem como objetivo apresentar as técnicas e metodologias fundamentais para a análise de dados na perspectiva interdisciplinar de um Cientista de Dados. Na primeira parte da cadeira, os alunos aprendem sobre a natureza diversa dos dados e o poder simbólico das diferentes estruturas de dados para representar informação. Tal compreensão fundamental leva naturalmente a um segundo momento da cadeira no qual os alunos aprendem como interrogar e extrair informações dos dados e justificar suas escolhas. Durante esta segunda parte, os alunos aprendem sobre inferência estatística, testes de hipóteses, abordagens freqüentistas versus Bayesianas para pensar em dados, correlação e causalidade. Finalmente, na terceira parte do módulo, os alunos aprendem os fundamentos da aprendizagem de máquina por meio da teoria e prática dos métodos de regressão, classificação e redução de dimensionalidade.\n",
+    "objetivos": "\n\tCaracterizar tipos e estruturas de dados em conjuntos tabulares\n\tCalcular e interpretar estatísticas descritivas\n\tCriar e interpretar visualizações univariadas e bivariadas\n\tRealizar uma análise exploratória de dados estruturada e comunicar conclusões\n\tConstruir e avaliar modelos de base, incluindo regressão linear e logística\n\tAplicar métodos não supervisionados como k-means para agrupamento\n\tSelecionar e interpretar métricas de avaliação, compreendendo o compromisso viés–variância\n\tRelacionar conceitos de pensamento estatístico com a prática de aprendizagem automática (ML)\n\n\n\n",
+    "programa": "\n\tIntrodução à Ciência de Dados e funções no campo\n\tTipos de dados e estruturas de dados tabulares\n\tEstatística descritiva: tendência central e dispersão\n\tVisualização univariada: histogramas, KDE, boxplots, outliers, assimetria\n\tAnálise bivariada: gráficos de dispersão e pares, relações lineares e não lineares\n\tCorrelação: Pearson e Spearman, força vs significância\n\tDados categóricos: tabelas de contingência, proporções, resumos agrupados\n\tPipelines de Análise Exploratória de Dados (AED) e narrativa de dados\n\tFundamentos de aprendizagem automática\n\tRegressão linear: ajuste do modelo, resíduos, R², sobreajuste, interpretação\n\tRegressão logística: classificação binária, sigmoide, log-odds, ROC, precisão, F1\n\tClustering: k-means, método do cotovelo, introdução ao clustering hierárquico, aplicações\n\tValidação e avaliação de modelos\n\tPensamento estatístico\n\tRevisão e integração de conceitos\n\n\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 26,
+  "fields": {
+    "nome": "Engenharia de Software",
+    "codigo": "ULHT260-7341",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": "A Engenharia de Software ensina o desenho, escrita de código e testes, e manutenção de programas que têm um propósito de resolver problemas complexos com soluções eficientes e seguras. Todas as unidades curriculares anteriores tem um maior foco na sintaxe e técnicas de programação enquanto nesta unidade curricular os alunos aprendem as técnicas de de desenhar e desenvolver software de uma forma eficiente, legível, modular e escalável.\n\nEsta unidade curricular é essencial para desenvolver as capacidades de desenho e programação que os alunos vão enfrentar no mercado de trabalho.\n",
+    "objetivos": "OA1. Compreender os métodos, técnicas e ferramentas para o completo desenvolvimento de um sistema de software, desde a sua conceção até à sua entrega e manutenção.\n\nOA2. Saber planear, gerir, avaliar e garantir a qualidade do desenvolvimento de projetos de software utilizando os princípios da Engenharia de Software.\n\n \n",
+    "programa": "\n\tCP1. Introdução à Engenharia de Software;\n\tCP2. Modelos e processos desenvolvimento de software;\n\t\n\t\t Modelos Clássicos: Cascata (contexto histórico)\n\t\tModelos Ágeis: Agile (framework de Scrum)\n\t\n\t\n\tCP3. Modelação de sistemas;\n\t\n\t\tAnálise de requisitos\n\t\tDiagrama de domínio\n\t\tDiagrama de conceitos\n\t\tCasos de uso\n\t\n\t\n\tCP4. Desenho da arquitectura;\n\t\n\t\tAnálise\n\t\tDesenho\n\t\tAvaliação\n\t\tEvolução\n\t\n\t\n\tCP5. Desenho e implementação;\n\t\n\t\tPadrões UML\n\t\tPrincípios de desenvolvimento orientado a objectos: S.O.L.I.D, KISS, entre outros.\n\t\n\t\n\tCP6. Verificação e validação;\n\t\n\t\tConhecer os diferentes tipos de testes\n\t\tAplicação de testes unitários\n\t\n\t\n\tCP7. Segurança e Confiabilidade\n\tCP8. Integração Contínua\n\t\n\t\tVantagens\n\t\tFerramentas e tecnologias\n\t\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 27,
+  "fields": {
+    "nome": "Interação Humano-Máquina",
+    "codigo": "ULHT260-11047",
+    "ano_curricular": 3,
+    "semestre": 1,
+    "ects": 5,
+    "descricao": " \n\n \n\n A disciplina Interação Humano-Máquina tem por principal objetivo dotar os estudantes de competências metodológicas, de design, de comunicação e de fatores humanos, que lhes permitam desenhar produtos e serviços com as pessoas e para as pessoas. Num mundo cada vez mais digital, a inclusão de todas as pessoas/cidadãos é cada vez mais necessária. A Humanização da Tecnologia é mais do que uma boa experiência do Utilizador. Na prática e, aplicando os conhecimentos teóricos a projetos, os estudantes deverão ser capazes de criar artefactos (em tecnologias de informação) que melhorem a forma como as pessoas trabalham, comunicam e interagem numa sociedade inclusiva.\n",
+    "objetivos": "\n\t\n\tAdquirir competências em Desenho de Interação e Desenho Inclusivo.\n\t\n\t\n\tCompreender como a perceção humana e funções cognitivas influenciam a interação entre o humano e o computador. Compreender que a diferentes interações correspondem diferentes interfaces utilizador.\n\t\n\t\n\tCompreender o impacto dos públicos heterogéneos e dos fatores culturais no desenho de aplicações\n\t\n\t\n\tAprender metodologias de projeto que facilitem o desenho de experiências satisfatórias para o utilizador;\n\t\n\t\n\tCriar protótipos de alta fidelidade e recolher feed-back junto do Público-Alvo;\n\t\n\t\n\tAprender a planear, desenhar e realizar estudos de avaliação da usabilidade ao longo do ciclo de desenvolvimento de software. Saber tratar e analisar dados, bem como apresentar resultados de forma sucinta.\n\t\n\t\n\tAplicar as competências adquiridas ao desenvolvimento de sistemas de informação.\n\t\n\n",
+    "programa": "O que é o Desenho de Interação? Compreender e conceptualizar a interação. O impacto da Teoria da Actividade. Desenhar com a acessibilidade em mente. Princípios para  inclusão. Os contributos da psicologia cognitiva no estudo da interação humano-máquina. Perceção humana e funções cognitivas que influenciam o desempenho do utilizador e a satisfação. Desenvolvimento e Avaliação de Protótipos iniciais. Tipos de estudos em user experience, ao longo do ciclo de vida do projeto. Análise crítica aos resultados do estudo para melhorias no protótipo.\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 28,
+  "fields": {
+    "nome": "Computação Móvel",
+    "codigo": "ULHT260-16925",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta UC é cada vez mais fundamental numa sociedade onde o número de smartphones já ultrapassa largamente o número de computadores e onde se prevê que, num futuro próximo, cada indivíduo se faça acompanhar de um conjunto de dispositivos móveis (smartwatches, smart glasses, sensores, etc.) programáveis, criando a oportunidade para que os engenheiros informáticos possam resolver um vasto conjunto de problemas cuja resolução era até agora impossível ou excessivamente dispendiosa.\n\nA dificuldade está em passar conhecimento que não se esgote no dia em que terminam a UC, dada a velocidade vertiginosa a que evoluem as tecnologias associadas à computação móvel. Nesse sentido, esta UC não pretende apenas ensinar uma linguagem/tecnologia específica mas sim abordar temas intemporais desta área como os vários Modelos de Desenvolvmento, Autonomia, Geo-localização, Conectividade ou Usabilidade.\n",
+    "objetivos": "O objectivo desta unidade curricular é introduzir os conceitos fundamentais da computação móvel. O aluno deverá ser capaz de perceber como tirar o máximo partido das vantagens da computação móvel (localização, sensores, contextual), quando aplicados à resolução de problema concretos. O aluno deverá estar sensibilizado para os constrangimentos típicos de uma aplicação móvel (autonomia, conectividade, usabilidade) e conhecer os mecanismos que permitem ultrapassar esses constrangimentos.\n\nConcretamente, o aluno deverá conhecer os 4 modelos de desenvolvimento de aplicações móveis (Web, Híbrido-Web, Híbrido-Nativo e Nativo) e saber aplicar os conceitos utilizando pelo menos 2 destes modelos - nomeadamente Híbrido-Nativo (Flutter) e Nativo (Android Kotlin).\n",
+    "programa": "Faceta \"conceptual\"\n\n\n\tComputação Móvel / Sistemas Ubíquos / IoT\n\tArquitetura e desenvolvimento de aplicações móveis (Web, Híbridas, Nativas) - Usabilidade e Interação\n\tConectividade\n\tGeo-localização\n\tAutonomia\n\tSensores\n\tIntegração com serviços externos\n\tModelos de negócio\n\n\nFaceta \"prática\"\n\n\n\tArquitetura de aplicações móveis\n\t\n\t\tSeparação UI/Lógica de Negócio\n\t\tProgramação de widgets\n\t\tGestão de estado\n\t\tTestes unitários / integração\n\t\tInjeção de dependências\n\t\tProgramação assíncrona\n\t\tPadrão repositório\n\t\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 29,
+  "fields": {
+    "nome": "Inteligência Artificial",
+    "codigo": "ULHT260-2129",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta cadeira é uma introdução aos conceitos e técnicas básicas da Inteligência Artificial, com três áreas principais de atuação. Primeiro, a formalização do que é uma máquina, tanto na óptica de manipulação de símbolos da máquina de Turing, como nas máquinas de McCulloch and Pitts que funcionam com padrões de interligação entre nós em redes de neurónios. Segundo, o conceito de agente racional em IA, que emerge da interseção com as ciências cognitivas, e as diversas implementações de algoritmos de busca exaustiva estruturada (informados e não informados). Ainda dentro desta área de foco são ainda introduzidos os conceito de busca estocástica e algoritmos para satisfação de restrições (CSPs). Finalmente, na terceira área de foco, os estudantes aprendem noções e usos de alguns dos algoritmos de inteligência artificial avançados que são utilizados hoje em dia.\n",
+    "objetivos": "Os objectivos de aprendizagem desta cadeira incluem (1) Entendimento profundo dos aspectos conceituais que dão origem à IA, nomeadamente a formalização do conceito de computação universal via manipulação de símbolos, e a computação baseada em redes de neurónios; (2) os métodos e representações usados para estudar o funcionamento de qualquer máquina; (3) Desenho e implementação de agentes racionais e o conceito de \"processamento de informação\"; (4) Algoritmos clássicos de busca não informada: British Museum, DFS e BFS; (5) Busca informada: Dijkstra e A*; (6) Formalização e resolução de problemas de satisfação de restrições (CSP); (7) conhecimentos básicos de técnicas avançadas de inteligência artificial nos domínios de machine learning e data science; e (8) Conhecimentos sobre os usos da inteligência artificial na sociedade incluindo aspectos relacionados com ética e o futuro de IA.\n",
+    "programa": "\n\tConceitos Básicos\n\t\n\t\tDefinições de IA\n\t\tMáquina de Turing\n\t\tRedes neuronais de McCulloch e Pitts\n\t\tCómo analisar máquinas? diagramas de transição de estados\n\t\n\t\n\tBusca\n\t\n\t\tO conceito de agente de busca em IA\n\t\tEspaços e Grafos de busca\n\t\tBusca não informada: British Museum, DFS, BFS\n\t\tBusca Informada: Dijkstra e A*\n\t\tBusca adversária\n\t\n\t\n\tProblemas de satisfação de restrições\n\tNocões básicas de sistemas de recomendação\n\tO futuro de IA\n\t\n\t\tAnalise critica de artigos recentes em IA\n\t\n\t\n\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 30,
+  "fields": {
+    "nome": "Segurança Informática",
+    "codigo": "ULHT260-11194",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "A presente unidade curricular tem por objectivo formar estudantes com perfis profissionais especializados, capazes de lidar eficazmente com a complexidade crescente das ameaças à segurança das aplicações em rede e na nuvem, utilizando as mais avançadas tecnologias da segurança informática, para implementar elevados padrões de segurança em redes informáticas\n",
+    "objetivos": "No final da cadeira, os estudantes deverão: Identificar os diferentes domínios e aplicações da segurança informática. Perceber e utilizar os principais algoritmos de encriptação, assim como quantificar os níveis de segurança que permitem assegurar. Conhecer e perceber as actuais ameaças à segurança em redes de dados e as boas práticas necessárias para as evitar. Conceber e implementar aplicações em rede obedecendo a elevados requisitos de segurança mesmo utilizando canais de comunicação inseguros Utilizar os conceitos adquiridos em cenários reais, no contexto do projecto / estágio profissional a realizar no ano lectivo.\n",
+    "programa": "¿Introdução à Segurança Informática ¿Conceitos fundamentais de Segurança Informática ¿Paradigmas de Segurança ¿Criptografia ¿Algoritmos de segurança ¿Autenticação e autorização ¿Gestão de chaves ¿Segurança de Redes ¿Firewalls ¿IDS/IPS ¿Redes sem fios ¿Arquitecturas de Segurança ¿Protocolos de comunicação segura ¿Tipificação de vulnerabilidades e ataques ¿Segurança de Software ¿Políticas e gestão de segurança\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+},
+{
+  "model": "portfolio.unidadecurricular",
+  "pk": 31,
+  "fields": {
+    "nome": "Sistemas de Informação na Nuvem",
+    "codigo": "ULHT260-22514",
+    "ano_curricular": 3,
+    "semestre": 2,
+    "ects": 5,
+    "descricao": "Esta Unidade Curricular tem como objetivo uma introdução à computação em nuvem, numa perspectiva de um iniciante que não possui nenhuma experiência anterior com o tópico.\n\nA ideia é ajudar a criar Junior Cloud Architects, o que significa crias as competências para implementar ou adotar a tecnologia Cloud, entender o que é exatamente e quais opções existem quando se pensa em implantações em nuvem.\n\nEsta UC abrange uma ampla variedade de áreas de tópicos de computação em nuvem, fornecendo uma base sólida de entendimento. Esta unidade curricular cria também um ambiente de entendimento da teoria e das formas práticas dos diferentes modelos de serviços de Cloud Computing: Infraestrutura como Serviço (IaaS), Plataforma como Serviço (PaaS) e Software como Serviço (SaaS), fornecendo exemplos e diferenças entre cada .\n",
+    "objetivos": "\n\tEntenda por que as empresas estão migrando para serviços em nuvem para apoiar seus negócios\n\tQuais são os modelos de negócios\n\tQuais são os principais provedores de serviços\n\tPrincipais conceitos da arquitetura em nuvem\n\tRecursos práticos para criar e implantar um serviço em nuvem\n\n",
+    "programa": "Aulas teóricas:\n\n\n\tVisão geral: história, mercado, tendências\n\tRevisão de arquiteturas distribuídas: SOA, orientado a eventos Componentes e Serviços\n\tO que é uma nuvem? Privado, público, híbrido\n\tTecnologias, modelos de negócios, principais fornecedores de serviços nacionais e internacionais\n\t\n\t\tIaaS\n\t\tBaaS\n\t\tPaaS\n\t\tSaaS\n\t\toutras\n\t\n\t\n\n\nAgenda Prática:\n\n\n\t1º Trabalho - IaaS e PaaS\n\t\n\t\tAWS EC2 - Implante e execute o servidor ubuntu\n\t\tDocker PaaS - AWS Beanstalk\n\t\tHeroku - implantação de 2 aplicativos, cada um por serviço\n\t\n\t\n\t2º Trabalho - SaaS e BaaS\n\t\n\t\tTrello Board\n\t\tAWS BaaS\n\t\tFirebase (armazenar dados e média)\n\t\n\t\n\n\nCada trabalho tem um planeamento prático de 6 aulas\n",
+    "imagem": "",
+    "licenciatura": 1,
+    "link": "",
+    "docentes": []
+  }
+}
+]
