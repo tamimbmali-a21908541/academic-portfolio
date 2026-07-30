@@ -2,4 +2,5 @@
 
 Grade: 13 | ECTS: 5
 
-Project files for this course will be added here.
+Estudei os fundamentos de Data Science, incluindo estatística descritiva, análise exploratória de dados e visualização.
+Apliquei métodos de aprendizagem automática (regressão linear/logística e clustering) e avaliação de modelos.
