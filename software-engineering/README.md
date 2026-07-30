@@ -2,4 +2,5 @@
 
 Grade: 13 | ECTS: 5
 
-Project files for this course will be added here.
+- Realizei laboratórios de Agile (User Stories e Acceptance Criteria), UML (diagramas ER, Classes e Sequência) e wireframes UX/UI.  
+- Desenvolvi exercícios práticos de Software Architectures & DevOps e modelação de sistemas.
