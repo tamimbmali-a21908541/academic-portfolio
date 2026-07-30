@@ -2,4 +2,5 @@
 
 Grade: 16 | ECTS: 5
 
-Project files for this course will be added here.
+Estudei os fundamentos da Inteligência Artificial, incluindo IA simbólica, conexionista e Deep Learning.
+Analisei conceitos como o Teste de Turing, representação do conhecimento, raciocínio e aprendizagem automática.
