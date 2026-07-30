@@ -2,4 +2,5 @@
 
 Grade: 12 | ECTS: 6
 
-Project files for this course will be added here.
+Estudei e apliquei fundamentos de Sistemas Operativos (processos, memória, concorrência e sincronização).
+Desenvolvi um simulador interativo de escalonamento de CPU e substituição de páginas com visualização e métricas.
