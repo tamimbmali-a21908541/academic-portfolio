@@ -547,8 +547,8 @@ const WORK = [
     ],
     tags: ["Flutter 3.24","Dart","Material Design 3","GitHub Actions","CI/CD"],
     repo: "",
-    live: "https://bit.ly/jrs-pt-app",
-    liveLabel: "Download the APK"
+    live: "",
+    liveLabel: ""
   },
   {
     title: "CIL App",
@@ -593,8 +593,8 @@ const WORK = [
     ],
     tags: ["Flutter","Dart","Firebase","Google Maps","Apple Health","Google Fit"],
     repo: "",
-    live: "https://bit.ly/hayya-jirani",
-    liveLabel: "Download the APK"
+    live: "",
+    liveLabel: ""
   },
   {
     title: "JustOneClickAnalysis",
@@ -824,7 +824,7 @@ $('#workGrid').innerHTML = WORK.map(p=>{
   if (p.live) buttons.push(`<a class="btn btn-primary" style="justify-content:center" href="${esc(p.live)}" target="_blank" rel="noopener">${esc(p.liveLabel||'View live')}${ICON_EXT}</a>`);
   if (p.repo) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.repo)}" target="_blank" rel="noopener">View code${ICON_EXT}</a>`);
   if (p.cert) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.cert.url)}" target="_blank" rel="noopener">${esc(p.cert.label)}${ICON_EXT}</a>`);
-  if (!buttons.length) buttons.push('<span class="ph" style="text-align:center">Add a repo link in WORK</span>');
+  if (!buttons.length) buttons.push('<span class="ph" style="text-align:center">Built for the organisation — source not public</span>');
 
   return `
   <article class="card proj reveal">
