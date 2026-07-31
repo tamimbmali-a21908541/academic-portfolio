@@ -37,4 +37,4 @@ The course followed the actual order of the work: understand the data before mod
 
 ---
 
-> This was a theory and analysis course; practical work was done in notebooks rather than committed as a repository project.
+> Practical work was done in weekly Jupyter notebooks — see [weekly-practicals/](weekly-practicals/) for the full set (weeks 1–13, with datasets).

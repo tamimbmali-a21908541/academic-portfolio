@@ -34,4 +34,4 @@ The course covered AI as a field with two distinct intellectual lineages rather 
 
 ---
 
-> This was a theory-focused course; assessment was through examination rather than a code deliverable.
+> Assessment combined practical tests with a journal-and-podcast assignment. In this folder: [journal-and-podcast.pdf](journal-and-podcast.pdf) (course journal, co-authored), [podcast.pdf](podcast.pdf), and two practical-test notebooks ([practical-test-1.ipynb](practical-test-1.ipynb), [practical-test-2/](practical-test-2/)).
