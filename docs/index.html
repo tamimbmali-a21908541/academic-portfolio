@@ -18,7 +18,10 @@
 <meta name="twitter:image" content="https://academic-portfolio-tau.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="en" href="https://academic-portfolio-tau.vercel.app/">
+<link rel="alternate" hreflang="pt" href="https://academic-portfolio-tau.vercel.app/?lang=pt">
+<link rel="alternate" hreflang="ar" href="https://academic-portfolio-tau.vercel.app/?lang=ar">
 <style>
 /* ═══════════════════════════════════════════════════════════
    DESIGN TOKENS
@@ -97,11 +100,44 @@ h1,h2,h3,h4{line-height:1.2;margin:0;letter-spacing:-.02em;font-weight:700}
 p{margin:0}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:var(--radius-sm)}
 
+/* ── Arabic typography ───────────────────────────────────────
+   Latin tracking is set tight for Inter; Arabic script must never
+   be letter-spaced — it breaks the joining between glyphs. */
+:root[lang="ar"]{
+  --font-sans:"IBM Plex Sans Arabic","Inter",ui-sans-serif,system-ui,sans-serif;
+}
+:root[lang="ar"] h1,:root[lang="ar"] h2,:root[lang="ar"] h3,:root[lang="ar"] h4,
+:root[lang="ar"] .eyebrow,:root[lang="ar"] .stat-l,:root[lang="ar"] .hero-badge{
+  letter-spacing:0;
+}
+:root[lang="ar"] body{line-height:1.75}
+/* Technology names, grades and code stay left-to-right inside RTL text */
+:root[dir="rtl"] .tag,:root[dir="rtl"] .grade,:root[dir="rtl"] code,
+:root[dir="rtl"] .brand-mark,:root[dir="rtl"] .tl-when,
+:root[dir="rtl"] .proj-meta dd,:root[dir="rtl"] .stat-n,:root[dir="rtl"] .course-ft span{
+  direction:ltr;unicode-bidi:isolate;
+}
+
+/* ── Language switcher ───────────────────────────────────── */
+.lang-switch{
+  display:flex;gap:2px;padding:2px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);
+}
+.lang-switch button{
+  font-family:var(--font-mono);font-size:11px;font-weight:600;
+  padding:5px 7px;border:0;border-radius:calc(var(--radius) - 3px);
+  background:transparent;color:var(--fg-subtle);cursor:pointer;
+  transition:background var(--dur) var(--ease),color var(--dur) var(--ease);
+}
+.lang-switch button:hover{color:var(--fg)}
+.lang-switch button[aria-pressed="true"]{background:var(--accent);color:var(--accent-fg)}
+
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--space-5)}
 
 /* ── Skip link ───────────────────────────────────────────── */
 .skip{
-  position:absolute;left:var(--space-4);top:-100px;z-index:100;
+  position:absolute;inset-inline-start:var(--space-4);top:-100px;z-index:100;
   background:var(--accent);color:var(--accent-fg);
   padding:var(--space-3) var(--space-4);border-radius:var(--radius);
   font-weight:600;transition:top var(--dur) var(--ease);
@@ -125,7 +161,7 @@ header.stuck{border-bottom-color:var(--border)}
   background:var(--accent);color:var(--accent-fg);
   border-radius:8px;font-family:var(--font-mono);font-size:13px;font-weight:600;
 }
-nav.main{display:flex;gap:var(--space-1);margin-left:auto}
+nav.main{display:flex;gap:var(--space-1);margin-inline-start:auto}
 nav.main a{
   padding:var(--space-2) var(--space-3);border-radius:var(--radius-sm);
   font-size:14px;font-weight:500;color:var(--fg-muted);
@@ -150,9 +186,9 @@ nav.main a:hover{color:var(--fg);background:var(--surface)}
    disappearing — keeps section navigation reachable on phones. */
 @media(max-width:860px){
   .hd{flex-wrap:wrap;height:auto;padding-block:var(--space-3);row-gap:var(--space-2)}
-  .brand{margin-right:auto}
+  .brand{margin-inline-end:auto}
   nav.main{
-    order:3;width:100%;margin-left:0;
+    order:3;width:100%;margin-inline-start:0;
     overflow-x:auto;scrollbar-width:none;
     -webkit-overflow-scrolling:touch;
   }
@@ -236,9 +272,9 @@ section{padding-block:var(--space-9)}
 .proj-course{font-size:13px;color:var(--fg-subtle)}
 .proj-desc{color:var(--fg-muted);font-size:15px;margin-bottom:var(--space-4)}
 .proj-points{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-2)}
-.proj-points li{position:relative;padding-left:20px;font-size:14.5px;color:var(--fg-muted)}
+.proj-points li{position:relative;padding-inline-start:20px;font-size:14.5px;color:var(--fg-muted)}
 .proj-points li::before{
-  content:"";position:absolute;left:0;top:9px;
+  content:"";position:absolute;inset-inline-start:0;top:9px;
   width:6px;height:6px;border-radius:50%;background:var(--accent);
 }
 .proj-points strong{color:var(--fg);font-weight:600}
@@ -324,9 +360,9 @@ section{padding-block:var(--space-9)}
 .bg-side{display:grid;gap:var(--space-4)}
 
 .timeline{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-5)}
-.timeline li{position:relative;padding-left:var(--space-5)}
-.timeline li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
-.timeline li:not(:last-child)::after{content:"";position:absolute;left:3.5px;top:19px;bottom:calc(-1 * var(--space-5));width:1px;background:var(--border)}
+.timeline li{position:relative;padding-inline-start:var(--space-5)}
+.timeline li::before{content:"";position:absolute;inset-inline-start:0;top:7px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.timeline li:not(:last-child)::after{content:"";position:absolute;inset-inline-start:3.5px;top:19px;bottom:calc(-1 * var(--space-5));width:1px;background:var(--border)}
 .tl-role{font-weight:600;font-size:15px}
 .tl-org{font-size:13.5px;color:var(--fg-muted);margin-top:2px}
 .tl-when{font-family:var(--font-mono);font-size:12px;color:var(--fg-subtle);margin-top:3px}
@@ -374,13 +410,18 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
       <span data-bind="shortName">Portfolio</span>
     </a>
     <nav class="main">
-      <a href="#work">Work</a>
-      <a href="#academic">Academic</a>
-      <a href="#stack">Stack</a>
-      <a href="#courses">Courses</a>
-      <a href="#background">Background</a>
-      <a href="#contact">Contact</a>
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#academic" data-i18n="navAcademic">Academic</a>
+      <a href="#stack" data-i18n="navStack">Stack</a>
+      <a href="#courses" data-i18n="navCourses">Courses</a>
+      <a href="#background" data-i18n="navBackground">Background</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+      <button data-lang="en" aria-pressed="true" lang="en">EN</button>
+      <button data-lang="pt" aria-pressed="false" lang="pt">PT</button>
+      <button data-lang="ar" aria-pressed="false" lang="ar">ع</button>
+    </div>
     <button class="icon-btn" id="theme" aria-label="Toggle colour theme" title="Toggle theme">
       <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
@@ -393,34 +434,27 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <!-- ══ HERO ══ -->
 <section class="hero" id="top">
   <div class="wrap">
-    <span class="hero-badge"><span class="dot"></span> Available immediately · Lisbon, Portugal</span>
+    <span class="hero-badge"><span class="dot"></span> <span data-i18n="heroBadge">Available immediately · Lisbon, Portugal</span></span>
     <h1 data-bind="heroName">Tamim Mohamed Ali</h1>
     <p class="hero-role"><span class="grad">Software Developer &amp; Data Analyst</span></p>
-    <p class="hero-lead">
-      I build mobile and web applications that ship. I built a Flutter app for the
-      <strong>Jesuit Refugee Service</strong>, the official app for the
-      <strong>Islamic Community of Lisbon</strong>, an international competition entry,
-      and a live data-analysis platform.
-      Currently finishing a BSc in Computer Engineering at Universidade Lusófona —
-      <strong>170 of 180 ECTS</strong>, with two courses left.
-    </p>
+    <p class="hero-lead" data-i18n-html="heroLead"></p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#work">
-        View my work
+        <span data-i18n="ctaWork">View my work</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <a class="btn btn-ghost" data-bind="repoHref" href="#courses">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0C17.1 4.7 18.1 5 18.1 5c.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
-        Source code
+        <span data-i18n="ctaSource">Source code</span>
       </a>
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><div class="stat-n" data-count="5">5</div><div class="stat-l">Apps shipped to users</div></div>
-      <div class="stat"><div class="stat-n"><span data-count="170">170</span><span style="font-size:.5em;color:var(--fg-subtle)">/180</span></div><div class="stat-l">ECTS completed</div></div>
-      <div class="stat"><div class="stat-n">13.5<span style="font-size:.5em;color:var(--fg-subtle)">/20</span></div><div class="stat-l">Weighted average</div></div>
-      <div class="stat"><div class="stat-n" data-count="7">7</div><div class="stat-l">Programming languages</div></div>
-      <div class="stat"><div class="stat-n" data-count="3">3</div><div class="stat-l">Spoken languages</div></div>
+      <div class="stat"><div class="stat-n" data-count="5">5</div><div class="stat-l" data-i18n="statApps">Apps shipped to users</div></div>
+      <div class="stat"><div class="stat-n"><span data-count="170">170</span><span style="font-size:.5em;color:var(--fg-subtle)">/180</span></div><div class="stat-l" data-i18n="statEcts">ECTS completed</div></div>
+      <div class="stat"><div class="stat-n">13.5<span style="font-size:.5em;color:var(--fg-subtle)">/20</span></div><div class="stat-l" data-i18n="statAvg">Weighted average</div></div>
+      <div class="stat"><div class="stat-n" data-count="7">7</div><div class="stat-l" data-i18n="statLangs">Programming languages</div></div>
+      <div class="stat"><div class="stat-n" data-count="3">3</div><div class="stat-l" data-i18n="statSpoken">Spoken languages</div></div>
     </div>
   </div>
 </section>
@@ -429,9 +463,9 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <section id="work">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Shipped work</span>
-      <h2>Applications with real users</h2>
-      <p>Built outside the classroom, for people who actually use them — a humanitarian NGO, a Lisbon community organisation, an invoicing product, an international competition, and a live analytics platform.</p>
+      <span class="eyebrow" data-i18n="ebWork">Shipped work</span>
+      <h2 data-i18n="h2Work">Applications with real users</h2>
+      <p data-i18n="pWork">Built outside the classroom, for people who actually use them — a humanitarian NGO, a Lisbon community organisation, an invoicing product, an international competition, and a live analytics platform.</p>
     </div>
     <div class="projects" id="workGrid"></div>
   </div>
@@ -441,9 +475,9 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <section id="academic">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Academic projects</span>
-      <h2>Eight projects worth reading the code for</h2>
-      <p>Where the substantial university engineering happened. Each links to a README covering architecture, the trade-offs considered, and what I'd do differently.</p>
+      <span class="eyebrow" data-i18n="ebAcademic">Academic projects</span>
+      <h2 data-i18n="h2Academic">Eight projects worth reading the code for</h2>
+      <p data-i18n="pAcademic">Where the substantial university engineering happened. Each links to a README covering architecture, the trade-offs considered, and what I'd do differently.</p>
     </div>
     <div class="projects" id="projGrid"></div>
   </div>
@@ -453,9 +487,9 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <section id="stack">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Technologies</span>
-      <h2>Tools I've built with</h2>
-      <p>Everything listed here was used to deliver assessed work — not read about.</p>
+      <span class="eyebrow" data-i18n="ebStack">Technologies</span>
+      <h2 data-i18n="h2Stack">Tools I've built with</h2>
+      <p data-i18n="pStack">Everything listed here was used to deliver assessed work — not read about.</p>
     </div>
     <div class="stack" id="stackGrid"></div>
   </div>
@@ -465,9 +499,9 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <section id="courses">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Coursework</span>
-      <h2>All 30 courses</h2>
-      <p>The full three-year curriculum. Grades use the Portuguese 0–20 scale, where 10 is a pass. Courses marked with a code icon have source in this repository; two Year 3 courses are still in progress.</p>
+      <span class="eyebrow" data-i18n="ebCourses">Coursework</span>
+      <h2 data-i18n="h2Courses">All 30 courses</h2>
+      <p data-i18n="pCourses">The full three-year curriculum. Grades use the Portuguese 0–20 scale, where 10 is a pass. Courses marked with a code icon have source in this repository; two Year 3 courses are still in progress.</p>
     </div>
     <div class="filters" id="filters" role="group" aria-label="Filter courses"></div>
     <div class="courses" id="courseGrid"></div>
@@ -478,22 +512,22 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <section id="background">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Background</span>
-      <h2>Before software</h2>
-      <p>Six years teaching mathematics and seven on a non-profit's fiscal council — experience in explaining hard things clearly and being accountable for numbers.</p>
+      <span class="eyebrow" data-i18n="ebBackground">Background</span>
+      <h2 data-i18n="h2Background">Before software</h2>
+      <p data-i18n="pBackground">Six years teaching mathematics and seven on a non-profit's fiscal council — experience in explaining hard things clearly and being accountable for numbers.</p>
     </div>
     <div class="bg-grid">
       <div class="card bg-col reveal">
-        <h3>Experience</h3>
+        <h3 data-i18n="hExperience">Experience</h3>
         <ol class="timeline" id="expList"></ol>
       </div>
       <div class="bg-side">
         <div class="card stack-group reveal">
-          <h3>Certifications</h3>
+          <h3 data-i18n="hCerts">Certifications</h3>
           <ul class="plain" id="certList"></ul>
         </div>
         <div class="card stack-group reveal">
-          <h3>Languages</h3>
+          <h3 data-i18n="hLangs">Languages</h3>
           <ul class="plain" id="langList"></ul>
         </div>
       </div>
@@ -505,9 +539,9 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <section id="contact">
   <div class="wrap">
     <div class="card contact-card reveal">
-      <span class="eyebrow" style="justify-content:center">Get in touch</span>
-      <h2>Available immediately</h2>
-      <p>Open to developer and data analyst roles in Lisbon — full-time, remote, or hybrid. Happy to walk through any project above in detail.</p>
+      <span class="eyebrow" style="justify-content:center" data-i18n="ebContact">Get in touch</span>
+      <h2 data-i18n="h2Contact">Available immediately</h2>
+      <p data-i18n="pContact">Open to developer and data analyst roles in Lisbon — full-time, remote, or hybrid. Happy to walk through any project above in detail.</p>
       <div class="contact-links" id="contactLinks"></div>
     </div>
   </div>
@@ -518,11 +552,141 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
 <footer>
   <div class="wrap ft">
     <span data-bind="footerName">Computer Engineering Portfolio</span>
-    <span>Universidade Lusófona · Lisbon, Portugal</span>
+    <span data-i18n="footerPlace">Universidade Lusófona · Lisbon, Portugal</span>
   </div>
 </footer>
 
 <script>
+/* ═══════════════════════════════════════════════════════════
+   INTERNATIONALISATION
+   Every translatable string is either a key in UI below, or an
+   {en,pt,ar} object inside the data arrays, resolved by t().
+   Technology names, grades, ECTS and links are language-neutral
+   and are deliberately NOT duplicated per language.
+   ═══════════════════════════════════════════════════════════ */
+const LANGS_AVAILABLE = ['en','pt','ar'];
+
+const UI = {
+  en:{
+    navWork:"Work", navAcademic:"Academic", navStack:"Stack", navCourses:"Courses",
+    navBackground:"Background", navContact:"Contact",
+    heroBadge:"Available immediately · Lisbon, Portugal",
+    role:"Software Developer & Data Analyst",
+    heroLead:`I build mobile and web applications that ship. I built a Flutter app for the
+      <strong>Jesuit Refugee Service</strong>, the official app for the
+      <strong>Islamic Community of Lisbon</strong>, an international competition entry,
+      and a live data-analysis platform.
+      Currently finishing a BSc in Computer Engineering at Universidade Lusófona —
+      <strong>170 of 180 ECTS</strong>, with two courses left.`,
+    ctaWork:"View my work", ctaSource:"Source code",
+    statApps:"Apps shipped to users", statEcts:"ECTS completed", statAvg:"Weighted average",
+    statLangs:"Programming languages", statSpoken:"Spoken languages",
+    ebWork:"Shipped work", h2Work:"Applications with real users",
+    pWork:"Built outside the classroom, for people who actually use them — a humanitarian NGO, a Lisbon community organisation, an invoicing product, an international competition, and a live analytics platform.",
+    ebAcademic:"Academic projects", h2Academic:"Eight projects worth reading the code for",
+    pAcademic:"Where the substantial university engineering happened. Each links to a README covering architecture, the trade-offs considered, and what I'd do differently.",
+    ebStack:"Technologies", h2Stack:"Tools I've built with",
+    pStack:"Everything listed here was used to deliver assessed work — not read about.",
+    ebCourses:"Coursework", h2Courses:"All 30 courses",
+    pCourses:"The full three-year curriculum. Grades use the Portuguese 0–20 scale, where 10 is a pass. Courses marked with a code icon have source in this repository; two Year 3 courses are still in progress.",
+    ebBackground:"Background", h2Background:"Before software",
+    pBackground:"Six years teaching mathematics and seven on a non-profit's fiscal council — experience in explaining hard things clearly and being accountable for numbers.",
+    hExperience:"Experience", hCerts:"Certifications", hLangs:"Languages",
+    ebContact:"Get in touch", h2Contact:"Available immediately",
+    pContact:"Open to developer and data analyst roles in Lisbon — full-time, remote, or hybrid. Happy to walk through any project above in detail.",
+    footerPlace:"Universidade Lusófona · Lisbon, Portugal",
+    readReadme:"Read the README", readWriteup:"Read the write-up",
+    fullSource:"Full source in this repository", noSource:"Source not public",
+    privateProject:"Private client project — source not public",
+    mGrade:"Grade", mCredits:"Credits", mCourse:"Course",
+    fAll:"All courses", fY1:"Year 1", fY2:"Year 2", fY3:"Year 3",
+    fCode:"With source", fTop:"Grade 14+",
+    ectsYear:(e,y)=>`${e} ECTS · Year ${y}`, sourceTag:"source", liveTag:"live", wipTag:"in progress",
+    wipTitle:"Not yet completed", viewCode:"View code", viewLive:"View live", certLabel:"Participation certificate",
+    metaDesc:"Tamim Mohamed Ali — Software Developer & Data Analyst in Lisbon. Flutter, Java, C#, Python/Django, SQL and Power BI. Mobile apps built for the Jesuit Refugee Service and the Islamic Community of Lisbon."
+  },
+  pt:{
+    navWork:"Trabalho", navAcademic:"Académico", navStack:"Tecnologias", navCourses:"Cadeiras",
+    navBackground:"Percurso", navContact:"Contacto",
+    heroBadge:"Disponibilidade imediata · Lisboa, Portugal",
+    role:"Programador & Analista de Dados",
+    heroLead:`Construo aplicações móveis e web que chegam a utilizadores reais. Desenvolvi uma aplicação Flutter para o
+      <strong>Jesuit Refugee Service</strong>, a aplicação oficial da
+      <strong>Comunidade Islâmica de Lisboa</strong>, uma candidatura a uma competição internacional
+      e uma plataforma de análise de dados em produção.
+      Estou a terminar a licenciatura em Engenharia Informática na Universidade Lusófona —
+      <strong>170 de 180 ECTS</strong>, com duas cadeiras em falta.`,
+    ctaWork:"Ver o meu trabalho", ctaSource:"Código-fonte",
+    statApps:"Aplicações com utilizadores", statEcts:"ECTS concluídos", statAvg:"Média ponderada",
+    statLangs:"Linguagens de programação", statSpoken:"Línguas faladas",
+    ebWork:"Trabalho entregue", h2Work:"Aplicações com utilizadores reais",
+    pWork:"Construídas fora da sala de aula, para pessoas que as usam de facto — uma ONG humanitária, uma organização comunitária de Lisboa, um produto de faturação, uma competição internacional e uma plataforma de análise em produção.",
+    ebAcademic:"Projetos académicos", h2Academic:"Oito projetos que vale a pena ler o código",
+    pAcademic:"Onde aconteceu a engenharia universitária mais substancial. Cada um liga a um README com a arquitetura, os compromissos ponderados e o que faria de forma diferente.",
+    ebStack:"Tecnologias", h2Stack:"Ferramentas com que já construí",
+    pStack:"Tudo o que está aqui listado foi usado para entregar trabalho avaliado — não apenas lido.",
+    ebCourses:"Percurso curricular", h2Courses:"As 30 cadeiras",
+    pCourses:"O currículo completo dos três anos. As notas usam a escala portuguesa de 0 a 20, em que 10 é a nota mínima de aprovação. As cadeiras marcadas com o ícone de código têm código-fonte neste repositório; duas cadeiras do 3.º ano estão ainda a decorrer.",
+    ebBackground:"Percurso", h2Background:"Antes do software",
+    pBackground:"Seis anos a lecionar matemática e sete no conselho fiscal de uma associação sem fins lucrativos — experiência em explicar com clareza assuntos difíceis e em ser responsável por números.",
+    hExperience:"Experiência", hCerts:"Certificações", hLangs:"Línguas",
+    ebContact:"Entre em contacto", h2Contact:"Disponibilidade imediata",
+    pContact:"Aberto a funções de programador e analista de dados em Lisboa — tempo inteiro, remoto ou híbrido. Disponível para explicar em detalhe qualquer projeto acima.",
+    footerPlace:"Universidade Lusófona · Lisboa, Portugal",
+    readReadme:"Ler o README", readWriteup:"Ler a descrição",
+    fullSource:"Código-fonte completo neste repositório", noSource:"Código-fonte não público",
+    privateProject:"Projeto de cliente — código-fonte não público",
+    mGrade:"Nota", mCredits:"Créditos", mCourse:"Cadeira",
+    fAll:"Todas as cadeiras", fY1:"1.º ano", fY2:"2.º ano", fY3:"3.º ano",
+    fCode:"Com código", fTop:"Nota 14+",
+    ectsYear:(e,y)=>`${e} ECTS · ${y}.º ano`, sourceTag:"código", liveTag:"online", wipTag:"a decorrer",
+    wipTitle:"Ainda não concluída", viewCode:"Ver o código", viewLive:"Ver online", certLabel:"Certificado de participação",
+    metaDesc:"Tamim Mohamed Ali — Programador e Analista de Dados em Lisboa. Flutter, Java, C#, Python/Django, SQL e Power BI. Aplicações móveis para o Jesuit Refugee Service e a Comunidade Islâmica de Lisboa."
+  },
+  ar:{
+    navWork:"الأعمال", navAcademic:"الأكاديمي", navStack:"التقنيات", navCourses:"المقررات",
+    navBackground:"المسار", navContact:"التواصل",
+    heroBadge:"متاح للعمل فوراً · لشبونة، البرتغال",
+    role:"مطوّر برمجيات ومحلل بيانات",
+    heroLead:`أطوّر تطبيقات للهواتف والويب تصل إلى مستخدمين حقيقيين. بنيتُ تطبيق Flutter لمنظمة
+      <strong>Jesuit Refugee Service</strong>، والتطبيق الرسمي
+      <strong>للجالية الإسلامية في لشبونة</strong>، ومشاركةً في مسابقة دولية،
+      ومنصّة لتحليل البيانات تعمل في الإنتاج.
+      أُنهي حالياً بكالوريوس هندسة الحاسوب في جامعة Lusófona —
+      <strong>170 من 180 ECTS</strong>، مع تبقّي مقرّرين.`,
+    ctaWork:"استعرض أعمالي", ctaSource:"الشيفرة المصدرية",
+    statApps:"تطبيقات لدى مستخدمين", statEcts:"وحدات ECTS منجزة", statAvg:"المعدّل الموزون",
+    statLangs:"لغات برمجة", statSpoken:"لغات محكيّة",
+    ebWork:"أعمال منشورة", h2Work:"تطبيقات لدى مستخدمين حقيقيين",
+    pWork:"بُنيت خارج قاعة الدراسة، لأشخاص يستخدمونها فعلاً — منظمة إنسانية، ومؤسسة مجتمعية في لشبونة، ومنتج للفوترة، ومسابقة دولية، ومنصّة تحليلات تعمل في الإنتاج.",
+    ebAcademic:"مشاريع أكاديمية", h2Academic:"ثمانية مشاريع تستحق قراءة شيفرتها",
+    pAcademic:"هنا جرت الهندسة الجامعية الأكثر عمقاً. كل مشروع يقود إلى ملف README يشرح البنية، والمفاضلات التي وُزنت، وما كنت سأفعله بشكل مختلف.",
+    ebStack:"التقنيات", h2Stack:"أدوات بنيتُ بها",
+    pStack:"كل ما هو مذكور هنا استُخدم فعلياً في تسليم أعمال خضعت للتقييم — لا مجرد قراءة عنه.",
+    ebCourses:"المقررات الدراسية", h2Courses:"جميع المقررات الثلاثين",
+    pCourses:"المنهج الكامل للسنوات الثلاث. الدرجات وفق المقياس البرتغالي من 0 إلى 20، حيث 10 هي درجة النجاح. المقررات المؤشّرة برمز الشيفرة يتوفّر كودها في هذا المستودع؛ ومقرّران من السنة الثالثة ما زالا قيد الدراسة.",
+    ebBackground:"المسار", h2Background:"قبل البرمجة",
+    pBackground:"ست سنوات في تدريس الرياضيات وسبع سنوات عضواً في المجلس الرقابي لجمعية غير ربحية — خبرة في شرح الأمور الصعبة بوضوح وفي تحمّل المسؤولية عن الأرقام.",
+    hExperience:"الخبرة", hCerts:"الشهادات", hLangs:"اللغات",
+    ebContact:"تواصل معي", h2Contact:"متاح للعمل فوراً",
+    pContact:"منفتح على وظائف التطوير وتحليل البيانات في لشبونة — بدوام كامل، عن بُعد أو بنظام مختلط. يسعدني شرح أي مشروع أعلاه بالتفصيل.",
+    footerPlace:"جامعة Lusófona · لشبونة، البرتغال",
+    readReadme:"اقرأ ملف README", readWriteup:"اقرأ الوصف",
+    fullSource:"الشيفرة الكاملة في هذا المستودع", noSource:"الشيفرة غير منشورة",
+    privateProject:"مشروع لعميل — الشيفرة غير منشورة",
+    mGrade:"الدرجة", mCredits:"الوحدات", mCourse:"المقرر",
+    fAll:"كل المقررات", fY1:"السنة الأولى", fY2:"السنة الثانية", fY3:"السنة الثالثة",
+    fCode:"مع الشيفرة", fTop:"درجة 14 فأعلى",
+    ectsYear:(e,y)=>`${e} ECTS · السنة ${y}`, sourceTag:"شيفرة", liveTag:"مباشر", wipTag:"قيد الدراسة",
+    wipTitle:"لم تُستكمل بعد", viewCode:"عرض الشيفرة", viewLive:"عرض مباشر", certLabel:"شهادة مشاركة",
+    metaDesc:"تميم محمد علي — مطوّر برمجيات ومحلل بيانات في لشبونة. Flutter وJava وC# وPython/Django وSQL وPower BI. تطبيقات لمنظمة Jesuit Refugee Service وللجالية الإسلامية في لشبونة."
+  }
+};
+
+let LANG = 'en';
+const t  = v => (v && typeof v === 'object' && !Array.isArray(v)) ? (v[LANG] ?? v.en) : v;
+const ui = k => UI[LANG][k] ?? UI.en[k];
+
 const CONFIG = {
   name:      "Tamim Mohamed Ali",
   shortName: "Tamim Ali",
@@ -767,6 +931,249 @@ const COURSES = [
   {n:"Computer Security",                  g:null,e:5, y:3, f:"computer-security",              code:0, d:"Cryptography, authentication, network and application security. Currently in progress."}
 ];
 
+/* ═══════════════════════════════════════════════════════════
+   TRANSLATION OVERLAYS
+   English above is the base. Each entry here overlays the same
+   index of its array, replacing only the prose fields. Tags,
+   grades, ECTS, folders and links are never duplicated.
+   ═══════════════════════════════════════════════════════════ */
+const TRANS = {
+pt:{
+work:[
+ {context:"Jesuit Refugee Service · Portugal", badge:"ONG internacional",
+  desc:"Uma aplicação móvel de apoio a refugiados em Portugal, construída para o Jesuit Refugee Service — uma organização humanitária internacional.",
+  points:["<strong>Construída para uma ONG internacional</strong>, ao serviço de um público vulnerável onde a clareza e a fiabilidade contam mais do que as funcionalidades",
+          "<strong>Flutter 3.24 com Material Design 3</strong>, incluindo transições animadas e uma interface acessível e localizada",
+          "<strong>Pipeline de lançamento automatizado</strong> — o GitHub Actions compila e publica o APK assinado a cada versão etiquetada"]},
+ {context:"Comunidade Islâmica de Lisboa · Mesquita Central", badge:"Aplicação oficial",
+  desc:"A aplicação móvel oficial da Comunidade Islâmica de Lisboa — horários de oração, calendário islâmico, notícias e eventos, área de associado e donativos, em três línguas.",
+  points:["<strong>Horários de oração calculados no dispositivo</strong> com a biblioteca astronómica adhan, ajustados à posição GPS e ao fuso horário do utilizador — precisos sem depender do servidor",
+          "<strong>Calendário hijri, eventos, área de associado e donativos</strong> organizados numa arquitetura Flutter orientada a funcionalidades",
+          "<strong>Totalmente localizada em português, inglês e francês</strong>, com cache offline via Hive"]},
+ {context:"Aplicação de faturação · produto offline-first", badge:"Funciona sem servidor",
+  desc:"Uma aplicação de faturação autónoma em Flutter — clientes, produtos, faturas e pagamentos geridos inteiramente no telemóvel, sem servidor, conta ou subscrição.",
+  points:["<strong>Faturas PDF geradas no dispositivo</strong> — compostas, pré-visualizadas, impressas e partilhadas diretamente do telemóvel",
+          "<strong>Ativação de licença offline</strong> — um sistema de chave ligada ao dispositivo, permitindo vender e ativar a aplicação sem qualquer infraestrutura de servidor",
+          "<strong>Cópia de segurança no Google Drive e importação de contactos</strong> — o utilizador faz backup no seu próprio Drive via Google Sign-In"]},
+ {context:"Create Apps Championship 2025–26 · Dubai Chamber", badge:"Competição internacional",
+  desc:"Uma aplicação comunitária de fitness submetida à competição da Dubai Chambers, ligando vizinhos em torno de atividade partilhada, com mapas e integração com plataformas de saúde.",
+  points:["<strong>Totalmente bilingue árabe/inglês</strong>, incluindo layout da direita para a esquerda — a interface espelha-se, não é apenas traduzida",
+          "<strong>Integração com plataformas de saúde</strong>, tanto Apple Health como Google Fit, conciliando dois modelos distintos de permissões e dados",
+          "<strong>Google Maps e Firebase</strong> para localização, autenticação e dados em tempo real"]},
+ {context:"Plataforma de análise de dados · em produção", badge:"Em produção",
+  desc:"Uma plataforma que importa dados de folhas de cálculo e os transforma em estatísticas e visualizações interativas, sem que o utilizador escreva código.",
+  liveLabel:"Abrir a plataforma",
+  points:["<strong>Importação multiformato</strong> — CSV, Excel e XML normalizados numa única representação interna",
+          "<strong>Análise estatística e gráficos interativos</strong> gerados a partir de conjuntos de dados arbitrários",
+          "<strong>Implantada na edge</strong> em Cloudflare Pages com backend em TypeScript/Hono"]}
+],
+projects:[
+ {course:"Trabalho Final de Curso", codeNote:"Código-fonte não público — trabalho académico da universidade",
+  desc:"Uma plataforma multi-perfil ao serviço de administradores, professores, alunos e encarregados de educação a partir de uma única base de código multiplataforma. Foi o modelo de autorização, e não a lista de funcionalidades, que guiou o desenho.",
+  points:["<strong>Row-Level Security em PostgreSQL</strong> impõe o controlo de acessos na camada de dados — um cliente modificado continua sem conseguir ler os registos de outra família",
+          "<strong>Quatro interfaces distintas por perfil</strong> construídas a partir de uma base de código Flutter para Android, iOS e Web",
+          "<strong>Supabase</strong> para Postgres gerido, autenticação e notificações push"]},
+ {course:"Computação Distribuída",
+  desc:"Quatro serviços Spring Boot independentes que modelam o ciclo completo da reserva — reservar, validar disponibilidade, autorizar pagamento, notificar — sem base de dados partilhada entre eles.",
+  points:["<strong>Uma base de dados por serviço</strong> — quatro instâncias PostgreSQL, cada uma com o seu conjunto de migrações Flyway; sem leituras de tabelas entre serviços",
+          "<strong>Síncrono e assíncrono por desenho</strong> — OpenFeign (com fallbacks) quando a resposta condiciona uma escrita, Kafka quando não pode bloquear",
+          "<strong>Consumidores idempotentes</strong> — uma tabela de eventos processados torna segura a entrega at-least-once"]},
+ {course:"Programação Web",
+  desc:"Um projeto Django 5.2 com quatro aplicações — CMS de portefólio, artigos, tarefas e contas — construído em torno de uma API REST tipada e de um modelo de participação que permite a visitantes anónimos participar sem poderem fazer batota.",
+  points:["<strong>Participação anónima sem voto duplicado</strong> — likes e classificações guardam simultaneamente uma FK de utilizador anulável e uma chave de sessão, tornando a participação sem conta uma decisão de esquema e não uma condição na vista",
+          "<strong>API REST tipada com django-ninja</strong> — esquemas Pydantic <code>In</code>/<code>Out</code> mais um <code>ErrorSchema</code> uniforme, gerando validação, serialização e documentação OpenAPI a partir de uma única definição",
+          "<strong>Testes por aplicação e ponta a ponta</strong> — pacotes <code>tests/</code> dedicados para formulários, modelos, URLs, vistas e permissões, mais três suites Selenium WebDriver"]},
+ {course:"Sistemas Operativos",
+  desc:"Um simulador multi-CPU de sistema operativo em C onde os processos simulados são programas realmente separados que pedem tempo de CPU e páginas de memória ao núcleo através de sockets, em vez de serem iterações de um ciclo dentro do mesmo processo.",
+  points:["<strong>Três escalonadores intermutáveis</strong> — FIFO, Round Robin (quantum de 400 ms) e uma fila multinível com retroalimentação de 3 níveis com despromoção — a correr em até 4 CPUs",
+          "<strong>Quatro políticas de substituição de páginas</strong> (FIFO, RANDOM, CLOCK, LRU) comparadas sobre a mesma carga de trabalho, com uma pilha de frames livres para alocação em O(1)",
+          "<strong>Núcleo com threads e IPC por sockets</strong> — pthreads coordenam os processos simulados, e a execução reporta tempos comparativos de resposta e de conclusão"]},
+ {course:"Algoritmos e Estruturas de Dados",
+  desc:"Um motor em Java que carrega seis ficheiros CSV relacionados com milhares de registos de filmes e responde a consultas analíticas sobre eles, com a estrutura de dados escolhida por padrão de acesso para manter as pesquisas fora do caminho O(n).",
+  points:["<strong>Estrutura escolhida por consulta, não por entidade</strong> — <code>HashMap</code> para pesquisas por ID e por nome, <code>HashSet</code> para deteção de duplicados em O(1) durante o carregamento, <code>ArrayList</code> para consultas ordenadas por intervalo",
+          "<strong>Coleções pré-dimensionadas</strong> — trocar memória à partida para evitar realocações e cópias repetidas ao longo de milhares de inserções",
+          "<strong>20 classes de teste JUnit 5</strong> cobrindo sucesso e falha no parsing, cada comando de consulta e a tolerância a entradas malformadas"]},
+ {course:"Linguagens de Programação II",
+  desc:"Um jogo de tabuleiro em Java usado como exercício de desenho para a variação: uma dúzia de tipos de obstáculo e vários tipos de remédio que têm de aceitar novos membros sem reescrever o ciclo do jogo.",
+  points:["<strong>Polimorfismo em vez de condicionais</strong> — cada obstáculo estende uma classe abstrata <code>Abyss</code>, cada remédio implementa <code>Tool</code>; o gestor do jogo nunca pergunta em que tipo caiu",
+          "<strong>Padrão factory</strong> para construir as variantes, de modo que acrescentar um obstáculo toca num único sítio",
+          "<strong>Modelado primeiro em UML</strong>, com herança e polimorfismo a conduzir a hierarquia de classes, mais persistência de gravação e carregamento"]},
+ {course:"Data Science",
+  desc:"Treze semanas de notebooks práticos a percorrer o fluxo de trabalho pela sua ordem real: compreender os dados antes de os modelar, e avaliar com honestidade antes de acreditar num resultado.",
+  points:["<strong>Estatística descritiva e análise exploratória</strong> — distribuições, estrutura, lacunas e outliers examinados antes de ajustar qualquer modelo",
+          "<strong>Aprendizagem supervisionada e não supervisionada</strong> — regressão linear e logística, clustering, aplicadas a conjuntos de dados desde preços de habitação a dados de sobrevivência",
+          "<strong>A escolha da métrica como decisão, não como omissão</strong> — a exatidão em classes desequilibradas é ativamente enganadora, pelo que a métrica tem de corresponder ao custo de cada tipo de erro"]},
+ {course:"Processamento de Imagem",
+  desc:"Um pipeline desktop que deteta sinais de trânsito em imagens estáticas, classifica-os pela forma e lê o número dos sinais de limite de velocidade — todos os algoritmos implementados ao nível do pixel.",
+  points:["<strong>Segmentação de cor em HSV</strong> em vez de RGB, para que o mesmo sinal à sombra e ao sol caia na mesma banda de matiz",
+          "<strong>Etiquetagem de componentes conexos</strong> liga os pixels coloridos a objetos candidatos, e depois a classificação de formas separa os sinais circulares dos triangulares",
+          "<strong>OCR de dígitos por template matching</strong> — com dez glifos a uma escala conhecida, a comparação de pixels vence um modelo aprendido tanto em simplicidade como em fiabilidade"]}
+],
+courses:[
+ {n:"Matemática II", d:"Cálculo multivariável, derivadas parciais, gradientes e equações diferenciais."},
+ {n:"Matemática I", d:"Limites, continuidade, derivação, integração, sucessões e séries."},
+ {n:"Fundamentos de Física", d:"Mecânica, eletricidade, magnetismo e análise de circuitos."},
+ {n:"Competências Comportamentais", d:"Comunicação, trabalho em equipa, gestão do tempo e ética profissional."},
+ {n:"Matemática Discreta", d:"Lógica, prova por indução, conjuntos, relações, combinatória e teoria de grafos."},
+ {n:"Sistemas Digitais", d:"Álgebra de Boole, mapas de Karnaugh, flip-flops e máquinas de estados finitos."},
+ {n:"Fundamentos de Programação", d:"Controlo de fluxo, funções, arrays, recursividade e decomposição de problemas."},
+ {n:"Álgebra Linear", d:"Espaços vetoriais, operações com matrizes, transformações lineares e valores próprios."},
+ {n:"Arquitetura de Computadores", d:"Datapath do CPU, conjuntos de instruções, pipelining e hierarquia de memória."},
+ {n:"Algoritmos e Estruturas de Dados", d:"Motor Java para consultar grandes conjuntos CSV; estrutura escolhida por consulta."},
+ {n:"Linguagens de Programação I", d:"C — apontadores, gestão manual de memória, listas ligadas e I/O de ficheiros."},
+ {n:"Programação Web", d:"Plataforma Django 5.2 — API REST tipada com django-ninja, classificações anónimas, testes E2E em Selenium."},
+ {n:"Arquiteturas Avançadas de Computadores", d:"Circuitos Arduino com sensores, atuadores, LCD e interrupções por temporizador."},
+ {n:"Processamento de Imagem", d:"Deteção de sinais de trânsito em C#/EmguCV com segmentação HSV e OCR de dígitos."},
+ {n:"Engenharia de Requisitos e Testes", d:"Levantamento com personas e entrevistas; especificação de requisitos funcionais e não funcionais."},
+ {n:"Bases de Dados", d:"Modelação ER, normalização até à 3FN, SQL, procedimentos armazenados e ETL."},
+ {n:"Sistemas Operativos", d:"OSSIM — simulador multi-CPU em C: 3 escalonadores, 4 políticas de páginas, pthreads e sockets."},
+ {n:"Redes de Computadores", d:"Topologia corporativa multi-local com VLANs, encaminhamento e wireless em Packet Tracer."},
+ {n:"Sinais e Sistemas", d:"Sistemas LTI, convolução, transformadas discreta de Fourier e Z."},
+ {n:"Sistemas de Suporte à Decisão", d:"Modelação dimensional, ETL com Pentaho e reporting em Power BI sobre Oracle."},
+ {n:"Linguagens de Programação II", d:"Jogo de tabuleiro em Java — herança, polimorfismo e padrão factory."},
+ {n:"Trabalho Final de Curso", d:"Plataforma escolar em Flutter + Supabase com Row-Level Security em quatro perfis."},
+ {n:"Inteligência Artificial", d:"IA simbólica e conexionista, representação de conhecimento, aprendizagem profunda."},
+ {n:"Engenharia de Software", d:"User stories ágeis, diagramas UML de classes e sequência, wireframing, DevOps."},
+ {n:"Sistemas de Informação na Cloud", d:"Modelos IaaS/PaaS/SaaS com AWS EC2, VPC, Elastic Beanstalk e Docker."},
+ {n:"Data Science", d:"Análise exploratória, regressão, clustering e avaliação honesta de modelos."},
+ {n:"Computação Distribuída", d:"Quatro microserviços Spring Boot com Kafka, OpenFeign e base de dados por serviço."},
+ {n:"Interação Homem-Máquina", d:"Avaliação heurística e protótipo Axure Metro com testes de acessibilidade."},
+ {n:"Computação Móvel", d:"Desenvolvimento móvel multiplataforma. Atualmente a decorrer."},
+ {n:"Segurança Informática", d:"Criptografia, autenticação, segurança de redes e de aplicações. Atualmente a decorrer."}
+],
+stack:["Linguagens","Móvel","Backend","Frontend","Bases de dados","Dados & BI","Cloud & DevOps","Mensageria","Testes","Modelação"],
+experience:[
+ {role:"Membro do Conselho Fiscal", org:"União de Refugiados em Portugal", when:"7+ anos",
+  desc:"Fiscalização das contas, documentos e relatórios da associação; apoio administrativo às atividades e contacto com associados."},
+ {role:"Professor de Matemática", org:"Ensino secundário · Síria", when:"2009 – 2015",
+  desc:"Seis anos a lecionar matemática ao ensino secundário — preparação de aulas, exercícios e conceção de avaliações."},
+ {role:"Apoio Logístico", org:"Campanha nacional de vacinação contra a poliomielite · Síria", when:"2013 – 2015",
+  desc:"Apoio logístico e administrativo à campanha de erradicação da poliomielite, incluindo coordenação e gestão dos dados da campanha."}
+],
+langs:[["Árabe","Nativo"],["Português","Profissional"],["Inglês","Profissional"]]
+},
+ar:{
+work:[
+ {context:"Jesuit Refugee Service · البرتغال", badge:"منظمة دولية",
+  desc:"تطبيق للهواتف يدعم اللاجئين في البرتغال، بُني لصالح Jesuit Refugee Service — وهي منظمة إنسانية دولية.",
+  points:["<strong>بُني لمنظمة إنسانية دولية</strong>، يخدم فئة هشّة يهمّها الوضوح والموثوقية أكثر من كثرة الميزات",
+          "<strong>Flutter 3.24 مع Material Design 3</strong>، بما في ذلك انتقالات متحرّكة وواجهة ميسّرة ومُعرَّبة",
+          "<strong>خط إصدار آلي</strong> — يقوم GitHub Actions ببناء ونشر حزمة APK موقّعة مع كل إصدار موسوم"]},
+ {context:"الجالية الإسلامية في لشبونة · المسجد المركزي", badge:"تطبيق رسمي",
+  desc:"التطبيق الرسمي للجالية الإسلامية في لشبونة — مواقيت الصلاة، والتقويم الهجري، والأخبار والفعاليات، والعضوية، والتبرّعات، بثلاث لغات.",
+  points:["<strong>حساب مواقيت الصلاة على الجهاز</strong> باستخدام مكتبة adhan الفلكية، مضبوطة على موقع المستخدم ومنطقته الزمنية — دقيقة دون الحاجة إلى خادم",
+          "<strong>التقويم الهجري والفعاليات والعضوية والتبرّعات</strong> منظَّمة ضمن بنية Flutter قائمة على الميزات",
+          "<strong>مُعرَّب بالكامل بالبرتغالية والإنجليزية والفرنسية</strong>، مع تخزين محلي عبر Hive"]},
+ {context:"تطبيق فوترة · يعمل دون اتصال", badge:"يعمل دون خادم",
+  desc:"تطبيق فوترة مستقل بلغة Flutter — العملاء والمنتجات والفواتير والمدفوعات تُدار بالكامل على الهاتف، دون خادم أو حساب أو اشتراك.",
+  points:["<strong>فواتير PDF تُولَّد على الجهاز</strong> — تُنشأ وتُعاين وتُطبع وتُشارك مباشرة من الهاتف",
+          "<strong>تفعيل ترخيص دون اتصال</strong> — نظام مفتاح مرتبط بالجهاز، ما يتيح بيع التطبيق وتفعيله دون أي بنية خادم",
+          "<strong>نسخ احتياطي على Google Drive واستيراد جهات الاتصال</strong> — ينسخ المستخدم بياناته إلى Drive الخاص به عبر Google Sign-In"]},
+ {context:"Create Apps Championship 2025–26 · غرفة تجارة دبي", badge:"مسابقة دولية",
+  desc:"تطبيق مجتمعي للياقة البدنية شارك في مسابقة غرف تجارة دبي، يربط الجيران حول نشاط مشترك، مع الخرائط والتكامل مع منصّات الصحة.",
+  points:["<strong>ثنائي اللغة بالكامل عربي/إنجليزي</strong> بما في ذلك التخطيط من اليمين إلى اليسار — الواجهة تنعكس فعلياً ولا تُترجم فحسب",
+          "<strong>تكامل مع منصّات الصحة</strong>، مع Apple Health وGoogle Fit معاً، بالتوفيق بين نموذجَي أذونات وبيانات مختلفين",
+          "<strong>Google Maps وFirebase</strong> لخصائص الموقع والمصادقة والبيانات الآنية"]},
+ {context:"منصّة تحليل بيانات · تعمل في الإنتاج", badge:"في الإنتاج",
+  desc:"منصّة تستورد بيانات الجداول وتحوّلها إلى إحصاءات ورسوم تفاعلية، دون أن يكتب المستخدم أي شيفرة.",
+  liveLabel:"افتح المنصّة",
+  points:["<strong>استيراد متعدد الصيغ</strong> — ملفات CSV وExcel وXML تُوحَّد في تمثيل داخلي واحد",
+          "<strong>تحليل إحصائي ورسوم تفاعلية</strong> تُولَّد من أي مجموعة بيانات مرفوعة",
+          "<strong>نشر على الحافة</strong> عبر Cloudflare Pages مع خلفية بلغة TypeScript/Hono"]}
+],
+projects:[
+ {course:"مشروع التخرّج", codeNote:"الشيفرة غير منشورة — عمل أكاديمي مملوك للجامعة",
+  desc:"منصّة متعددة الأدوار تخدم الإداريين والمعلّمين والطلاب وأولياء الأمور من قاعدة شيفرة واحدة متعددة المنصّات. نموذج الصلاحيات، لا قائمة الميزات، هو ما قاد التصميم.",
+  points:["<strong>Row-Level Security في PostgreSQL</strong> يفرض التحكّم بالوصول في طبقة البيانات — حتى العميل المعدَّل لا يستطيع قراءة سجلّات عائلة أخرى",
+          "<strong>أربع واجهات منفصلة حسب الدور</strong> مبنية من قاعدة شيفرة Flutter واحدة تستهدف Android وiOS والويب",
+          "<strong>Supabase</strong> لقاعدة Postgres مُدارة والمصادقة والإشعارات"]},
+ {course:"الحوسبة الموزّعة",
+  desc:"أربع خدمات Spring Boot مستقلة تُنمذج دورة الحجز كاملة — الحجز، والتحقق من التوفّر، وتفويض الدفع، والإشعار — دون قاعدة بيانات مشتركة بينها.",
+  points:["<strong>قاعدة بيانات لكل خدمة</strong> — أربع نسخ PostgreSQL، لكل منها مجموعة ترحيلات Flyway خاصة؛ دون قراءة جداول عبر الخدمات",
+          "<strong>تزامني وغير تزامني بحسب التصميم</strong> — OpenFeign (مع بدائل احتياطية) حين تحكم الإجابة عملية كتابة، وKafka حين يجب ألا تُعطِّل",
+          "<strong>مستهلكون خاملو التكرار</strong> — جدول للأحداث المعالَجة يجعل التسليم مرة واحدة على الأقل آمناً"]},
+ {course:"برمجة الويب",
+  desc:"مشروع Django 5.2 بأربعة تطبيقات — نظام إدارة محتوى للأعمال، ومقالات، ومهام، وحسابات — مبني حول واجهة REST مُنمَّطة ونموذج مشاركة يتيح للزوار المجهولين المشاركة دون إمكانية التحايل.",
+  points:["<strong>مشاركة مجهولة دون تصويت مزدوج</strong> — الإعجابات والتقييمات تحمل مفتاحاً خارجياً اختيارياً للمستخدم ومفتاح جلسة معاً، فتصبح المشاركة دون حساب قراراً في تصميم المخطط لا شرطاً في طبقة العرض",
+          "<strong>واجهة REST مُنمَّطة عبر django-ninja</strong> — مخططات Pydantic من نوع <code>In</code>/<code>Out</code> مع <code>ErrorSchema</code> موحّد، ما يمنح التحقق والتسلسل وتوثيق OpenAPI من تعريف واحد",
+          "<strong>اختبارات لكل تطبيق ومن الطرف إلى الطرف</strong> — حزم <code>tests/</code> مخصّصة للنماذج والمسارات والعروض والصلاحيات، إضافة إلى ثلاث مجموعات Selenium WebDriver"]},
+ {course:"أنظمة التشغيل",
+  desc:"محاكي نظام تشغيل متعدد المعالجات بلغة C، حيث العمليات المُحاكاة برامج منفصلة فعلياً تطلب وقت المعالج وصفحات الذاكرة من النواة عبر المقابس، بدل أن تكون تكرارات داخل حلقة في العملية نفسها.",
+  points:["<strong>ثلاثة مجدولات قابلة للتبديل</strong> — FIFO وRound Robin (شريحة 400 مللي ثانية) وطابور تغذية راجعة متعدد المستويات من ثلاث درجات مع الخفض — تعمل على ما يصل إلى أربعة معالجات",
+          "<strong>أربع سياسات لاستبدال الصفحات</strong> (FIFO وRANDOM وCLOCK وLRU) تُقارَن على حِمل العمل ذاته، مع مكدّس إطارات حرة للتخصيص بزمن O(1)",
+          "<strong>نواة متعددة الخيوط باتصال عبر المقابس</strong> — خيوط pthreads تنسّق العمليات المُحاكاة، ويُبلِّغ التشغيل عن أزمنة الاستجابة والإنجاز للمقارنة"]},
+ {course:"الخوارزميات وبنى المعطيات",
+  desc:"محرّك بلغة Java يقرأ ستة ملفات CSV مترابطة تضمّ آلاف سجلات الأفلام ويجيب عن استعلامات تحليلية عليها، مع اختيار بنية المعطيات وفق نمط الوصول لإبقاء عمليات البحث خارج المسار O(n).",
+  points:["<strong>البنية تُختار حسب الاستعلام لا حسب الكيان</strong> — <code>HashMap</code> للبحث بالمعرّف والاسم، و<code>HashSet</code> لكشف التكرار بزمن O(1) أثناء التحميل، و<code>ArrayList</code> للاستعلامات المرتّبة",
+          "<strong>مجموعات مُهيّأة الحجم مسبقاً</strong> — مقايضة الذاكرة مقدماً لتفادي إعادة التخصيص والنسخ المتكررين عبر آلاف عمليات الإدراج",
+          "<strong>عشرون صف اختبار بـ JUnit 5</strong> تغطي نجاح التحليل وفشله، وكل أمر استعلام، وتحمّل المدخلات المشوّهة"]},
+ {course:"لغات البرمجة II",
+  desc:"لعبة لوحية بلغة Java استُخدمت تمريناً على التصميم القابل للتوسّع: اثنا عشر نوعاً من العقبات وعدة أنواع من الأدوات، يجب أن تقبل إضافات جديدة دون إعادة كتابة حلقة اللعبة.",
+  points:["<strong>تعدّد الأشكال بدل الشروط</strong> — كل عقبة ترث الصنف المجرّد <code>Abyss</code>، وكل أداة تُنفّذ الواجهة <code>Tool</code>؛ ومدير اللعبة لا يسأل أبداً عن نوع ما وقع عليه اللاعب",
+          "<strong>نمط المصنع (Factory)</strong> لإنشاء المتغيّرات، بحيث تمسّ إضافة عقبة موضعاً واحداً",
+          "<strong>نُمذجت أولاً بـ UML</strong>، مع الوراثة وتعدّد الأشكال يقودان هرم الأصناف، إضافة إلى حفظ الحالة واستعادتها"]},
+ {course:"علم البيانات",
+  desc:"ثلاثة عشر أسبوعاً من الدفاتر التطبيقية تسير في سير العمل بترتيبه الحقيقي: فهم البيانات قبل نمذجتها، والتقييم بأمانة قبل تصديق أي نتيجة.",
+  points:["<strong>الإحصاء الوصفي والتحليل الاستكشافي</strong> — التوزيعات والبنية والفجوات والقيم الشاذّة تُفحص قبل ملاءمة أي نموذج",
+          "<strong>التعلّم الموجَّه وغير الموجَّه</strong> — الانحدار الخطي واللوجستي والتجميع، مطبَّقة على بيانات تمتدّ من أسعار المساكن إلى بيانات النجاة",
+          "<strong>اختيار المقياس قرارٌ لا إعداد افتراضي</strong> — الدقة على الفئات غير المتوازنة مضلّلة فعلياً، لذا يجب أن يوافق المقياس كلفة كل نوع من الخطأ"]},
+ {course:"معالجة الصور",
+  desc:"سلسلة معالجة مكتبية تكتشف إشارات المرور في صور ثابتة، وتصنّفها حسب الشكل، وتقرأ الرقم على إشارات تحديد السرعة — وكل خوارزمية مُنفَّذة على مستوى البكسل.",
+  points:["<strong>تجزئة لونية في فضاء HSV</strong> بدل RGB، بحيث تقع الإشارة نفسها في الظل وفي الشمس ضمن نطاق تدرّج واحد",
+          "<strong>وسم المركّبات المتصلة</strong> يربط البكسلات الملوّنة بأجسام مرشّحة، ثم يفصل تصنيف الأشكال الإشارات الدائرية عن المثلثة",
+          "<strong>تعرّف ضوئي على الأرقام بمطابقة القوالب</strong> — مع عشرة رموز بمقياس معلوم، تتفوّق مقارنة البكسلات على نموذج متعلّم في البساطة والموثوقية معاً"]}
+],
+courses:[
+ {n:"الرياضيات II", d:"التفاضل والتكامل متعدد المتغيرات، والمشتقات الجزئية، والتدرّجات، والمعادلات التفاضلية."},
+ {n:"الرياضيات I", d:"النهايات والاتصال والاشتقاق والتكامل والمتتاليات والمتسلسلات."},
+ {n:"أساسيات الفيزياء", d:"الميكانيكا والكهرباء والمغناطيسية وتحليل الدارات."},
+ {n:"الكفايات السلوكية", d:"التواصل والعمل الجماعي وإدارة الوقت وأخلاقيات المهنة."},
+ {n:"الرياضيات المتقطعة", d:"المنطق والبرهان بالاستقراء والمجموعات والعلاقات والتوافيق ونظرية المخططات."},
+ {n:"النظم الرقمية", d:"جبر بوول وخرائط كارنو والقلّابات والآلات ذات الحالات المنتهية."},
+ {n:"أساسيات البرمجة", d:"التحكم في المسار، والدوال، والمصفوفات، والاستدعاء الذاتي، وتفكيك المسائل."},
+ {n:"الجبر الخطي", d:"الفضاءات المتجهية وعمليات المصفوفات والتحويلات الخطية والقيم الذاتية."},
+ {n:"معمارية الحاسوب", d:"مسار بيانات المعالج، ومجموعات التعليمات، وخطوط الأنابيب، وتدرّج الذاكرة."},
+ {n:"الخوارزميات وبنى المعطيات", d:"محرّك Java يستعلم عن مجموعات CSV كبيرة؛ البنية تُختار حسب الاستعلام."},
+ {n:"لغات البرمجة I", d:"لغة C — المؤشرات، وإدارة الذاكرة يدوياً، والقوائم المترابطة، وعمليات الملفات."},
+ {n:"برمجة الويب", d:"منصّة Django 5.2 — واجهة REST مُنمَّطة عبر django-ninja، وتقييمات مجهولة، واختبارات Selenium."},
+ {n:"المعماريات الحاسوبية المتقدمة", d:"دارات Arduino مع حسّاسات ومشغّلات وشاشة LCD ومقاطعات مؤقّتة."},
+ {n:"معالجة الصور", d:"كشف إشارات المرور بـ C#/EmguCV مع تجزئة HSV وتعرّف ضوئي على الأرقام."},
+ {n:"هندسة المتطلبات والاختبار", d:"جمع المتطلبات بالشخصيات والمقابلات؛ ومواصفات وظيفية وغير وظيفية."},
+ {n:"قواعد البيانات", d:"النمذجة ER، والتطبيع حتى الصيغة الثالثة، وSQL، والإجراءات المخزّنة، وETL."},
+ {n:"أنظمة التشغيل", d:"OSSIM — محاكي نظام تشغيل متعدد المعالجات بلغة C: 3 مجدولات و4 سياسات صفحات."},
+ {n:"شبكات الحاسوب", d:"طوبولوجيا مؤسسية متعددة المواقع مع VLAN والتوجيه واللاسلكي في Packet Tracer."},
+ {n:"الإشارات والأنظمة", d:"الأنظمة الخطية الثابتة، والالتفاف، وتحويلا فورييه المتقطع وZ."},
+ {n:"نظم دعم القرار", d:"النمذجة البُعدية، وETL عبر Pentaho، والتقارير في Power BI على Oracle."},
+ {n:"لغات البرمجة II", d:"لعبة لوحية بلغة Java — الوراثة وتعدّد الأشكال ونمط المصنع."},
+ {n:"مشروع التخرّج", d:"منصّة مدرسية بـ Flutter وSupabase مع Row-Level Security عبر أربعة أدوار."},
+ {n:"الذكاء الاصطناعي", d:"الذكاء الرمزي والاتصالي، وتمثيل المعرفة، والتعلّم العميق."},
+ {n:"هندسة البرمجيات", d:"قصص المستخدم الرشيقة، ومخططات UML للأصناف والتسلسل، والتصميم الأولي، وDevOps."},
+ {n:"نظم المعلومات السحابية", d:"نماذج IaaS/PaaS/SaaS مع AWS EC2 وVPC وElastic Beanstalk وDocker."},
+ {n:"علم البيانات", d:"التحليل الاستكشافي والانحدار والتجميع وتقييم النماذج بأمانة."},
+ {n:"الحوسبة الموزّعة", d:"أربع خدمات Spring Boot مع Kafka وOpenFeign وقاعدة بيانات لكل خدمة."},
+ {n:"التفاعل بين الإنسان والآلة", d:"التقييم الاستدلالي ونموذج Axure Metro أوّلي مع اختبارات إمكانية الوصول."},
+ {n:"الحوسبة المحمولة", d:"تطوير التطبيقات المحمولة متعددة المنصّات. قيد الدراسة حالياً."},
+ {n:"أمن المعلومات", d:"التعمية والمصادقة وأمن الشبكات والتطبيقات. قيد الدراسة حالياً."}
+],
+stack:["اللغات","الهواتف","الخلفية","الواجهة","قواعد البيانات","البيانات وذكاء الأعمال","السحابة وDevOps","أنظمة الرسائل","الاختبارات","النمذجة"],
+experience:[
+ {role:"عضو المجلس الرقابي", org:"اتحاد اللاجئين في البرتغال", when:"أكثر من 7 سنوات",
+  desc:"تدقيق حسابات الجمعية ومستنداتها وتقاريرها؛ ودعم إداري للأنشطة والتواصل مع الأعضاء."},
+ {role:"مدرّس رياضيات", org:"التعليم الثانوي · سوريا", when:"2009 – 2015",
+  desc:"ست سنوات في تدريس الرياضيات للمرحلة الثانوية — إعداد الدروس والتمارين وتصميم التقييمات."},
+ {role:"دعم لوجستي", org:"الحملة الوطنية للتلقيح ضد شلل الأطفال · سوريا", when:"2013 – 2015",
+  desc:"دعم لوجستي وإداري لحملة استئصال شلل الأطفال، شمل التنسيق وإدارة بيانات الحملة."}
+],
+langs:[["العربية","اللغة الأم"],["البرتغالية","مستوى مهني"],["الإنجليزية","مستوى مهني"]]
+}
+};
+
+/* Overlay a translation array onto the English base, by index. */
+const localise = (base, key) => {
+  const ov = TRANS[LANG] && TRANS[LANG][key];
+  return ov ? base.map((item,i)=>Object.assign({}, item, ov[i]||{})) : base;
+};
+
 /* ── Helpers ─────────────────────────────────────────────── */
 const $  = (s,r=document)=>r.querySelector(s);
 const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
@@ -781,16 +1188,16 @@ const ICON_CODE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
 const ICON_LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>';
 
 /* ── Identity binding ────────────────────────────────────── */
-(function identity(){
+function identity(){
   const named = CONFIG.name.trim().length > 0;
 
   $('[data-bind="shortName"]').textContent = CONFIG.shortName || CONFIG.name || 'Portfolio';
   $('[data-bind="heroName"]').textContent  = named ? CONFIG.name : 'Portfolio';
-  $('.hero-role .grad').textContent        = CONFIG.role || '';
+  $('.hero-role .grad').textContent        = ui('role') || CONFIG.role || '';
   $('[data-bind="footerName"]').textContent = named
     ? `© ${new Date().getFullYear()} ${CONFIG.name}`
     : `© ${new Date().getFullYear()} Portfolio`;
-  document.title = named ? `${CONFIG.name} — ${CONFIG.role}` : 'Portfolio';
+  document.title = named ? `${CONFIG.name} — ${ui('role')}` : 'Portfolio';
 
   // Source-code button
   const repoBtn = $('[data-bind="repoHref"]');
@@ -814,17 +1221,18 @@ const ICON_LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" st
     box.insertAdjacentHTML('beforeend',
       `<span class="ph">Add your ${missing.join(' and ')} URL in CONFIG at the top of this file</span>`);
   }
-})();
+}
 
 /* ── Render: shipped work ────────────────────────────────── */
 const ICON_EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>';
 
-$('#workGrid').innerHTML = WORK.map(p=>{
+function renderWork(){
+$('#workGrid').innerHTML = localise(WORK,'work').map(p=>{
   const buttons = [];
-  if (p.live) buttons.push(`<a class="btn btn-primary" style="justify-content:center" href="${esc(p.live)}" target="_blank" rel="noopener">${esc(p.liveLabel||'View live')}${ICON_EXT}</a>`);
-  if (p.repo) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.repo)}" target="_blank" rel="noopener">View code${ICON_EXT}</a>`);
-  if (p.cert) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.cert.url)}" target="_blank" rel="noopener">${esc(p.cert.label)}${ICON_EXT}</a>`);
-  if (!buttons.length) buttons.push(`<p class="code-note" style="margin-top:0">${ICON_LOCK}Private client project — source not public</p>`);
+  if (p.live) buttons.push(`<a class="btn btn-primary" style="justify-content:center" href="${esc(p.live)}" target="_blank" rel="noopener">${esc(p.liveLabel||ui('viewLive'))}${ICON_EXT}</a>`);
+  if (p.repo) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.repo)}" target="_blank" rel="noopener">${ui('viewCode')}${ICON_EXT}</a>`);
+  if (p.cert) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.cert.url)}" target="_blank" rel="noopener">${ui('certLabel')}${ICON_EXT}</a>`);
+  if (!buttons.length) buttons.push(`<p class="code-note" style="margin-top:0">${ICON_LOCK}${ui('privateProject')}</p>`);
 
   return `
   <article class="card proj reveal">
@@ -843,9 +1251,11 @@ $('#workGrid').innerHTML = WORK.map(p=>{
     </div>
   </article>`;
 }).join('');
+}
 
 /* ── Render: academic projects ───────────────────────────── */
-$('#projGrid').innerHTML = PROJECTS.map(p=>`
+function renderProjects(){
+$('#projGrid').innerHTML = localise(PROJECTS,'projects').map(p=>`
   <article class="card proj reveal">
     <div>
       <div class="proj-top">
@@ -858,20 +1268,21 @@ $('#projGrid').innerHTML = PROJECTS.map(p=>`
     </div>
     <div class="proj-side">
       <dl class="proj-meta">
-        <div class="meta-row"><dt>Grade</dt><dd>${p.grade} / 20</dd></div>
-        <div class="meta-row"><dt>Credits</dt><dd>${p.ects} ECTS</dd></div>
-        <div class="meta-row"><dt>Course</dt><dd style="font-size:12px">${esc(p.course)}</dd></div>
+        <div class="meta-row"><dt>${ui('mGrade')}</dt><dd dir="ltr">${p.grade} / 20</dd></div>
+        <div class="meta-row"><dt>${ui('mCredits')}</dt><dd dir="ltr">${p.ects} ECTS</dd></div>
+        <div class="meta-row"><dt>${ui('mCourse')}</dt><dd style="font-size:12px">${esc(p.course)}</dd></div>
       </dl>
       <div class="tags">${p.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
       <a class="btn btn-ghost" style="justify-content:center" href="${esc(folderUrl(p.folder))}">
-        ${p.code === false ? 'Read the write-up' : 'Read the README'}
+        ${p.code === false ? ui('readWriteup') : ui('readReadme')}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       ${p.code === false
-        ? `<p class="code-note">${ICON_LOCK}${esc(p.codeNote || 'Source not public')}</p>`
-        : `<p class="code-note ok">${ICON_CODE}Full source in this repository</p>`}
+        ? `<p class="code-note">${ICON_LOCK}${esc(p.codeNote || ui('noSource'))}</p>`
+        : `<p class="code-note ok">${ICON_CODE}${ui('fullSource')}</p>`}
     </div>
   </article>`).join('');
+}
 
 /* ── Render: background ──────────────────────────────────── */
 const EXPERIENCE = [
@@ -895,7 +1306,8 @@ const LANGS = [
   ["English","Professional"]
 ];
 
-$('#expList').innerHTML = EXPERIENCE.map(e=>`
+function renderBackground(){
+$('#expList').innerHTML = localise(EXPERIENCE,'experience').map(e=>`
   <li>
     <div class="tl-role">${esc(e.role)}</div>
     <div class="tl-org">${esc(e.org)}</div>
@@ -906,15 +1318,19 @@ $('#expList').innerHTML = EXPERIENCE.map(e=>`
 $('#certList').innerHTML = CERTS.map(([t,by,url])=>
   `<li><a href="${esc(url)}" target="_blank" rel="noopener" class="cert-link"><b>${esc(t)}</b></a><span class="meta">${esc(by)}</span></li>`).join('');
 
-$('#langList').innerHTML = LANGS.map(([l,lv])=>
+$('#langList').innerHTML = ((TRANS[LANG]&&TRANS[LANG].langs)||LANGS).map(([l,lv])=>
   `<li><b>${esc(l)}</b><span class="meta">${esc(lv)}</span></li>`).join('');
+}
 
 /* ── Render: tech stack ──────────────────────────────────── */
-$('#stackGrid').innerHTML = STACK.map(([group,items])=>`
+function renderStack(){
+const gNames = (TRANS[LANG]&&TRANS[LANG].stack)||null;
+$('#stackGrid').innerHTML = STACK.map(([group,items],gi)=>`
   <div class="card stack-group reveal">
-    <h3>${esc(group)}</h3>
+    <h3>${esc(gNames?gNames[gi]:group)}</h3>
     <div class="tags">${items.map(i=>`<span class="tag">${esc(i)}</span>`).join('')}</div>
   </div>`).join('');
+}
 
 /* ── Render: courses + filtering ─────────────────────────── */
 const FILTERS = [
@@ -926,11 +1342,13 @@ const FILTERS = [
   ['top',  'Grade 14+',    c=>c.g!==null && c.g>=14]
 ];
 
-$('#filters').innerHTML = FILTERS.map(([k,label],i)=>
-  `<button class="filter" data-f="${k}" aria-pressed="${i===0}">${esc(label)}</button>`
+function renderCourses(){
+const FKEYS = ['fAll','fY1','fY2','fY3','fCode','fTop'];
+$('#filters').innerHTML = FILTERS.map(([k],i)=>
+  `<button class="filter" data-f="${k}" aria-pressed="${i===0}">${esc(ui(FKEYS[i]))}</button>`
 ).join('');
 
-$('#courseGrid').innerHTML = COURSES.map(c=>{
+$('#courseGrid').innerHTML = localise(COURSES,'courses').map(c=>{
   const done = c.g !== null;
   // A card is a single link, so nested anchors aren't possible. Where a course
   // has a deployed demo, the whole card points there — a working app beats a
@@ -942,19 +1360,20 @@ $('#courseGrid').innerHTML = COURSES.map(c=>{
     <div class="course-hd">
       <h3>${esc(c.n)}</h3>
       ${done ? `<span class="grade${c.g>=16?' hi':''}">${c.g}</span>`
-             : `<span class="grade wip" title="Not yet completed">···</span>`}
+             : `<span class="grade wip" title="${ui('wipTitle')}">···</span>`}
     </div>
     <p class="course-desc">${esc(c.d)}</p>
     <div class="course-ft">
-      <span>${c.e} ECTS · Year ${c.y}</span>
+      <span dir="ltr">${ui('ectsYear')(c.e,c.y)}</span>
       <span class="ft-tags">
-        ${c.code ? `<span class="has-code">${ICON_CODE} source</span>` : ''}
-        ${c.live ? `<span class="live-tag">${ICON_EXT}live</span>` : ''}
-        ${!c.code && !c.live && !done ? '<span class="wip-tag">in progress</span>' : ''}
+        ${c.code ? `<span class="has-code">${ICON_CODE} ${ui('sourceTag')}</span>` : ''}
+        ${c.live ? `<span class="live-tag">${ICON_EXT}${ui('liveTag')}</span>` : ''}
+        ${!c.code && !c.live && !done ? `<span class="wip-tag">${ui('wipTag')}</span>` : ''}
       </span>
     </div>
   </a>`;
 }).join('');
+}
 
 $('#filters').addEventListener('click', e=>{
   const btn = e.target.closest('.filter');
@@ -987,53 +1406,105 @@ addEventListener('scroll', ()=>{
   $('#hdr').classList.toggle('stuck', scrollY > 8);
 }, {passive:true});
 
-/* ── Deep links ──────────────────────────────────────────────
-   Sections are rendered by JS above, so the browser resolves any
-   incoming #hash against a much shorter document and lands in the
-   wrong place. Re-resolve it once now that the content exists. */
-if (location.hash) {
-  try {
-    const target = document.querySelector(location.hash);
-    if (target) target.scrollIntoView({behavior:'instant', block:'start'});
-  } catch { /* malformed hash - ignore */ }
-}
-
 /* ── Motion: reveal + counters (reduced-motion aware) ────── */
-(function motion(){
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduced){
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let revealIO = null, countIO = null;
+
+function observeMotion(){
+  if (REDUCED){
     $$('.reveal').forEach(el=>el.classList.add('in'));
+    $$('[data-count]').forEach(el=>{ el.textContent = el.dataset.count; });
     return;
   }
+  if (!revealIO){
+    revealIO = new IntersectionObserver((entries)=>{
+      entries.forEach((entry, i)=>{
+        if(!entry.isIntersecting) return;
+        const el = entry.target;
+        setTimeout(()=>el.classList.add('in'), Math.min(i,6) * 55);
+        revealIO.unobserve(el);
+      });
+    }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
+  }
+  $$('.reveal:not(.in)').forEach(el=>revealIO.observe(el));
 
-  // Staggered reveal on scroll
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach((entry, i)=>{
-      if(!entry.isIntersecting) return;
-      const el = entry.target;
-      setTimeout(()=>el.classList.add('in'), Math.min(i,6) * 55);
-      io.unobserve(el);
-    });
-  }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
-  $$('.reveal').forEach(el=>io.observe(el));
+  if (!countIO){
+    countIO = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = +el.dataset.count;
+        const start = performance.now(), dur = 900;
+        const tick = now =>{
+          const t = Math.min((now-start)/dur, 1);
+          el.textContent = Math.round(target * (1 - Math.pow(1-t, 3)));
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        countIO.unobserve(el);
+      });
+    }, {threshold:.5});
+  }
+  $$('[data-count]').forEach(el=>countIO.observe(el));
+}
 
-  // Count-up stats
-  const co = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = +el.dataset.count;
-      const start = performance.now(), dur = 900;
-      const tick = now =>{
-        const t = Math.min((now-start)/dur, 1);
-        el.textContent = Math.round(target * (1 - Math.pow(1-t, 3)));
-        if (t < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-      co.unobserve(el);
-    });
-  }, {threshold:.5});
-  $$('[data-count]').forEach(el=>co.observe(el));
+/* ── Language ────────────────────────────────────────────────
+   Sets LANG, flips document direction, refreshes every static
+   string, then re-renders the JS-built sections. */
+function applyLang(lang, {persist=true} = {}){
+  LANG = LANGS_AVAILABLE.includes(lang) ? lang : 'en';
+  const root = document.documentElement;
+  root.setAttribute('lang', LANG);
+  root.setAttribute('dir', LANG === 'ar' ? 'rtl' : 'ltr');
+
+  $$('#langSwitch button').forEach(b=>
+    b.setAttribute('aria-pressed', String(b.dataset.lang === LANG)));
+
+  $$('[data-i18n]').forEach(el=>{
+    const v = ui(el.dataset.i18n);
+    if (typeof v === 'string') el.textContent = v;
+  });
+  $$('[data-i18n-html]').forEach(el=>{
+    const v = ui(el.dataset.i18nHtml);
+    if (typeof v === 'string') el.innerHTML = v;
+  });
+
+  const md = document.querySelector('meta[name="description"]');
+  if (md) md.setAttribute('content', ui('metaDesc'));
+
+  identity();
+  renderWork();
+  renderProjects();
+  renderBackground();
+  renderStack();
+  renderCourses();
+  observeMotion();
+
+  if (persist) localStorage.setItem('portfolio-lang', LANG);
+}
+
+$('#langSwitch').addEventListener('click', e=>{
+  const btn = e.target.closest('button');
+  if (btn) applyLang(btn.dataset.lang);
+});
+
+/* ── Init ────────────────────────────────────────────────── */
+(function init(){
+  const fromUrl = new URLSearchParams(location.search).get('lang');
+  const saved   = localStorage.getItem('portfolio-lang');
+  const browser = (navigator.language||'en').slice(0,2);
+  const start   = [fromUrl, saved, LANGS_AVAILABLE.includes(browser) ? browser : null, 'en']
+                    .find(v => v && LANGS_AVAILABLE.includes(v));
+  applyLang(start, {persist: Boolean(fromUrl || saved)});
+
+  /* Sections are rendered by JS, so an incoming #hash resolved against
+     an empty document. Re-resolve it now that the content exists. */
+  if (location.hash) {
+    try {
+      const target = document.querySelector(location.hash);
+      if (target) target.scrollIntoView({behavior:'instant', block:'start'});
+    } catch { /* malformed hash - ignore */ }
+  }
 })();
 </script>
 </body>
