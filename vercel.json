@@ -3,6 +3,7 @@
   "rewrites": [
     { "source": "/", "destination": "/docs/index.html" },
     { "source": "/index.html", "destination": "/docs/index.html" },
-    { "source": "/certificates/:path*", "destination": "/docs/certificates/:path*" }
+    { "source": "/certificates/:path*", "destination": "/docs/certificates/:path*" },
+    { "source": "/og-image.png", "destination": "/docs/og-image.png" }
   ]
 }
