@@ -415,7 +415,7 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
     </div>
 
     <div class="stats reveal">
-      <div class="stat"><div class="stat-n" data-count="3">3</div><div class="stat-l">Apps shipped to users</div></div>
+      <div class="stat"><div class="stat-n" data-count="5">5</div><div class="stat-l">Apps shipped to users</div></div>
       <div class="stat"><div class="stat-n"><span data-count="170">170</span><span style="font-size:.5em;color:var(--fg-subtle)">/180</span></div><div class="stat-l">ECTS completed</div></div>
       <div class="stat"><div class="stat-n">13.5<span style="font-size:.5em;color:var(--fg-subtle)">/20</span></div><div class="stat-l">Weighted average</div></div>
       <div class="stat"><div class="stat-n" data-count="7">7</div><div class="stat-l">Programming languages</div></div>
@@ -548,6 +548,36 @@ const WORK = [
     repo: "",
     live: "https://bit.ly/jrs-pt-app",
     liveLabel: "Download the APK"
+  },
+  {
+    title: "CIL App",
+    context: "Comunidade Islâmica de Lisboa · Lisbon Central Mosque",
+    badge: "Official community app",
+    desc: "The official mobile application of the Islamic Community of Lisbon — prayer times, Islamic calendar, community news and events, membership, and donations, in three languages.",
+    points: [
+      "<strong>Prayer times computed on-device</strong> with the adhan astronomical library, adjusted to the user's GPS position and timezone — accurate without a server round-trip",
+      "<strong>Hijri calendar, events, membership, and donation flows</strong> organised in a feature-first Flutter architecture",
+      "<strong>Fully localised in Portuguese, English, and French</strong>, with offline caching via Hive"
+    ],
+    tags: ["Flutter","Dart","Provider","go_router","Hive","adhan"],
+    repo: "https://github.com/tamimbmali-a21908541/academic-portfolio/tree/main/cil-app",
+    live: "",
+    liveLabel: ""
+  },
+  {
+    title: "PowerInvoice",
+    context: "Standalone invoicing app · offline-first product",
+    badge: "Works with no backend",
+    desc: "A self-contained Flutter invoicing app — clients, products, invoices, and payments managed entirely on the phone, with no server, account, or subscription required.",
+    points: [
+      "<strong>PDF invoices generated on-device</strong> — composed, previewed, printed, and shared straight from the phone",
+      "<strong>Offline licence activation</strong> — a device-bound key system, so the app can be sold and activated without any server infrastructure",
+      "<strong>Google Drive backup and contact import</strong> — users back up to their own Drive via Google Sign-In and pull clients from phone contacts"
+    ],
+    tags: ["Flutter","Dart","PDF","Google Drive API","Offline-first"],
+    repo: "https://github.com/tamimbmali-a21908541/academic-portfolio/tree/main/powerinvoice-app",
+    live: "",
+    liveLabel: ""
   },
   {
     title: "Hayya-Jirani",
