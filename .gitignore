@@ -1,15 +1,15 @@
-# ---- Secrets & local config ----
+# Secrets & local config
 .env
 *.env
 !.env.example
 .claude/
 
-# ---- Android signing credentials (never publish) ----
+# Signing credentials
 *.jks
 *.keystore
 **/key.properties
 
-# ---- Python ----
+# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -20,20 +20,20 @@ env/
 .coverage
 htmlcov/
 
-# ---- Django ----
+# Django
 db.sqlite3
 db.sqlite3-journal
 staticfiles/
 media/
 *.log
 
-# ---- Java / Maven ----
+# Java / Maven
 target/
 *.class
 *.jar
 !**/.mvn/wrapper/maven-wrapper.jar
 
-# ---- .NET / Visual Studio ----
+# .NET / Visual Studio
 bin/
 obj/
 .vs/
@@ -42,47 +42,35 @@ packages/
 *.user
 *.csproj.user
 
-# ---- Editors ----
-.idea/
-.vscode/
-*.swp
-*~
-
-# ---- OS ----
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# ---- Personal transcript source (kept local, not published) ----
-/1.xlsx
-/2.xlsx
-/3.xlsx
-
-# ---- Local-only Django projects, not published ----
-# web2/            = local working copy of the published web-programming/ project
-# web-multiapp-local/ = a separate 13-app Django project (biblioteca, bandas, blog...)
-# Neither is committed. Delete a line here to start publishing that folder.
-/web2/
-/web-multiapp-local/
-
-# ---- CV (contains phone number - send directly, don't publish) ----
-/CV_Tamim_Mohamed_Ali.pdf
-
-# ---- Flutter / Dart ----
+# Flutter / Dart
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 **/android/.gradle/
 **/ios/Pods/
 
-# ---- Node / frontend build output ----
+# Node
 node_modules/
 
-# ---- cil-app: local working files, not part of the app ----
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local working files (not published)
+/1.xlsx
+/2.xlsx
+/3.xlsx
+/web2/
+/web-multiapp-local/
+/CV_Tamim_Mohamed_Ali.pdf
+/PowerInvoice/
 /cil-app/error.txt
 /cil-app/info.txt
 /cil-app/1.png
-
-# ---- Local-only backend workspace, not published ----
-# The published PowerInvoice mobile app lives in /powerinvoice-app/.
-/PowerInvoice/
