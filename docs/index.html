@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tamim Mohamed Ali — Software Developer &amp; Data Analyst</title>
-<meta name="description" content="Tamim Mohamed Ali — Software Developer &amp; Data Analyst in Lisbon. Flutter, Java, C#, Python/Django, SQL and Power BI. Built the Jesuit Refugee Service's first mobile application worldwide.">
+<meta name="description" content="Tamim Mohamed Ali — Software Developer &amp; Data Analyst in Lisbon. Flutter, Java, C#, Python/Django, SQL and Power BI. Mobile apps built for the Jesuit Refugee Service and the Islamic Community of Lisbon.">
 <meta name="theme-color" content="#09090B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233B82F6'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='13' font-weight='bold' fill='white' text-anchor='middle'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tamim Mohamed Ali — Software Developer &amp; Data Analyst">
-<meta property="og:description" content="Flutter, Java, C#, Python/Django, SQL and Power BI. Built the Jesuit Refugee Service's first mobile app worldwide. 170/180 ECTS in Computer Engineering, Universidade Lusófona.">
+<meta property="og:description" content="Flutter, Java, C#, Python/Django, SQL and Power BI. Mobile apps built for the Jesuit Refugee Service and the Islamic Community of Lisbon. 170/180 ECTS in Computer Engineering, Universidade Lusófona.">
 <meta property="og:url" content="https://academic-portfolio-tau.vercel.app/">
 <meta property="og:image" content="https://academic-portfolio-tau.vercel.app/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -397,9 +397,10 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
     <h1 data-bind="heroName">Tamim Mohamed Ali</h1>
     <p class="hero-role"><span class="grad">Software Developer &amp; Data Analyst</span></p>
     <p class="hero-lead">
-      I build mobile and web applications that ship. My Flutter app for the
-      <strong>Jesuit Refugee Service is the organisation's first mobile application worldwide</strong>,
-      and I've since delivered an international competition entry and a live data-analysis platform.
+      I build mobile and web applications that ship. I built a Flutter app for the
+      <strong>Jesuit Refugee Service</strong>, the official app for the
+      <strong>Islamic Community of Lisbon</strong>, an international competition entry,
+      and a live data-analysis platform.
       Currently finishing a BSc in Computer Engineering at Universidade Lusófona —
       <strong>170 of 180 ECTS</strong>, with two courses left.
     </p>
@@ -537,10 +538,10 @@ const WORK = [
   {
     title: "JRS-PT",
     context: "Jesuit Refugee Service · Portugal",
-    badge: "First JRS app worldwide",
-    desc: "A mobile application supporting refugees in Portugal, built for the Jesuit Refugee Service — the first mobile app the organisation has deployed anywhere in the world.",
+    badge: "International NGO",
+    desc: "A mobile application supporting refugees in Portugal, built for the Jesuit Refugee Service — an international humanitarian organisation.",
     points: [
-      "<strong>Selected by an international NGO</strong> as their first mobile platform, serving a vulnerable user base where clarity and reliability matter more than features",
+      "<strong>Built for an international NGO</strong>, serving a vulnerable user base where clarity and reliability matter more than features",
       "<strong>Flutter 3.24 with Material Design 3</strong>, including animated transitions and an accessible, localised interface",
       "<strong>Automated release pipeline</strong> — GitHub Actions builds and publishes the signed APK on every tagged release"
     ],
@@ -651,6 +652,54 @@ const PROJECTS = [
       "<strong>Tests per app and end to end</strong> — dedicated <code>tests/</code> packages for forms, models, URLs, views and permissions, plus three Selenium WebDriver suites"
     ],
     tags: ["Django 5.2","django-ninja","Pydantic","PostgreSQL","Cloudinary","Selenium","Docker"]
+  },
+  {
+    title: "OSSIM — Operating System Simulator",
+    course: "Operating Systems",
+    grade: 12, ects: 6, folder: "operating-systems",
+    desc: "A multi-CPU operating system simulator in C where the simulated processes are real separate programs that request CPU time and memory pages from the kernel over sockets, rather than loop iterations inside one process.",
+    points: [
+      "<strong>Three interchangeable schedulers</strong> — FIFO, Round Robin (400 ms slice) and a 3-level Multi-Level Feedback Queue with demotion — running across up to 4 CPUs",
+      "<strong>Four page-replacement policies</strong> (FIFO, RANDOM, CLOCK, LRU) compared on the same workload, with a free-frame stack for O(1) allocation",
+      "<strong>Threaded kernel with socket IPC</strong> — pthreads coordinate the simulated processes, and the run reports comparative turnaround and response times"
+    ],
+    tags: ["C","pthreads","Sockets","Scheduling","Virtual Memory"]
+  },
+  {
+    title: "DEISI MDB — Dataset Query Engine",
+    course: "Algorithms and Data Structures",
+    grade: 10, ects: 6, folder: "algorithms-and-data-structures",
+    desc: "A Java engine that ingests six related CSV files totalling thousands of movie records and answers analytical queries over them, with the data structure chosen per access pattern to keep lookups off the O(n) path.",
+    points: [
+      "<strong>Structure chosen per query, not per entity</strong> — <code>HashMap</code> for ID and name lookups, <code>HashSet</code> for O(1) duplicate detection during ingest, <code>ArrayList</code> for ordered range queries",
+      "<strong>Pre-sized collections</strong> — trading memory up front to avoid repeated reallocation-and-copy across thousands of inserts",
+      "<strong>20 JUnit 5 test classes</strong> covering parsing success and failure, each query command, and malformed-input tolerance"
+    ],
+    tags: ["Java","JUnit 5","Data Structures","CSV parsing","Complexity"]
+  },
+  {
+    title: "The Great Programming Journey",
+    course: "Programming Languages II",
+    grade: 10, ects: 6, folder: "programming-languages-ii",
+    desc: "A Java board game used as an exercise in designing for variation: a dozen hazard types and several remedy types that must accept new members without the game loop being rewritten.",
+    points: [
+      "<strong>Polymorphism instead of conditionals</strong> — every hazard extends an abstract <code>Abyss</code>, every remedy implements <code>Tool</code>; the game manager never asks what kind it landed on",
+      "<strong>Factory pattern</strong> for constructing the variants, so adding a hazard touches one place",
+      "<strong>Modelled in UML first</strong>, with inheritance and polymorphism driving the class hierarchy, plus save/load persistence"
+    ],
+    tags: ["Java","OOP","UML","Design Patterns","Inheritance"]
+  },
+  {
+    title: "Data Science — Statistics & Modelling",
+    course: "Data Science",
+    grade: 13, ects: 5, folder: "data-science",
+    desc: "Thirteen weeks of practical notebooks running the workflow in its real order: understand the data before modelling it, and evaluate honestly before believing a result.",
+    points: [
+      "<strong>Descriptive statistics and exploratory analysis</strong> — distributions, structure, gaps and outliers examined before any model is fitted",
+      "<strong>Supervised and unsupervised learning</strong> — linear and logistic regression, clustering, applied across datasets from housing prices to survival data",
+      "<strong>Metric choice as a decision, not a default</strong> — accuracy on imbalanced classes is actively misleading, so the metric has to match the cost of each error type"
+    ],
+    tags: ["Python","Jupyter","pandas","scikit-learn","Statistics"]
   },
   {
     title: "Traffic Sign Recognition",
