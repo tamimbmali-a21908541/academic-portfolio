@@ -1,0 +1,26 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+
+    // Create flutter extension object for older plugin compatibility
+    // Plugins like geolocator_android access: flutter.compileSdkVersion
+    project.ext.flutter = [
+        compileSdkVersion: 34,
+        targetSdkVersion: 34,
+        minSdkVersion: 21,
+        ndkVersion: "25.1.8937393"
+    ]
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

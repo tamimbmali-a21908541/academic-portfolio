@@ -2,6 +2,12 @@
 .env
 *.env
 !.env.example
+.claude/
+
+# ---- Android signing credentials (never publish) ----
+*.jks
+*.keystore
+**/key.properties
 
 # ---- Python ----
 __pycache__/
@@ -61,3 +67,22 @@ desktop.ini
 
 # ---- CV (contains phone number - send directly, don't publish) ----
 /CV_Tamim_Mohamed_Ali.pdf
+
+# ---- Flutter / Dart ----
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/android/.gradle/
+**/ios/Pods/
+
+# ---- Node / frontend build output ----
+node_modules/
+
+# ---- cil-app: local working files, not part of the app ----
+/cil-app/error.txt
+/cil-app/info.txt
+/cil-app/1.png
+
+# ---- Local-only backend workspace, not published ----
+# The published PowerInvoice mobile app lives in /powerinvoice-app/.
+/PowerInvoice/
