@@ -1,0 +1,63 @@
+# ---- Secrets & local config ----
+.env
+*.env
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Django ----
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+*.log
+
+# ---- Java / Maven ----
+target/
+*.class
+*.jar
+!**/.mvn/wrapper/maven-wrapper.jar
+
+# ---- .NET / Visual Studio ----
+bin/
+obj/
+.vs/
+packages/
+*.suo
+*.user
+*.csproj.user
+
+# ---- Editors ----
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Personal transcript source (kept local, not published) ----
+/1.xlsx
+/2.xlsx
+/3.xlsx
+
+# ---- Local-only Django projects, not published ----
+# web2/            = local working copy of the published web-programming/ project
+# web-multiapp-local/ = a separate 13-app Django project (biblioteca, bandas, blog...)
+# Neither is committed. Delete a line here to start publishing that folder.
+/web2/
+/web-multiapp-local/
+
+# ---- CV (contains phone number - send directly, don't publish) ----
+/CV_Tamim_Mohamed_Ali.pdf
