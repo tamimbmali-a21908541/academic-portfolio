@@ -431,7 +431,7 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
     <div class="sec-head">
       <span class="eyebrow">Shipped work</span>
       <h2>Applications with real users</h2>
-      <p>Built outside the classroom, for people who actually use them — a humanitarian NGO, an international competition, and a live analytics platform.</p>
+      <p>Built outside the classroom, for people who actually use them — a humanitarian NGO, a Lisbon community organisation, an invoicing product, an international competition, and a live analytics platform.</p>
     </div>
     <div class="projects" id="workGrid"></div>
   </div>
@@ -442,7 +442,7 @@ footer{border-top:1px solid var(--border);padding-block:var(--space-6);margin-to
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Academic projects</span>
-      <h2>Four projects worth reading the code for</h2>
+      <h2>Eight projects worth reading the code for</h2>
       <p>Where the substantial university engineering happened. Each links to a README covering architecture, the trade-offs considered, and what I'd do differently.</p>
     </div>
     <div class="projects" id="projGrid"></div>
@@ -824,7 +824,7 @@ $('#workGrid').innerHTML = WORK.map(p=>{
   if (p.live) buttons.push(`<a class="btn btn-primary" style="justify-content:center" href="${esc(p.live)}" target="_blank" rel="noopener">${esc(p.liveLabel||'View live')}${ICON_EXT}</a>`);
   if (p.repo) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.repo)}" target="_blank" rel="noopener">View code${ICON_EXT}</a>`);
   if (p.cert) buttons.push(`<a class="btn btn-ghost" style="justify-content:center" href="${esc(p.cert.url)}" target="_blank" rel="noopener">${esc(p.cert.label)}${ICON_EXT}</a>`);
-  if (!buttons.length) buttons.push('<span class="ph" style="text-align:center">Built for the organisation — source not public</span>');
+  if (!buttons.length) buttons.push(`<p class="code-note" style="margin-top:0">${ICON_LOCK}Private client project — source not public</p>`);
 
   return `
   <article class="card proj reveal">
