@@ -74,3 +74,7 @@ desktop.ini
 /cil-app/error.txt
 /cil-app/info.txt
 /cil-app/1.png
+
+/docs/
+/README.md
+/vercel.json
